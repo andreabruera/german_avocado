@@ -9,15 +9,6 @@ from scipy import spatial
 from sklearn import linear_model
 from tqdm import tqdm
 
-### loading lemma frequencies
-with open(os.path.join('pickles', 'sdewac_lemma_pos_freqs.pkl'), 'rb') as i:
-    lemma_pos = pickle.load(i)
-with open(os.path.join('pickles', 'sdewac_lemma_freqs.pkl'), 'rb') as i:
-    lemma_freqs = pickle.load(i)
-### loading word frequencies
-with open(os.path.join('pickles', 'sdewac_word_freqs.pkl'), 'rb') as i:
-    word_freqs = pickle.load(i)
-
 ### loading aligned german fasttext
 ft_de_file = os.path.join('pickles', 'ft_de_aligned.pkl')
 if os.path.exists(ft_de_file):
@@ -34,20 +25,9 @@ else:
     with open(ft_de_file, 'wb') as i:
         pickle.dump(ft_de, i)
 
-'''
-### frequency threshold: 1000
-freq_threshold = 1000
-nouns_candidates = list()
-for w, freq in lemma_freqs.items():
-    if freq > freq_threshold:
-        w_pos = sorted(lemma_pos[w].items(), key=lambda item : item[1], reverse=True)
-        if w_pos[0][0] == 'NN':
-            if w.lower() in ft_de.keys():
-                nouns_candidates.append(w)
-'''
 nouns_candidates = list()
 trans_de = dict()
-with open(os.path.join('data', 'german_nouns_phil.tsv')) as i:
+with open(os.path.join('output', 'german_nouns_phil_100.tsv')) as i:
     for l_i, l in enumerate(i):
         line = l.strip().split('\t')
         if l_i == 0:
@@ -72,13 +52,6 @@ else:
         pickle.dump(ft_en, i)
 
 '''
-### learning a transformation of tf_de words
-translator = googletrans.Translator()
-trans_de = dict()
-for w in tqdm(nouns_candidates):
-    trans = translator.translate(w, src='de', dest='en').text.lower()
-    trans_de[w] = trans
-
 ### checking alignment
 sims = dict()
 for w, vec in ft_en.items():
@@ -108,7 +81,7 @@ perceptual_norms = {
          }
 
 ### loading concreteness
-with open(os.path.join('norms', 'Concreteness_ratings_Brysbaert_et_al_BRM.txt')) as i:
+with open(os.path.join('english_norms', 'Concreteness_ratings_Brysbaert_et_al_BRM.txt')) as i:
     for l_i, l in enumerate(i):
         line = l.strip().split('\t')
         if l_i == 0:
@@ -119,7 +92,7 @@ with open(os.path.join('norms', 'Concreteness_ratings_Brysbaert_et_al_BRM.txt'))
         perceptual_norms['concreteness'][line[header.index('Word')]] = float(line[header.index('Conc.M')])
 
 ### loading sensorimotor
-with open(os.path.join('norms', 'Lancaster_sensorimotor_norms_for_39707_words.tsv')) as i:
+with open(os.path.join('english_norms', 'Lancaster_sensorimotor_norms_for_39707_words.tsv')) as i:
     for l_i, l in enumerate(i):
         line = l.strip().split('\t')
         if l_i == 0:
@@ -173,7 +146,7 @@ emotional_norms = {
          'dominance' : dict(),
          }
 ### loading emotions
-with open(os.path.join('norms', 'BRM-emot-submit.csv')) as i:
+with open(os.path.join('english_norms', 'BRM-emot-submit.csv')) as i:
     for l_i, l in enumerate(i):
         line = l.strip().split(',')
         if l_i == 0:
@@ -206,8 +179,7 @@ for k in emotional_keys:
     emotional_predictions[k] = {k : (v-perc_means)/perc_stds for k, v in raw_emotional_predictions.items()}
     #emotional_predictions[k] = {k : round(v, 3) for k, v in zip(nouns_candidates, scaled_vals)}
 
-
-with open(os.path.join('data', 'nouns_phil_semantic_norms.tsv'), 'w') as o:
+with open(os.path.join('output', 'candidate_nouns_semantic_norms.tsv'), 'w') as o:
     ### header
     o.write('word\t')
     o.write('en_google_translation\t')

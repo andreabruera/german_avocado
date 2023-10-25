@@ -43,7 +43,7 @@ def multiprocessing_levenshtein(inputs):
 relevant_words = list(set(dataset['word']))
 #print(relevant_words)
 relevant_words = list()
-with open(os.path.join('data', 'phil_clean.tsv')) as i:
+with open(os.path.join('data', 'phil_original_annotated_clean.tsv')) as i:
     for l_i, l in enumerate(i):
         line = l.strip().split('\t')
         if l_i==0:
@@ -53,7 +53,7 @@ with open(os.path.join('data', 'phil_clean.tsv')) as i:
 '''
 ### reading candidate dataset
 relevant_words = list()
-with open(os.path.join('data', 'german_nouns_phil.tsv')) as i:
+with open(os.path.join('output', 'candidate_nouns_min_100.tsv')) as i:
     for l_i, l in enumerate(i):
         line = l.strip().split('\t')
         if l_i==0:
@@ -80,7 +80,7 @@ for w in tqdm(relevant_words):
     old20_scores[w] = score
 
 #with open('old20_scores.tsv', 'w') as o:
-with open(os.path.join('data', 'old20_scores_candidate_nouns_phil.tsv'), 'w') as o:
+with open(os.path.join('output', 'candidate_nouns_old20.tsv'), 'w') as o:
     o.write('word\told20 score (based on the top {} lemmas in sdewac)\n'.format(max_n))
     for k, v in old20_scores.items():
         o.write('{}\t{}\n'.format(k, v))

@@ -53,8 +53,9 @@ for w, freq in lemma_freqs.items():
             if w.lower() in ft_de.keys():
                 nouns_candidates.append(w)
 
+### just trying not to translate if not needed...
 trans_de = dict()
-with open(os.path.join('data', 'nouns_phil_semantic_norms.tsv')) as i:
+with open(os.path.join('output', 'nouns_phil_semantic_norms.tsv')) as i:
     for l_i, l in enumerate(i):
         line = l.strip().split('\t')
         if l_i == 0:
@@ -69,7 +70,7 @@ for w in tqdm(nouns_candidates):
     trans = translator.translate(w, src='de', dest='en').text.lower()
     trans_de[w] = trans
 
-with open(os.path.join('data', 'german_nouns_phil_100.tsv'), 'w') as o:
+with open(os.path.join('output', 'candidate_nouns_min_100.tsv'), 'w') as o:
     o.write('word\ten_google_translation\n')
     for de, en in trans_de.items():
         o.write('{}\t{}\n'.format(de, en))

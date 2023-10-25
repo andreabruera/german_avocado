@@ -9,7 +9,7 @@ data = {
         'en' : dict(),
         'predicted' : dict(),
         }
-with open(os.path.join('data', 'nouns_phil_semantic_norms.tsv')) as i:
+with open(os.path.join('output', 'candidate_nouns_semantic_norms.tsv')) as i:
     for l_i, l in enumerate(i):
         line = l.strip().split('\t')
         if l_i == 0:
@@ -39,7 +39,7 @@ for k, en_data in data['en'].items():
 
 ### reading phil's data
 phil_data = {'de' : dict(), 'predicted' : dict()}
-with open(os.path.join('data', 'phil_clean.tsv')) as i:
+with open(os.path.join('output', 'phil_original_annotated_clean.tsv')) as i:
     for l_i, l in enumerate(i):
         line = l.strip().split('\t')
         if l_i == 0:
@@ -56,7 +56,7 @@ with open(os.path.join('data', 'phil_clean.tsv')) as i:
             phil_data['de']['hand'] = [float(line[header.index('Handlung')])]
 
 predictions = dict()
-with open(os.path.join('data', 'nouns_phil_semantic_norms.tsv')) as i:
+with open(os.path.join('output', 'candidate_nouns_semantic_norms.tsv')) as i:
     for l_i, l in enumerate(i):
         line = l.strip().split('\t')
         if l_i == 0:
@@ -67,7 +67,7 @@ with open(os.path.join('data', 'nouns_phil_semantic_norms.tsv')) as i:
         word = line[header.index('word')]
         predictions[word] = [float(line[header.index('predicted_auditory')]), float(line[header.index('predicted_hand')])]
 
-with open(os.path.join('data', 'phil_clean.tsv')) as i:
+with open(os.path.join('output', 'phil_original_annotated_clean.tsv')) as i:
     for l_i, l in enumerate(i):
         line = l.strip().split('\t')
         if l_i == 0:

@@ -81,7 +81,7 @@ for k, v in final_phil.items():
 keys = sorted(clean_phil.keys())
 total = len(clean_phil['Words'])
 
-with open(os.path.join('data', 'phil_clean.tsv'), 'w') as o:
+with open(os.path.join('output', 'phil_original_annotated_clean.tsv'), 'w') as o:
     o.write('\t'.join(keys))
     o.write('\n')
     for i in range(total):

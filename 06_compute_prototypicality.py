@@ -7,7 +7,7 @@ from scipy import spatial
 
 nouns_candidates = list()
 trans_de = dict()
-with open(os.path.join('data', 'german_nouns_phil.tsv')) as i:
+with open(os.path.join('output', 'candidate_nouns_min_100.tsv')) as i:
     for l_i, l in enumerate(i):
         line = l.strip().split('\t')
         if l_i == 0:
@@ -26,7 +26,7 @@ centroid_words = {
         'inanimate' : list(),
         'innatural' : list(),
     }
-with open(os.path.join('data', 'phil_clean.tsv')) as i:
+with open(os.path.join('output', 'phil_original_annotated_clean.tsv')) as i:
     for l_i, l in enumerate(i):
         line = l.strip().split('\t')
         if l_i==0:
@@ -43,7 +43,7 @@ with open(os.path.join('data', 'phil_clean.tsv')) as i:
 centroid_vectors = {k : numpy.average([ft_de[w.lower()] for w in v if w.lower() in ft_de.keys()], axis=0) for k,v in centroid_words.items()}
 
 keyz = list(centroid_vectors.keys()).copy()
-with open(os.path.join('data', 'prototypicality_german_nouns_phil.tsv'), 'w') as o:
+with open(os.path.join('output', 'candidate_nouns_prototypicality.tsv'), 'w') as o:
     o.write('word\t')
     for k in keyz:
         o.write('{}_prototypicality\t'.format(k))
