@@ -4,6 +4,7 @@ import pickle
 import scipy
 
 from scipy import spatial
+from tqdm import tqdm
 
 nouns_candidates = list()
 trans_de = dict()
@@ -48,11 +49,11 @@ with open(os.path.join('output', 'candidate_nouns_prototypicality.tsv'), 'w') as
     for k in keyz:
         o.write('{}_prototypicality\t'.format(k))
     o.write('\n')
-    for w in nouns_candidates:
+    for w in tqdm(nouns_candidates):
         o.write('{}\t'.format(w))
         vec = ft_de[w.lower()]
         for k in keyz:
             sim = 1 - scipy.spatial.distance.cosine(vec, centroid_vectors[k])
-            o.write('{}\t'.format(sim))
+            o.write('{}\t'.format(round(sim, 5)))
         o.write('\n')
 

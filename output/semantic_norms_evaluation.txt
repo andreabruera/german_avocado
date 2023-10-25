@@ -1,0 +1,23 @@
+evaluation against english norms (using de->en translations)
+number of words considered: 13109
+
+concreteness: pearson correlation = 0.7291
+visual: pearson correlation = 0.5006
+haptic: pearson correlation = 0.5835
+gustatory: pearson correlation = 0.6538
+olfactory: pearson correlation = 0.5834
+auditory: pearson correlation = 0.5828
+hand: pearson correlation = 0.4796
+leg: pearson correlation = 0.5036
+head: pearson correlation = 0.4913
+mouth: pearson correlation = 0.5471
+torso: pearson correlation = 0.4665
+valence: pearson correlation = 0.6231
+arousal: pearson correlation = 0.4773
+dominance: pearson correlation = 0.547
+
+evaluation against german norms (rated for the previous studies)
+number of words considered: 687
+
+auditory: pearson correlation = 0.719
+hand: pearson correlation = 0.6254

@@ -27,7 +27,7 @@ else:
 
 nouns_candidates = list()
 trans_de = dict()
-with open(os.path.join('output', 'german_nouns_phil_100.tsv')) as i:
+with open(os.path.join('output', 'candidate_nouns_min_100.tsv')) as i:
     for l_i, l in enumerate(i):
         line = l.strip().split('\t')
         if l_i == 0:
