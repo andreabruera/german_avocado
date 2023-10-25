@@ -1,3 +1,8 @@
+data/
+norms/
+phil_original_annotated/
+pickles/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
