@@ -1,0 +1,57 @@
+word	:)
+word_length	number of letters composing the word
+raw_word_frequency_sdewac	raw word frequency count in sDeWaC [1]
+log10_word_frequency_sdewac	logarithm with base 10 [2] of the raw word count in sDeWaC
+raw_lemma_frequency_sdewac	raw frequency count of lemmas [3, 4] from sDeWaC
+log10_lemma_frequency_sdewac	logarithm with base 10 [2] of the raw lemma count in sDeWaC
+word_average_bigram_frequency	average of the frequency in sDeWaC of all adjacent pairs of letters composing the word (e.g. for 'Platz': (freq('Pl') + freq('la') + freq('at') + freq('tz')) / 4) [5, 6] 
+word_average_trigram_frequency	average of the frequency in sDeWaC of all adjacent triplets of letters composing the word (e.g. for 'Platz': (freq('Pla') + freq('lat') + freq('atz')) / 3) [5, 6]
+old20_score		Measure of orthographic similarity / complexity for words [7] (o.l.d.=orthographic Levenshtein distance)
+en_google_translation	automatic translation from German to English using the Google Translate API
+predicted_concreteness	z-scored level of concreteness predicted from the German fasttext word vectors [8] aligned with English [9], after training on English concreteness norms for 40k words [10]
+predicted_visual	z-scored level of strength of visual information predicted from the German fasttext word vectors aligned with English, after training on English perceptual strength norms for 40k words [11]
+predicted_haptic	same as above, but for haptic information
+predicted_gustatory	same as above, but for gustatory information
+predicted_olfactory	same as above, but for olfactory information
+predicted_auditory	same as above, but for auditory information
+predicted_hand	same as above, but for interaction with arms/hands
+predicted_leg	same as above, but for interaction with legs/feet
+predicted_head	same as above, but for interaction with the head
+predicted_mouth	same as above, but for interaction with the mouth
+predicted_torso	same as above, but for interaction with the torso
+predicted_valence	z-scored level of valence predicted from the German fasttext word vectors aligned with English, after training on English valence norms for 13k words [12]
+predicted_arousal	same as above, but for arousal
+predicted_dominance	same as above, but for dominance
+en_concreteness	original concreteness score of the English word reported under the en_google_translate column (possibly missing - 'na')
+en_visual	same as above, but for visual strength
+en_haptic	same as above, but for haptic strength
+en_gustatory	same as above, but for gustatory strength
+en_olfactory	same as above, but for olfactory strength
+en_auditory	 same as above, but for auditory strength
+en_hand	 same as above, but for arms/hands interaction
+en_leg	same as above, but for legs/feet interaction
+en_head	same as above, but for head interaction
+en_mouth	same as above, but for mouth interaction
+en_torso	same as above, but for torso interaction
+en_valence	same as above, but for valence
+en_arousal	same as above, but for arousal
+en_dominance	same as above, but for dominance
+animate_prototypicality	 (cosine) similarity between German word vector and prototype word vector for animate entities [13] (centroid of word vectors for animate words from Phil's previous experiment) [13]
+natural_prototypicality	same as above, but with the prototype for natural entities
+inanimate_prototypicality	same as above, but with the prototype for inanimate entities
+innatural_prototypicality	same as above, but with the prototype for innatural entities
+
+References
+
+[1] Faaß, G., & Eckart, K. (2013, September). Sdewac–a corpus of parsable sentences from the web. In Language Processing and Knowledge in the Web: 25th International Conference, GSCL 2013, Darmstadt, Germany, September 25-27, 2013. Proceedings (pp. 61-68). Berlin, Heidelberg: Springer Berlin Heidelberg.
+[2] Brysbaert, M., Mandera, P., & Keuleers, E. (2018). The word frequency effect in word processing: An updated review. Current Directions in Psychological Science, 27(1), 45-50.
+[3] Levelt, W. J., Roelofs, A., & Meyer, A. S. (1999). A theory of lexical access in speech production. Behavioral and brain sciences, 22(1), 1-38.
+[4] Caramazza, A. (1997). How many levels of processing are there in lexical access?. Cognitive neuropsychology, 14(1), 177-208.
+[5] Chetail, F. (2015). Reconsidering the role of orthographic redundancy in visual word recognition. Frontiers in Psychology, 6, 645.
+[6] Schmalz, X., & Mulatti, C. (2017). Busting a myth with the Bayes Factor: Effects of letter bigram frequency in visual lexical decision do not reflect reading processes. The Mental Lexicon, 12(2), 263-282
+[7] Yarkoni, T., Balota, D., & Yap, M. (2008). Moving beyond Coltheart’s N: A new measure of orthographic similarity. Psychonomic bulletin & review, 15(5), 971-979.
+[8] Bojanowski, P., Grave, E., Joulin, A., & Mikolov, T. (2017). Enriching word vectors with subword information. Transactions of the association for computational linguistics, 5, 135-146
+[9] Chersoni, E., Xiang, R., Lu, Q., & Huang, C. R. (2020, December). Automatic learning of modality exclusivity norms with crosslingual word embeddings. In Proceedings of the Ninth Joint Conference on Lexical and Computational Semantics (pp. 32-38).
+[10] Brysbaert, M., Warriner, A. B., & Kuperman, V. (2014). Concreteness ratings for 40 thousand generally known English word lemmas. Behavior research methods, 46, 904-911.
+[11] Lynott, D., Connell, L., Brysbaert, M., Brand, J., & Carney, J. (2020). The Lancaster Sensorimotor Norms: multidimensional measures of perceptual and action strength for 40,000 English words. Behavior Research Methods, 52, 1271-1291.
+[12] Warriner, A. B., Kuperman, V., & Brysbaert, M. (2013). Norms of valence, arousal, and dominance for 13,915 English lemmas. Behavior research methods, 45, 1191-1207.
