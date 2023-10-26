@@ -22,7 +22,7 @@ predicted_torso	same as above, but for interaction with the torso
 predicted_valence	z-scored level of valence predicted from the German fasttext word vectors aligned with English, after training on English valence norms for 13k words [12]
 predicted_arousal	same as above, but for arousal
 predicted_dominance	same as above, but for dominance
-en_concreteness	original concreteness score of the English word reported under the en_google_translate column (possibly missing - 'na')
+en_concreteness	original concreteness score of the English word reported under the en_google_translate column (possibly missing - indicated by 'na')
 en_visual	same as above, but for visual strength
 en_haptic	same as above, but for haptic strength
 en_gustatory	same as above, but for gustatory strength
