@@ -1,5 +1,4 @@
 import itertools
-import multiprocessing
 import numpy
 import os
 import pdb
@@ -26,7 +25,8 @@ with open(os.path.join('output', 'candidate_nouns_all_variables.tsv')) as i:
         line = l.strip().split('\t')
         if l_i == 0:
             header = line[1:].copy()
-            relevant_keys = [h for h in header if 'en_' not in h]
+            #relevant_keys = [h for h in header if 'en_' not in h]
+            relevant_keys = [h for h in header if 'en_' not in h and 'raw_' not in h]
             continue
         ### filtering words which are too long
         if len(line[0]) > 10:
