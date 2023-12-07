@@ -1,0 +1,14 @@
+word	good_or_bad?
+Rohrstock	x
+Klaviatur	x
+Schlagwerk	x
+Klopfen	x
+Schlag	x
+Motorsäge	x
+Vibrieren	x
+Klatschen	x
+Streicheln	x
+Taktstock	x
+Tanz	x
+Fußtritt	x
+Klöppel	x

@@ -1,0 +1,12 @@
+word	good_or_bad?
+Troubadour	x
+Mandarin	x
+Kuckuck	x
+Singvogel	x
+Sänger	x
+Augenzeuge	x
+Sprecher	x
+Krähe	x
+Tölpel	x
+Trauergast	x
+Sprachrohr	x
