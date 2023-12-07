@@ -1,10 +1,12 @@
 import itertools
+import mne
 import numpy
 import os
 import pdb
 import pickle
 import scipy
 
+from mne import stats
 from scipy import spatial, stats
 from tqdm import tqdm
 
@@ -51,14 +53,15 @@ with open(os.path.join(fourtets, 'fourtets_{}.tsv'.format(perc))) as i:
 
 ### testing p-vals
 combs = list(itertools.combinations(fourtets.keys(), r=2))
+ps = list()
+cases = list()
 for h in relevant_keys:
     vals = {k : [words_and_norms[w][relevant_keys.index(h)] for w in v] for k, v in fourtets.items()}
-    ps = list()
     for c in combs:
         p = scipy.stats.ttest_ind(vals[c[0]], vals[c[1]]).pvalue
         ps.append(p)
-    check = [False if p>0.05 else True for p in ps]
-    print(h)
-    print(ps)
-    if True in check:
-        print(h)
+        cases.append([h, c[0], c[1]])
+corrected_ps = mne.stats.fdr_correction(ps)[1]
+for case, p in zip(cases, corrected_ps):
+    if p<=0.05:
+        print([case, p])
