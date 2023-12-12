@@ -33,10 +33,15 @@ with open(os.path.join('output', 'candidate_nouns_all_variables.tsv')) as i:
         ### filtering compounds
         if len(line[header.index('en_google_translation')+1].split()) > 1:
             continue
+        if 'nan' in [line[header.index(h)+1] for h in relevant_keys]:
+            print(line)
+            continue
         if 'na' in [line[header.index(h)+1] for h in relevant_keys]:
-            print(line[0])
+            print(line)
             continue
         words_and_norms[line[0]] = [float(line[header.index(h)+1]) for h in relevant_keys]
+        for dim in words_and_norms[line[0]]:
+            assert str(dim) != 'nan'
 
 
 ### starting to filter: concreteness
@@ -54,7 +59,7 @@ remove = [
           'predicted_torso', 
           ]
 
-bottom_perc = 0.25
+bottom_perc = 0.5
 for top_perc in [
              0.05, 
              #0.1, 
@@ -114,8 +119,8 @@ for top_perc in [
                     candidates[cand_key] = set()
                 diffs = [(k, abs(averages[k_two]['bottom']-v)) for k, v in ws]
                 sorted_diffs = sorted(ws, key=lambda item : item[1])
-                candidates[cand_key].update(set([w[0] for w in sorted_ws[:int(len(sorted_ws)*bottom_perc)]]))
-                #candidates[cand_key].update(set([w[0] for w in sorted_diffs[:int(len(sorted_diffs)*bottom_perc)]]))
+                #candidates[cand_key].update(set([w[0] for w in sorted_ws[:int(len(sorted_ws)*bottom_perc)]]))
+                candidates[cand_key].update(set([w[0] for w in sorted_diffs[:int(len(sorted_diffs)*bottom_perc)]]))
                 ### top 
                 key_two = '{}_top'.format(k_two)
                 cand_key = tuple(sorted([key_one, key_two]))
@@ -123,8 +128,8 @@ for top_perc in [
                     candidates[cand_key] = set()
                 diffs = [(k, abs(averages[k_two]['top']-v)) for k, v in ws]
                 sorted_diffs = sorted(ws, key=lambda item : item[1])
-                candidates[cand_key].update(set([w[0] for w in sorted_ws[-int(len(sorted_ws)*top_perc):]]))
-                #candidates[cand_key].update(set([w[0] for w in sorted_diffs[-int(len(sorted_diffs)*top_perc):]]))
+                #candidates[cand_key].update(set([w[0] for w in sorted_ws[-int(len(sorted_ws)*top_perc):]]))
+                candidates[cand_key].update(set([w[0] for w in sorted_diffs[-int(len(sorted_diffs)*top_perc):]]))
     word_to_key = {w : k for k, v in candidates.items() for w in v}
 
     ### writing candidates to file
@@ -142,13 +147,18 @@ for top_perc in [
     word_vecs = dict()
     for __, ws in candidates.items():
         for w in ws:
-            
             vec = numpy.array([words_and_norms[w][h_i] for h_i, h in enumerate(relevant_keys)], dtype=numpy.float64)
             word_vecs[w] = vec
+    for v in word_vecs.values():
+        for dim in v:
+            assert str(dim) != 'nan'
     ### z-scoring
     means = numpy.average([v for v in word_vecs.values()], axis=0)
     stds = numpy.std([v for v in word_vecs.values()], axis=0)
     word_vecs = {w : (v-means)/stds for w, v in word_vecs.items()}
+    for v in word_vecs.values():
+        for dim in v:
+            assert str(dim) != 'nan'
 
     couple_sims = dict()
     with tqdm() as counter:

@@ -38,6 +38,7 @@ with open(os.path.join('output', 'candidate_nouns_all_variables.tsv')) as i:
         words_and_norms[line[0]] = [float(line[header.index(h)+1]) for h in relevant_keys]
 
 fourtets = os.path.join('fourtets')
+#perc = 0.1
 perc = 0.05
 words_used = list()
 counter = 0
@@ -54,7 +55,7 @@ with open(os.path.join(fourtets, 'fourtets_{}.tsv'.format(perc))) as i:
         #if random.choice([0, 1]) == 1:
         #    continue
         counter += 1
-        if counter > 30:
+        if counter > 10:
             continue
         words_used.extend(line)
         for i in range(4):
