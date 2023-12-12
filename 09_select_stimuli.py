@@ -25,11 +25,10 @@ with open(os.path.join('output', 'candidate_nouns_all_variables.tsv')) as i:
         line = l.strip().split('\t')
         if l_i == 0:
             header = line[1:].copy()
-            #relevant_keys = [h for h in header if 'en_' not in h]
             relevant_keys = [h for h in header if 'en_' not in h and 'raw_' not in h]
             continue
         ### filtering words which are too long
-        if len(line[0]) > 10:
+        if len(line[0]) > 12:
             continue
         ### filtering compounds
         if len(line[header.index('en_google_translation')+1].split()) > 1:
@@ -39,6 +38,7 @@ with open(os.path.join('output', 'candidate_nouns_all_variables.tsv')) as i:
             continue
         words_and_norms[line[0]] = [float(line[header.index(h)+1]) for h in relevant_keys]
 
+
 ### starting to filter: concreteness
 conc_ws = [(k, v[relevant_keys.index('predicted_concreteness')]) for k, v in words_and_norms.items()]
 sorted_ws = sorted(conc_ws, key=lambda item : item[1], reverse=True)
@@ -46,13 +46,22 @@ sorted_ws = sorted(conc_ws, key=lambda item : item[1], reverse=True)
 selected_ws = [w[0] for w in sorted_ws][:int(len(conc_ws)*0.25)]
 message = 'retaining {} most concrete words'.format(len(selected_ws))
 print(message)
+remove = [
+          'predicted_leg', 
+          'predicted_haptic', 
+          'predicted_mouth', 
+          'predicted_head', 
+          'predicted_torso', 
+          ]
 
-for perc in [
+bottom_perc = 0.25
+for top_perc in [
              0.05, 
              #0.1, 
              #0.15, 
              #0.2, 
-             0.25,
+             #0.25,
+             #0.33
              ]:
 
     ### selecting the four corners
@@ -71,17 +80,18 @@ for perc in [
     ## auditory words
     aud_ws = [(k, words_and_norms[k][relevant_keys.index('predicted_auditory')]) for k in selected_ws]
     sorted_aud_ws = sorted(aud_ws, key=lambda item : item[1])
-    corners['auditory']['bottom'].extend([w[0] for w in sorted_aud_ws][:int(len(aud_ws)*perc)])
-    corners['auditory']['top'].extend([w[0] for w in sorted_aud_ws][-int(len(aud_ws)*perc):])
+    corners['auditory']['bottom'].extend([w[0] for w in sorted_aud_ws][:int(len(aud_ws)*bottom_perc)])
+    corners['auditory']['top'].extend([w[0] for w in sorted_aud_ws][-int(len(aud_ws)*top_perc):])
     ## action words
     act_ws = [(k, words_and_norms[k][relevant_keys.index('predicted_hand')]) for k in selected_ws]
     sorted_act_ws = sorted(act_ws, key=lambda item : item[1])
-    corners['action']['bottom'].extend([w[0] for w in sorted_act_ws][:int(len(act_ws)*perc)])
-    corners['action']['top'].extend([w[0] for w in sorted_act_ws][-int(len(act_ws)*perc):])
+    corners['action']['bottom'].extend([w[0] for w in sorted_act_ws][:int(len(act_ws)*bottom_perc)])
+    corners['action']['top'].extend([w[0] for w in sorted_act_ws][-int(len(act_ws)*top_perc):])
     checks = [len(v) for _ in corners.values() for v in _.values()]
     poss = set(checks)
-    assert len(poss) == 1
+    #assert len(poss) == 1
     print('for each corner, {} possibilities'.format(poss))
+    averages = {k : {c : numpy.median([words_and_norms[v][relevant_keys.index('predicted_hand')] if k=='action' else words_and_norms[v][relevant_keys.index('predicted_auditory')] for v in ws]) for c, ws in kv.items()} for k, kv in corners.items()}
 
     ### 
     mapper = {
@@ -102,32 +112,38 @@ for perc in [
                 cand_key = tuple(sorted([key_one, key_two]))
                 if cand_key not in candidates.keys():
                     candidates[cand_key] = set()
-                candidates[cand_key].update(set([w[0] for w in sorted_ws[:int(len(sorted_ws)*perc)]]))
+                diffs = [(k, abs(averages[k_two]['bottom']-v)) for k, v in ws]
+                sorted_diffs = sorted(ws, key=lambda item : item[1])
+                candidates[cand_key].update(set([w[0] for w in sorted_ws[:int(len(sorted_ws)*bottom_perc)]]))
+                #candidates[cand_key].update(set([w[0] for w in sorted_diffs[:int(len(sorted_diffs)*bottom_perc)]]))
                 ### top 
                 key_two = '{}_top'.format(k_two)
                 cand_key = tuple(sorted([key_one, key_two]))
                 if cand_key not in candidates.keys():
                     candidates[cand_key] = set()
-                candidates[cand_key].update(set([w[0] for w in sorted_ws[-int(len(sorted_ws)*perc):]]))
+                diffs = [(k, abs(averages[k_two]['top']-v)) for k, v in ws]
+                sorted_diffs = sorted(ws, key=lambda item : item[1])
+                candidates[cand_key].update(set([w[0] for w in sorted_ws[-int(len(sorted_ws)*top_perc):]]))
+                #candidates[cand_key].update(set([w[0] for w in sorted_diffs[-int(len(sorted_diffs)*top_perc):]]))
     word_to_key = {w : k for k, v in candidates.items() for w in v}
 
     ### writing candidates to file
-    cand_out = os.path.join('candidates', str(perc))
+    cand_out = os.path.join('candidates', str(top_perc))
     os.makedirs(cand_out, exist_ok=True)
     for k, v in candidates.items():
         f_k = '_'.join(k)
-        with open(os.path.join(cand_out, '{}_{}.txt'.format(f_k, perc)), 'w') as o:
+        with open(os.path.join(cand_out, '{}_{}.txt'.format(f_k, top_perc)), 'w') as o:
             o.write('word\tgood_or_bad?\n')
             for w in v:
                 o.write('{}\tx\n'.format(w))
 
     ### putting it all together
 
-    remove = list()
     word_vecs = dict()
     for __, ws in candidates.items():
         for w in ws:
-            vec = numpy.array([words_and_norms[w][h_i] for h_i, h in enumerate(relevant_keys) if h not in remove], dtype=numpy.float64)
+            
+            vec = numpy.array([words_and_norms[w][h_i] for h_i, h in enumerate(relevant_keys)], dtype=numpy.float64)
             word_vecs[w] = vec
     ### z-scoring
     means = numpy.average([v for v in word_vecs.values()], axis=0)
@@ -140,9 +156,20 @@ for perc in [
             for __, ws_two in candidates.items():
                 if _ == __:
                     continue
+                if 'auditory_bottom' in _ and 'auditory_bottom' in __:
+                    current_remove = remove + ['predicted_hand']
+                if 'auditory_top' in _ and 'auditory_top' in __:
+                    current_remove = remove + ['predicted_hand']
+                if 'action_bottom' in _ and 'action_bottom' in __:
+                    current_remove = remove + ['predicted_auditory']
+                if 'action_top' in _ and 'action_top' in __:
+                    current_remove = remove + ['predicted_auditory']
+                weights = [0.25 if 'predicted' not in h else 1. for h in relevant_keys if h not in current_remove]
                 for w_one in ws_one:
+                    vec_one = [dim for dim_i, dim in enumerate(word_vecs[w_one]) if relevant_keys[dim_i] not in current_remove]
                     for w_two in ws_two:
-                        couple_sims[tuple(sorted([w_one, w_two]))] = 1 - scipy.spatial.distance.cosine(word_vecs[w_one], word_vecs[w_two])
+                        vec_two = [dim for dim_i, dim in enumerate(word_vecs[w_two]) if relevant_keys[dim_i] not in current_remove]
+                        couple_sims[tuple(sorted([w_one, w_two]))] = 1 - scipy.spatial.distance.cosine(vec_one, vec_two, w=weights)
                         counter.update(1)
 
     # we use each word as a seed to get possibilities
@@ -154,8 +181,8 @@ for perc in [
             for w_one in ws_one:
                 #if words_used_counter[w_one]>=100:
                 #    continue
-                chosen_ws = [w_one]
-                chosen_sims = list()
+                chosen_ws = [[w_one] for i in range(10)]
+                chosen_sims = [list() for i in range(10)]
                 for k_two, ws_two in candidates.items():
                     if k_one == k_two:
                         continue
@@ -164,14 +191,16 @@ for perc in [
                     if len(clean_ws_two) == 0:
                         continue
                     sims = [(w, couple_sims[tuple(sorted([w, w_one]))]) for w in clean_ws_two]
-                    chosen_w = sorted(sims, key=lambda item : item[1], reverse=True)[0]
-                    chosen_ws.append(chosen_w[0])
-                    chosen_sims.append(chosen_w[1])
-                if len(chosen_ws) < 4:
-                    continue
-                for w in chosen_ws:
-                    words_used_counter[w] += 1
-                fourtets.append(chosen_ws+[numpy.average(chosen_sims), numpy.std(chosen_sims)])
+                    for i in range(5):
+                        chosen_w = sorted(sims, key=lambda item : item[1], reverse=True)[i]
+                        chosen_ws[i].append(chosen_w[0])
+                        chosen_sims[i].append(chosen_w[1])
+                for i in range(5):
+                    if len(chosen_ws[i]) < 4:
+                        continue
+                    for w in chosen_ws[i]:
+                        words_used_counter[w] += 1
+                    fourtets.append(chosen_ws[i]+[numpy.average(chosen_sims[i]), numpy.std(chosen_sims[i])])
                 counter.update(1)
     ### sorting and reordering
     columns = [k for k in candidates.keys()]
@@ -191,7 +220,7 @@ for perc in [
     
     out_fourtets = os.path.join('fourtets')
     os.makedirs(out_fourtets,exist_ok=True)
-    with open(os.path.join(out_fourtets, 'fourtets_{}.tsv'.format(perc)), 'w') as o:
+    with open(os.path.join(out_fourtets, 'fourtets_{}.tsv'.format(top_perc)), 'w') as o:
         for col in columns:
             o.write('{}\t'.format(col))
         o.write('average_similarity\taverage_std\n')
