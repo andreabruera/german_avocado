@@ -1,140 +1,140 @@
-word	good_or_bad?
-Bariton	x
-Beitrag	x
-Artgenosse	x
-Augenzeuge	x
-Saal	x
-Hahnenschrei	x
-Kollege	x
-Redakteur	x
-Sprachrohr	x
-Brecher	x
-Ton	x
-Krähe	x
-Funkgerät	x
-Kuckuck	x
-Gerichtssaal	x
-Anrufer	x
-Eule	x
-Pauker	x
-Ohrenzeuge	x
-Tonband	x
-Sprecher	x
-Radio	x
-Rezitator	x
-Monolog	x
-Autofahrer	x
-Gitarrist	x
-Tierarzt	x
-Jingle	x
-Tölpel	x
-Zeichentrick	x
-Minister	x
-Holzbläser	x
-Schauspieler	x
-Spaßmacher	x
-Singvogel	x
-Sinto	x
-Funktelefon	x
-Kompressor	x
-Gezwitscher	x
-Ohrwurm	x
-Zwischenfall	x
-Wortlaut	x
-Ventil	x
-Schrei	x
-Moderator	x
-Ohr	x
-Pauke	x
-Moderatorin	x
-Vogel	x
-Grunzen	x
-Verfasser	x
-Vorfall	x
-Lautsprecher	x
-Uhu	x
-Kommentator	x
-Bombenleger	x
-Showmaster	x
-Unterhändler	x
-Schreihals	x
-Klingelton	x
-Papagei	x
-Mitschüler	x
-Sprecherin	x
-Entertainer	x
-Wärter	x
-Sandmännchen	x
-Sängerin	x
-Musikant	x
-Sirene	x
-Gemurmel	x
-Mitschnitt	x
-Kleiber	x
-Psalmist	x
-Telefax	x
-Fernsprecher	x
-Posaunist	x
-Funktionär	x
-Kanzlerin	x
-Clown	x
-Musiker	x
-Sender	x
-Würger	x
-Tuba	x
-Plagiator	x
-Trauergast	x
-Schulleiter	x
-Piepser	x
-Aufschrei	x
-Komiker	x
-Troubadour	x
-Tenor	x
-Sänger	x
-Zaunkönig	x
-Journalist	x
-Staatsanwalt	x
-Extremist	x
-Liederhalle	x
-Spruch	x
-Tonleiter	x
-Sprechchor	x
-Recorder	x
-Aufzug	x
-Anführer	x
-Pfiff	x
-Bauchredner	x
-Reporterin	x
-Telegraf	x
-Hooligan	x
-Redner	x
-Songtext	x
-Schwalbe	x
-Trinkspruch	x
-Fiedel	x
-Tohuwabohu	x
-Darsteller	x
-Autokolonne	x
-Musikbox	x
-Krachen	x
-Schächter	x
-Interpret	x
-Videotext	x
-Besetzer	x
-Dolmetscher	x
-Amokläufer	x
-Metronom	x
-Schuljunge	x
-Feuerwerker	x
-Reporter	x
-Protestler	x
-Lehrer	x
-Kommentar	x
-Sprechanlage	x
-Anwalt	x
-Lied	x
-Megaphon	x
-Mischpult	x
-Schmierfink	x
-Schüler	x
-Trommler	x
+word	good_or_bad?	comment
+Psalmist	x	y
+Posaunist	x	y
+Redner	x	y
+Würger	x	y
+Videotext	x	y
+Jingle	x	y
+Ohr	x	y
+Komiker	x	y
+Unterhändler	x	y
+Songtext	x	y
+Troubadour	x	y
+Verfasser	x	y
+Schrei	x	y
+Fiedel	x	y
+Trauergast	x	y
+Recorder	x	y
+Extremist	x	y
+Grunzen	x	y
+Ventil	x	y
+Kleiber	x	y
+Uhu	x	y
+Clown	x	y
+Pauke	x	y
+Hooligan	x	y
+Staatsanwalt	x	y
+Sprecher	x	y
+Tölpel	x	y
+Mischpult	x	y
+Zwischenfall	x	y
+Klingelton	x	y
+Bariton	x	y
+Sandmännchen	x	y
+Hahnenschrei	x	y
+Sinto	x	y
+Eule	x	y
+Spruch	x	y
+Musikant	x	y
+Bombenleger	x	y
+Gerichtssaal	x	y
+Tonleiter	x	y
+Journalist	x	y
+Schuljunge	x	y
+Singvogel	x	y
+Kommentar	x	y
+Gitarrist	x	y
+Spaßmacher	x	y
+Kuckuck	x	y
+Rezitator	x	y
+Artgenosse	x	y
+Gezwitscher	x	y
+Pauker	x	y
+Wärter	x	y
+Holzbläser	x	y
+Anrufer	x	y
+Schwalbe	x	y
+Besetzer	x	y
+Telefax	x	y
+Sender	x	y
+Schüler	x	y
+Schauspieler	x	y
+Kommentator	x	y
+Reporter	x	y
+Funktionär	x	y
+Tenor	x	y
+Sprachrohr	x	y
+Amokläufer	x	y
+Vorfall	x	y
+Autofahrer	x	y
+Mitschüler	x	y
+Entertainer	x	y
+Tierarzt	x	y
+Trommler	x	y
+Mitschnitt	x	y
+Lehrer	x	y
+Kollege	x	y
+Ohrenzeuge	x	y
+Schulleiter	x	y
+Zaunkönig	x	y
+Protestler	x	y
+Moderatorin	x	y
+Ton	x	y
+Minister	x	y
+Fernsprecher	x	y
+Aufzug	x	y
+Kanzlerin	x	y
+Lautsprecher	x	y
+Interpret	x	y
+Ohrwurm	x	y
+Showmaster	x	y
+Megaphon	x	y
+Funkgerät	x	y
+Kompressor	x	y
+Lied	x	y
+Zeichentrick	x	y
+Feuerwerker	x	y
+Krachen	x	y
+Schreihals	x	y
+Darsteller	x	y
+Autokolonne	x	y
+Sänger	x	y
+Sirene	x	y
+Piepser	x	y
+Plagiator	x	y
+Augenzeuge	x	y
+Tohuwabohu	x	y
+Radio	x	y
+Telegraf	x	y
+Wortlaut	x	y
+Trinkspruch	x	y
+Pfiff	x	y
+Redakteur	x	y
+Metronom	x	y
+Tuba	x	y
+Liederhalle	x	y
+Aufschrei	x	y
+Schmierfink	x	y
+Bauchredner	x	y
+Sängerin	x	y
+Musikbox	x	y
+Musiker	x	y
+Sprechchor	x	y
+Anwalt	x	y
+Saal	x	y
+Brecher	x	y
+Monolog	x	y
+Funktelefon	x	y
+Schächter	x	y
+Dolmetscher	x	y
+Papagei	x	y
+Sprecherin	x	y
+Anführer	x	y
+Reporterin	x	y
+Tonband	x	y
+Krähe	x	y
+Vogel	x	y
+Sprechanlage	x	y
+Gemurmel	x	y
+Moderator	x	y
+Beitrag	x	y

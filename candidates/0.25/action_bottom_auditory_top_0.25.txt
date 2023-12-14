@@ -1,701 +1,701 @@
-word	good_or_bad?
-Woge	x
-Fischadler	x
-Irrläufer	x
-Triebwerk	x
-Fassung	x
-Sohn	x
-Beitrag	x
-Wiedehopf	x
-Brachvogel	x
-Wächter	x
-Saal	x
-Kolibri	x
-Arena	x
-Randale	x
-Sprachrohr	x
-Jaguar	x
-Auspuff	x
-Krähe	x
-Funkgerät	x
-Abschrift	x
-Pampa	x
-Nachbarin	x
-Aula	x
-Antifaschist	x
-Chefkoch	x
-Sporthalle	x
-Nebel	x
-Gendarm	x
-Murmeltier	x
-Radio	x
-Monolog	x
-Schwan	x
-Luftfahrzeug	x
-Taxi	x
-Tierarzt	x
-Sprichwort	x
-Rosine	x
-Tölpel	x
-Wilddieb	x
-Wirtsleute	x
-Minister	x
-Zweig	x
-Zirkus	x
-Sägemühle	x
-Hai	x
-Beleuchter	x
-Baby	x
-Ratte	x
-Funktelefon	x
-Leitartikel	x
-Oberst	x
-Veteran	x
-Eunuch	x
-Raubtier	x
-Flughafen	x
-Gezwitscher	x
-Väterchen	x
-Wortlaut	x
-Ventil	x
-Anbeter	x
-Küster	x
-Ohr	x
-Theaterautor	x
-Text	x
-Großvater	x
-Klarinettist	x
-Meise	x
-Häscher	x
-Pirat	x
-Ochsenknecht	x
-Klaps	x
-Vogel	x
-Switch	x
-Luftstrom	x
-Straße	x
-Schreiberin	x
-Häuptling	x
-Rebhuhn	x
-Esel	x
-Uhu	x
-Kranich	x
-Flugzeug	x
-Bombenleger	x
-Showmaster	x
-Autofahrerin	x
-Schreihals	x
-Chauffeur	x
-Schrift	x
-Mauersegler	x
-Fernsehgerät	x
-Kopfgeld	x
-Mitbewohner	x
-Schauplatz	x
-Radiologe	x
-Abflug	x
-Drohn	x
-Turm	x
-Cockpit	x
-Beamter	x
-Stadtführer	x
-Kröte	x
-Tarantel	x
-Musikant	x
-Nachbar	x
-Auditorium	x
-Hof	x
-Helikopter	x
-Kolonne	x
-Schrifttafel	x
-Kanonenboot	x
-Kinderarzt	x
-Schneesturm	x
-Reh	x
-Würdenträger	x
-Maulesel	x
-Vogelmann	x
-Rehwild	x
-Wetterfrosch	x
-Piepser	x
-Lemming	x
-Pförtner	x
-Steinbruch	x
-Wetterhahn	x
-Flugsaurier	x
-Kommissar	x
-Leiter	x
-Gegenspieler	x
-Gaukler	x
-Heide	x
-Bauer	x
-Lehrerin	x
-Spatz	x
-Nashorn	x
-Attentäter	x
-Liederhalle	x
-Extremist	x
-Absolvent	x
-Schweinchen	x
-Türe	x
-Theoretiker	x
-Affe	x
-Muff	x
-Aufzug	x
-Sandburg	x
-Magier	x
-Kompagnon	x
-Autorin	x
-Kehlkopf	x
-Propeller	x
-Feuerstätte	x
-Biber	x
-Redner	x
-Zeitung	x
-Autokolonne	x
-Schlucker	x
-Musikbox	x
-Diener	x
-Trompeter	x
-Händler	x
-Protestler	x
-Lehrer	x
-Kaffer	x
-Saloon	x
-Gewehrfeuer	x
-Schacht	x
-Rüffel	x
-Bandkollege	x
-Kapelle	x
-Enkelsohn	x
-Stier	x
-Bassist	x
-Brocken	x
-Milizionär	x
-Kälbchen	x
-Raucher	x
-Spielstätte	x
-Pkw	x
-Kollege	x
-Wald	x
-Hofnarr	x
-Maskottchen	x
-Lebenslauf	x
-Sergeant	x
-Ehemann	x
-Butt	x
-Kerzenschein	x
-Gerichtssaal	x
-Düsenjet	x
-Nachtlokal	x
-Regisseur	x
-Strauß	x
-Anrufer	x
-Haltepunkt	x
-Park	x
-Eule	x
-Slogan	x
-Zaungast	x
-Menschenaffe	x
-Pauker	x
-Ohrenzeuge	x
-Wachtel	x
-Sprecher	x
-Autofahrer	x
-Terrorist	x
-Tür	x
-Jingle	x
-Eisvogel	x
-Zauberer	x
-Arzt	x
-Detektor	x
-AT&T	x
-Lift	x
-Spaßmacher	x
-Neonazi	x
-Kondensator	x
-Wirt	x
-Pierrot	x
-Web	x
-Singvogel	x
-Ferkel	x
-Kai	x
-Schlingel	x
-Ferrari	x
-Buchautor	x
-Spion	x
-Boy	x
-Violinist	x
-Eisbrecher	x
-Schrei	x
-Mama	x
-Geysir	x
-Wiegenlied	x
-Phantom	x
-Haselmaus	x
-Moderatorin	x
-Paragraph	x
-Matrose	x
-Punker	x
-Panther	x
-Kommentator	x
-Rotkehlchen	x
-Brandung	x
-Feuervogel	x
-Säufer	x
-Steinmetz	x
-Ohrenschmalz	x
-Schafhirt	x
-Staatsmann	x
-Sprecherin	x
-Wärter	x
-Sängerin	x
-Fußgänger	x
-Buchstabe	x
-Spielort	x
-Diakon	x
-Weggefährte	x
-Anna	x
-Supertanker	x
-Papi	x
-Nachtclub	x
-Haushalter	x
-Kleiber	x
-Theater	x
-Theologe	x
-Panoptikum	x
-Stadion	x
-Anzeigetafel	x
-Looping	x
-Elefant	x
-Clown	x
-Bus	x
-Gastwirt	x
-Meerjungfrau	x
-Koordinator	x
-Sportsmann	x
-Lüftchen	x
-Opa	x
-Wahrzeichen	x
-Tuba	x
-Plagiator	x
-Säger	x
-Trafo	x
-Protest	x
-Schakal	x
-Baumwipfel	x
-Sänger	x
-Interpol	x
-Schwein	x
-Tornado	x
-Gewinner	x
-Rock	x
-Flamingo	x
-Wahlkämpfer	x
-Rabauke	x
-Frosch	x
-Schafstall	x
-Söhnchen	x
-Langstrumpf	x
-Recorder	x
-Hahn	x
-Ochse	x
-Hooligan	x
-Vierzylinder	x
-Psychiater	x
-Augenzeugin	x
-Biene	x
-Werbespot	x
-Fuhrleute	x
-Trinkspruch	x
-Fiedel	x
-Darsteller	x
-Satellit	x
-Teufel	x
-Seismologe	x
-Videotext	x
-Leitartikler	x
-Staudamm	x
-Kanonier	x
-Metronom	x
-Feuerwerker	x
-Reporter	x
-Audi	x
-Gangster	x
-Grille	x
-Lied	x
-Dickhäuter	x
-Waschbär	x
-Volkswagen	x
-Seeräuber	x
-Blues	x
-Kämmerchen	x
-Bühnenautor	x
-Schluck	x
-Haushälterin	x
-Kaff	x
-Kerl	x
-Besucherin	x
-Untertasse	x
-Specht	x
-Kloß	x
-Produzent	x
-Vater	x
-Kumpel	x
-Panda	x
-Schlachthof	x
-Eber	x
-Dschunke	x
-Hahnenschrei	x
-Notarztwagen	x
-Mäuschen	x
-Aufseher	x
-Wurm	x
-Samariter	x
-Lastwagen	x
-Kamerad	x
-Inspirator	x
-Hinweis	x
-Luft	x
-Maikäfer	x
-Airplane	x
-Revolverheld	x
-Gewinnerin	x
-Motor	x
-Igel	x
-Hotelier	x
-Kabine	x
-Schlagzeile	x
-Radiator	x
-Transistor	x
-Dienerin	x
-Mutter	x
-Soldat	x
-Rancher	x
-Kapitän	x
-Offizier	x
-Enkelkind	x
-Tonband	x
-Mobilfunk	x
-Rezitator	x
-Giraffe	x
-Chamäleon	x
-Luftraum	x
-Kommissarin	x
-Pirol	x
-Flamme	x
-Flüchtling	x
-Holzbläser	x
-Schauspieler	x
-Landsknecht	x
-Zerstörer	x
-Schulgebäude	x
-Mittelsmann	x
-Kalb	x
-Marinesoldat	x
-Fist	x
-Sinto	x
-Kielwasser	x
-Wal	x
-Laternenmast	x
-Saxophonist	x
-Kompressor	x
-Kennerin	x
-Schlächter	x
-Anwohnerin	x
-Otter	x
-Henne	x
-Kundschafter	x
-Telegraph	x
-Moderator	x
-Steppenwolf	x
-Chef	x
-Wicht	x
-Cousin	x
-Grunzen	x
-Reiher	x
-Verfasser	x
-Vorfall	x
-Dickkopf	x
-Videoband	x
-Sitzungssaal	x
-Fahrer	x
-Hyäne	x
-Weißwurst	x
-Romanautor	x
-Code	x
-Bär	x
-Köter	x
-Stockente	x
-Auerochse	x
-Zecher	x
-Wirtin	x
-Sandmännchen	x
-Diplomat	x
-Blitz	x
-Schimpanse	x
-Bericht	x
-Kurier	x
-Trichter	x
-Flug	x
-Sirene	x
-Version	x
-Passagier	x
-Wiesel	x
-Halle	x
-Kakerlak	x
-Mitschnitt	x
-Pädiater	x
-Lächeln	x
-Nagetier	x
-Fernsprecher	x
-Kommuniqué	x
-Kanzlerin	x
-Sender	x
-Säugetier	x
-Mägdlein	x
-Flugplatz	x
-Trauergast	x
-Feldwebel	x
-Spitzbube	x
-Airport	x
-Tanzende	x
-Hund	x
-Troubadour	x
-Erdmännchen	x
-Eisbär	x
-Osterglocke	x
-Kleinbus	x
-Lockvogel	x
-Säuger	x
-Werbeanzeige	x
-Kavalier	x
-Staatsanwalt	x
-Teilnehmer	x
-Spruch	x
-Tonleiter	x
-Sprechchor	x
-Pfiff	x
-Politiker	x
-Paragraf	x
-Legierung	x
-Dickschädel	x
-Pilot	x
-Plagiat	x
-Steigflug	x
-Rabe	x
-Leseratte	x
-Insasse	x
-Tohuwabohu	x
-Sperling	x
-BMW	x
-Hirte	x
-Krachen	x
-Blumfeld	x
-Auslöser	x
-Badegast	x
-Besetzer	x
-Amokläufer	x
-Feuersturm	x
-Dolmetscher	x
-Drahtzieher	x
-Kellner	x
-Kommentar	x
-Begleiter	x
-Sprechanlage	x
-Anwalt	x
-Todesschütze	x
-Kätzchen	x
-Leibwächter	x
-Popo	x
-Astrologe	x
-Schmierfink	x
-Mafioso	x
-Schüler	x
-Biograf	x
-Wachtmeister	x
-Bariton	x
-Senator	x
-Superhirn	x
-Patin	x
-Artgenosse	x
-Synagoge	x
-Augenzeuge	x
-Köchin	x
-Fährte	x
-Redakteur	x
-Autobus	x
-Gala	x
-Kakadu	x
-Brecher	x
-Ton	x
-Journalistin	x
-Ente	x
-Wasserwerk	x
-Marder	x
-Kuckuck	x
-Hamster	x
-Silo	x
-Alphabet	x
-Nachtklub	x
-Blaupunkt	x
-Taube	x
-Autor	x
-Vergaser	x
-Idol	x
-Automobil	x
-Volkswirt	x
-Freund	x
-Assassine	x
-Lkw	x
-Torwächter	x
-Beter	x
-Depp	x
-Gitarrist	x
-Klimbim	x
-Standort	x
-Funke	x
-Dachs	x
-Mühle	x
-Wachturm	x
-Projektor	x
-Zeichentrick	x
-Kreisverkehr	x
-Känguruh	x
-Schulkamerad	x
-General	x
-Riese	x
-Jeep	x
-Ohrwurm	x
-Mitarbeiter	x
-Zwischenfall	x
-Trinker	x
-Tänzchen	x
-Flieger	x
-Häuflein	x
-Türsteher	x
-Übersetzer	x
-Wache	x
-Robbe	x
-Manager	x
-Heuschrecke	x
-Tick	x
-Molch	x
-Verleger	x
-Karatschi	x
-Sitzplatz	x
-Kettenhund	x
-Pauke	x
-Büffel	x
-Lümmel	x
-Glotze	x
-Glossar	x
-Späher	x
-Tiergarten	x
-Dompteur	x
-Elch	x
-Gondel	x
-Kneipe	x
-Lautsprecher	x
-Unterhändler	x
-Farmer	x
-Zeugin	x
-Feuer	x
-Bruder	x
-Klingelton	x
-Papagei	x
-Waidmann	x
-Zehnkämpfer	x
-Mitschüler	x
-Schwall	x
-Entertainer	x
-Schwur	x
-Liederbuch	x
-Truthahn	x
-Bankier	x
-Busch	x
-Marktplatz	x
-Brutstätte	x
-Gemurmel	x
-Höhle	x
-Bomber	x
-Schützer	x
-Jackpot	x
-Rettungsboot	x
-Psalmist	x
-Telefax	x
-Renault	x
-Posaunist	x
-Funktionär	x
-Automat	x
-Musiker	x
-Würger	x
-Schulleiter	x
-Fresser	x
-Auszug	x
-Tiger	x
-Schmierer	x
-Feuerschein	x
-Hubschrauber	x
-Aufschrei	x
-Mandarin	x
-Komiker	x
-Ameisenbär	x
-Turmfalke	x
-Tenor	x
-Werbetafel	x
-Trupp	x
-Bergleute	x
-Kommunist	x
-Berserker	x
-Meilenstein	x
-Zaunkönig	x
-Journalist	x
-Interview	x
-Nieselregen	x
-Krankenwagen	x
-Boxer	x
-Schulhaus	x
-Schlitzohr	x
-Idiot	x
-Maulwurf	x
-Deserteur	x
-Scientologe	x
-Autograph	x
-Kommandeur	x
-Wasserfall	x
-Anführer	x
-Gewandhaus	x
-Antilope	x
-Bauchredner	x
-Passantin	x
-Reporterin	x
-Dinosaurier	x
-Telegraf	x
-Pastor	x
-Schule	x
-Eichelhäher	x
-Mercedes	x
-Taucher	x
-Hähnchen	x
-Songtext	x
-Schwalbe	x
-Halbaffe	x
-Dämpfer	x
-Gründer	x
-Grube	x
-Fluggast	x
-Spezi	x
-Schächter	x
-Wolf	x
-Interpret	x
-Zweisitzer	x
-Wirbelwind	x
-Figur	x
-Telephon	x
-Megaphon	x
-Memorandum	x
-Mischpult	x
-Schuljunge	x
-Fledermaus	x
-Trommler	x
+word	good_or_bad?	comment
+Lächeln	x	y
+Biograf	x	y
+Psychiater	x	y
+Mitarbeiter	x	y
+Regisseur	x	y
+Flugplatz	x	y
+Kompagnon	x	y
+Theologe	x	y
+Videotext	x	y
+Notarztwagen	x	y
+Antifaschist	x	y
+Ohr	x	y
+Unterhändler	x	y
+Troubadour	x	y
+Kommandeur	x	y
+Dämpfer	x	y
+Hai	x	y
+Randale	x	y
+Kundschafter	x	y
+Kröte	x	y
+Torwächter	x	y
+Passantin	x	y
+Airplane	x	y
+Flughafen	x	y
+Baby	x	y
+Patin	x	y
+Wachturm	x	y
+Wolf	x	y
+Meise	x	y
+Sprecher	x	y
+Mischpult	x	y
+Känguruh	x	y
+Kondensator	x	y
+Bariton	x	y
+Assassine	x	y
+Sinto	x	y
+Synagoge	x	y
+Hotelier	x	y
+Großvater	x	y
+Blaupunkt	x	y
+Triebwerk	x	y
+Säufer	x	y
+Tonleiter	x	y
+Antilope	x	y
+Flieger	x	y
+Singvogel	x	y
+Wasserwerk	x	y
+Spaßmacher	x	y
+Theater	x	y
+Tarantel	x	y
+Rezitator	x	y
+Zehnkämpfer	x	y
+Soldat	x	y
+Schweinchen	x	y
+Spitzbube	x	y
+Pauker	x	y
+Saloon	x	y
+Steigflug	x	y
+Holzbläser	x	y
+Anrufer	x	y
+Schwalbe	x	y
+Strauß	x	y
+Tick	x	y
+Telefax	x	y
+Rebhuhn	x	y
+Kloß	x	y
+Wald	x	y
+Kapelle	x	y
+Schauspieler	x	y
+Taube	x	y
+Funktionär	x	y
+Wächter	x	y
+Reiher	x	y
+Spatz	x	y
+Haushalter	x	y
+Seismologe	x	y
+Staudamm	x	y
+Bus	x	y
+Wurm	x	y
+Molch	x	y
+Häuptling	x	y
+Muff	x	y
+Nashorn	x	y
+Radiator	x	y
+Telegraph	x	y
+Entertainer	x	y
+Mühle	x	y
+Tierarzt	x	y
+Boxer	x	y
+Nachbarin	x	y
+Trommler	x	y
+Dickschädel	x	y
+Söhnchen	x	y
+Memorandum	x	y
+Mitschnitt	x	y
+Maskottchen	x	y
+Kai	x	y
+Gondel	x	y
+Baumwipfel	x	y
+Jaguar	x	y
+Panda	x	y
+Gegenspieler	x	y
+Hund	x	y
+Haselmaus	x	y
+Zaunkönig	x	y
+Waschbär	x	y
+BMW	x	y
+Übersetzer	x	y
+Wahlkämpfer	x	y
+Revolverheld	x	y
+Teilnehmer	x	y
+Kaff	x	y
+Kopfgeld	x	y
+Menschenaffe	x	y
+Wilddieb	x	y
+Blumfeld	x	y
+Abflug	x	y
+Buchstabe	x	y
+Fernsprecher	x	y
+Rüffel	x	y
+Marder	x	y
+Magier	x	y
+Weißwurst	x	y
+Diakon	x	y
+Fuhrleute	x	y
+Kielwasser	x	y
+Zeichentrick	x	y
+Lebenslauf	x	y
+Schreihals	x	y
+Sänger	x	y
+Kapitän	x	y
+Hamster	x	y
+Hinweis	x	y
+Kommissarin	x	y
+Tiger	x	y
+Motor	x	y
+Fischadler	x	y
+Dschunke	x	y
+Kerzenschein	x	y
+Telegraf	x	y
+Ehemann	x	y
+Hubschrauber	x	y
+Biber	x	y
+Metronom	x	y
+Theoretiker	x	y
+Text	x	y
+Gendarm	x	y
+Liederhalle	x	y
+Journalistin	x	y
+Gewinnerin	x	y
+Aufschrei	x	y
+Flamingo	x	y
+Schmierfink	x	y
+Legierung	x	y
+Beamter	x	y
+Musikbox	x	y
+Radiologe	x	y
+Musiker	x	y
+Sprechchor	x	y
+Anwalt	x	y
+Fährte	x	y
+Trompeter	x	y
+Propeller	x	y
+Produzent	x	y
+Häuflein	x	y
+Funktelefon	x	y
+Schächter	x	y
+Autor	x	y
+Zeitung	x	y
+Glossar	x	y
+Karatschi	x	y
+Reporterin	x	y
+Vogel	x	y
+Kommissar	x	y
+Schwall	x	y
+Fassung	x	y
+Stadtführer	x	y
+Eunuch	x	y
+Gründer	x	y
+Posaunist	x	y
+Redner	x	y
+Krankenwagen	x	y
+Meerjungfrau	x	y
+Schule	x	y
+Sandburg	x	y
+Leseratte	x	y
+Brandung	x	y
+Schlagzeile	x	y
+Mercedes	x	y
+Reh	x	y
+Laternenmast	x	y
+Recorder	x	y
+Schulgebäude	x	y
+Leitartikel	x	y
+Vater	x	y
+Extremist	x	y
+Wirtin	x	y
+Sitzplatz	x	y
+Ventil	x	y
+Kleiber	x	y
+Uhu	x	y
+Autobus	x	y
+Bericht	x	y
+Blitz	x	y
+Leiter	x	y
+Staatsanwalt	x	y
+Bär	x	y
+Tölpel	x	y
+Wiegenlied	x	y
+Luftstrom	x	y
+Zweig	x	y
+Klaps	x	y
+Klingelton	x	y
+Pierrot	x	y
+Feuervogel	x	y
+Ratte	x	y
+Silo	x	y
+Hahnenschrei	x	y
+Kaffer	x	y
+Steinbruch	x	y
+Spruch	x	y
+Turm	x	y
+Mägdlein	x	y
+Türsteher	x	y
+Wiesel	x	y
+Bombenleger	x	y
+Feuerschein	x	y
+Kettenhund	x	y
+Autofahrerin	x	y
+Gerichtssaal	x	y
+Enkelsohn	x	y
+Videoband	x	y
+Schuljunge	x	y
+Politiker	x	y
+Kommentar	x	y
+Hyäne	x	y
+Telephon	x	y
+Gitarrist	x	y
+Popo	x	y
+Kalb	x	y
+Kuckuck	x	y
+Kurier	x	y
+Artgenosse	x	y
+Marinesoldat	x	y
+Eisvogel	x	y
+Nachtklub	x	y
+Wärter	x	y
+Feuersturm	x	y
+Anwohnerin	x	y
+Schafhirt	x	y
+Vierzylinder	x	y
+Funke	x	y
+Mitbewohner	x	y
+Hof	x	y
+Senator	x	y
+Kommentator	x	y
+Aula	x	y
+Nieselregen	x	y
+Schlachthof	x	y
+Kehlkopf	x	y
+Zecher	x	y
+Kätzchen	x	y
+Idol	x	y
+Begleiter	x	y
+Volkswagen	x	y
+Sprachrohr	x	y
+Cockpit	x	y
+Teufel	x	y
+Erdmännchen	x	y
+Seeräuber	x	y
+Schlucker	x	y
+Chauffeur	x	y
+Insasse	x	y
+Feuer	x	y
+Volkswirt	x	y
+Affe	x	y
+Depp	x	y
+Gaukler	x	y
+Esel	x	y
+Werbeanzeige	x	y
+Robbe	x	y
+Bandkollege	x	y
+Brutstätte	x	y
+Specht	x	y
+Schwein	x	y
+Enkelkind	x	y
+Flugsaurier	x	y
+Kinderarzt	x	y
+Schauplatz	x	y
+Vogelmann	x	y
+Gewinner	x	y
+Späher	x	y
+Sitzungssaal	x	y
+Hirte	x	y
+Jackpot	x	y
+Anbeter	x	y
+Schulleiter	x	y
+Zaungast	x	y
+Langstrumpf	x	y
+Tiergarten	x	y
+Augenzeugin	x	y
+Lemming	x	y
+Kreisverkehr	x	y
+Aufzug	x	y
+Gastwirt	x	y
+Klarinettist	x	y
+Zweisitzer	x	y
+Ochse	x	y
+Superhirn	x	y
+Lautsprecher	x	y
+Pirat	x	y
+Köchin	x	y
+Schulhaus	x	y
+Arzt	x	y
+Megaphon	x	y
+Mandarin	x	y
+Kompressor	x	y
+Funkgerät	x	y
+Schrifttafel	x	y
+Krachen	x	y
+Kellner	x	y
+Steppenwolf	x	y
+Kavalier	x	y
+Protest	x	y
+Trafo	x	y
+Autokolonne	x	y
+Astrologe	x	y
+Schlingel	x	y
+Rabe	x	y
+Bergleute	x	y
+Schneesturm	x	y
+Schrift	x	y
+Rock	x	y
+Lehrerin	x	y
+Radio	x	y
+Kolibri	x	y
+Elefant	x	y
+Wortlaut	x	y
+Dickkopf	x	y
+Sägemühle	x	y
+Pfiff	x	y
+Dachs	x	y
+Würdenträger	x	y
+Kämmerchen	x	y
+Rabauke	x	y
+Woge	x	y
+Flugzeug	x	y
+Feuerstätte	x	y
+Cousin	x	y
+Zerstörer	x	y
+Todesschütze	x	y
+Glotze	x	y
+Kommunist	x	y
+Trinker	x	y
+Brecher	x	y
+Wachtmeister	x	y
+Väterchen	x	y
+Dolmetscher	x	y
+Trupp	x	y
+Papagei	x	y
+Tornado	x	y
+Automat	x	y
+Diener	x	y
+Sprecherin	x	y
+Geysir	x	y
+Dienerin	x	y
+Tür	x	y
+Tonband	x	y
+Eisbrecher	x	y
+Detektor	x	y
+Gemurmel	x	y
+Sporthalle	x	y
+Heuschrecke	x	y
+Phantom	x	y
+Irrläufer	x	y
+Neonazi	x	y
+Satellit	x	y
+Würger	x	y
+Abschrift	x	y
+Pädiater	x	y
+Absolvent	x	y
+Jingle	x	y
+Bauer	x	y
+Komiker	x	y
+Renault	x	y
+Attentäter	x	y
+Schützer	x	y
+Murmeltier	x	y
+Koordinator	x	y
+Schlitzohr	x	y
+Oberst	x	y
+Pförtner	x	y
+Inspirator	x	y
+Kumpel	x	y
+Interview	x	y
+Schwan	x	y
+Steinmetz	x	y
+Sprichwort	x	y
+Pauke	x	y
+Kerl	x	y
+Chefkoch	x	y
+Zwischenfall	x	y
+Flug	x	y
+Chamäleon	x	y
+Mutter	x	y
+Eule	x	y
+Düsenjet	x	y
+Dickhäuter	x	y
+Gala	x	y
+Musikant	x	y
+Kälbchen	x	y
+Grille	x	y
+Höhle	x	y
+Nebel	x	y
+Leibwächter	x	y
+Romanautor	x	y
+Panther	x	y
+Lümmel	x	y
+Idiot	x	y
+Pastor	x	y
+Taxi	x	y
+Ameisenbär	x	y
+Kanonenboot	x	y
+Besetzer	x	y
+Eber	x	y
+Diplomat	x	y
+Sender	x	y
+Punker	x	y
+Verleger	x	y
+Stockente	x	y
+Samariter	x	y
+Küster	x	y
+Henne	x	y
+Luft	x	y
+Untertasse	x	y
+General	x	y
+Marktplatz	x	y
+Eisbär	x	y
+Offizier	x	y
+Lockvogel	x	y
+Feldwebel	x	y
+Schlächter	x	y
+Fist	x	y
+Spielstätte	x	y
+Auslöser	x	y
+Dinosaurier	x	y
+Rotkehlchen	x	y
+Vergaser	x	y
+Badegast	x	y
+Sohn	x	y
+Automobil	x	y
+Turmfalke	x	y
+Igel	x	y
+Lehrer	x	y
+Berserker	x	y
+Sperling	x	y
+Park	x	y
+Frosch	x	y
+Wasserfall	x	y
+Bankier	x	y
+Schmierer	x	y
+Pkw	x	y
+Moderatorin	x	y
+Ton	x	y
+Transistor	x	y
+Minister	x	y
+Schwur	x	y
+Tänzchen	x	y
+Besucherin	x	y
+Kanzlerin	x	y
+Kabine	x	y
+Kranich	x	y
+Interpol	x	y
+Interpret	x	y
+Ohrwurm	x	y
+Straße	x	y
+Showmaster	x	y
+Fernsehgerät	x	y
+Lied	x	y
+Feuerwerker	x	y
+Pampa	x	y
+Helikopter	x	y
+Zauberer	x	y
+Paragraf	x	y
+Freund	x	y
+Kolonne	x	y
+Mauersegler	x	y
+Fluggast	x	y
+Sirene	x	y
+Nachbar	x	y
+Lastwagen	x	y
+Deserteur	x	y
+Passagier	x	y
+Augenzeuge	x	y
+Kamerad	x	y
+Tohuwabohu	x	y
+Spielort	x	y
+Liederbuch	x	y
+Schafstall	x	y
+Heide	x	y
+Kneipe	x	y
+Raubtier	x	y
+Ente	x	y
+Matrose	x	y
+Trinkspruch	x	y
+Staatsmann	x	y
+Auditorium	x	y
+AT&T	x	y
+Osterglocke	x	y
+Wetterfrosch	x	y
+Schreiberin	x	y
+Wicht	x	y
+Beter	x	y
+Wirt	x	y
+Anna	x	y
+Violinist	x	y
+Boy	x	y
+Ferkel	x	y
+Werbespot	x	y
+Saal	x	y
+Stadion	x	y
+Web	x	y
+Monolog	x	y
+Code	x	y
+Mafioso	x	y
+Autorin	x	y
+Slogan	x	y
+Schimpanse	x	y
+Häscher	x	y
+Auszug	x	y
+Gewehrfeuer	x	y
+Auerochse	x	y
+Opa	x	y
+Fahrer	x	y
+Switch	x	y
+Pilot	x	y
+Landsknecht	x	y
+Rancher	x	y
+Psalmist	x	y
+Säuger	x	y
+Schulkamerad	x	y
+Säugetier	x	y
+Werbetafel	x	y
+Songtext	x	y
+Verfasser	x	y
+Schrei	x	y
+Mama	x	y
+Fiedel	x	y
+Trauergast	x	y
+Terrorist	x	y
+Ohrenschmalz	x	y
+Drohn	x	y
+Leitartikler	x	y
+Busch	x	y
+Grunzen	x	y
+Eichelhäher	x	y
+Kleinbus	x	y
+Türe	x	y
+Clown	x	y
+Elch	x	y
+Hooligan	x	y
+Lüftchen	x	y
+Mäuschen	x	y
+Säger	x	y
+Arena	x	y
+Zeugin	x	y
+Bühnenautor	x	y
+Hahn	x	y
+Sandmännchen	x	y
+Ferrari	x	y
+Aufseher	x	y
+Schacht	x	y
+Bruder	x	y
+Waidmann	x	y
+Supertanker	x	y
+Wiedehopf	x	y
+Milizionär	x	y
+Projektor	x	y
+Alphabet	x	y
+Journalist	x	y
+Meilenstein	x	y
+Version	x	y
+Gezwitscher	x	y
+Wahrzeichen	x	y
+Veteran	x	y
+Truthahn	x	y
+Autograph	x	y
+Blues	x	y
+Wirbelwind	x	y
+Kennerin	x	y
+Taucher	x	y
+Otter	x	y
+Maulwurf	x	y
+Buchautor	x	y
+Schluck	x	y
+Wachtel	x	y
+Schüler	x	y
+Reporter	x	y
+Tenor	x	y
+Gangster	x	y
+Nagetier	x	y
+Theaterautor	x	y
+Maulesel	x	y
+Rettungsboot	x	y
+Raucher	x	y
+Wal	x	y
+Dompteur	x	y
+Moderator	x	y
+Nachtclub	x	y
+Amokläufer	x	y
+Vorfall	x	y
+Scientologe	x	y
+Zirkus	x	y
+Kommuniqué	x	y
+Weggefährte	x	y
+Fresser	x	y
+Autofahrer	x	y
+Airport	x	y
+Mitschüler	x	y
+Saxophonist	x	y
+Ochsenknecht	x	y
+Beleuchter	x	y
+Mobilfunk	x	y
+Fußgänger	x	y
+Luftfahrzeug	x	y
+Kollege	x	y
+Wache	x	y
+Grube	x	y
+Ohrenzeuge	x	y
+Luftraum	x	y
+Fledermaus	x	y
+Gewandhaus	x	y
+Klimbim	x	y
+Protestler	x	y
+Hofnarr	x	y
+Spion	x	y
+Hähnchen	x	y
+Giraffe	x	y
+Anzeigetafel	x	y
+Audi	x	y
+Flüchtling	x	y
+Looping	x	y
+Farmer	x	y
+Trichter	x	y
+Pirol	x	y
+Kakadu	x	y
+Paragraph	x	y
+Brachvogel	x	y
+Händler	x	y
+Kanonier	x	y
+Spezi	x	y
+Darsteller	x	y
+Tanzende	x	y
+Haushälterin	x	y
+Wetterhahn	x	y
+Flamme	x	y
+Papi	x	y
+Halbaffe	x	y
+Köter	x	y
+Piepser	x	y
+Bassist	x	y
+Plagiator	x	y
+Sportsmann	x	y
+Mittelsmann	x	y
+Chef	x	y
+Stier	x	y
+Lift	x	y
+Manager	x	y
+Redakteur	x	y
+Lkw	x	y
+Tuba	x	y
+Schakal	x	y
+Figur	x	y
+Haltepunkt	x	y
+Auspuff	x	y
+Bauchredner	x	y
+Rehwild	x	y
+Bomber	x	y
+Sängerin	x	y
+Wirtsleute	x	y
+Kakerlak	x	y
+Büffel	x	y
+Maikäfer	x	y
+Biene	x	y
+Rosine	x	y
+Riese	x	y
+Drahtzieher	x	y
+Standort	x	y
+Sergeant	x	y
+Anführer	x	y
+Krähe	x	y
+Plagiat	x	y
+Sprechanlage	x	y
+Jeep	x	y
+Brocken	x	y
+Butt	x	y
+Nachtlokal	x	y
+Panoptikum	x	y
+Halle	x	y
+Beitrag	x	y

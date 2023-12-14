@@ -1,415 +1,415 @@
-word	good_or_bad?
-Untersetzer	x
-Brezel	x
-Schlagzeug	x
-Motorsäge	x
-Tänzer	x
-Bastler	x
-Mähdrescher	x
-Wischer	x
-Briefträger	x
-Katechismus	x
-Kutscher	x
-Klinke	x
-Bauteil	x
-Handstreich	x
-Krabbeln	x
-Kehrmaschine	x
-Abwurf	x
-Lehrbuch	x
-Töpfchen	x
-Lebkuchen	x
-Gerät	x
-Dudelsack	x
-Stuntman	x
-Taktstock	x
-Brief	x
-Standpauke	x
-Blasebalg	x
-Feuergefecht	x
-Zugmaschine	x
-Handschlag	x
-Karussell	x
-Stoß	x
-Polizistin	x
-Trinken	x
-Moped	x
-Brecheisen	x
-Quarterback	x
-Traktor	x
-Flinte	x
-Steinschlag	x
-Zubehörteil	x
-Kriecher	x
-Knarre	x
-Festzug	x
-Kettensäge	x
-Schläfchen	x
-Eckstoß	x
-Wettkämpfer	x
-Zahnbürste	x
-Briefkasten	x
-Töpferei	x
-Puppe	x
-Teilnehmerin	x
-Fang	x
-Mundschutz	x
-Partnerin	x
-Gegenstand	x
-Klopfer	x
-Spielstand	x
-Löffel	x
-Balg	x
-Posaune	x
-Snowboarder	x
-Friseur	x
-Tanz	x
-Höhenmesser	x
-Torwart	x
-Harfe	x
-Tischler	x
-Miststück	x
-Steckenpferd	x
-Einparken	x
-Bausch	x
-Blumenkübel	x
-Fuchtel	x
-Feuerzeug	x
-Streichholz	x
-Fund	x
-Spritzer	x
-Hüpfen	x
-Rehkitz	x
-Lagerfeuer	x
-Hammer	x
-Röckchen	x
-Aufschneider	x
-Wippe	x
-Walze	x
-Fender	x
-Kopfnicken	x
-Kopfstoß	x
-Kegler	x
-Konditor	x
-Abschlag	x
-Ballerina	x
-Nachschlag	x
-Zither	x
-Kuhglocke	x
-Maus	x
-Tastatur	x
-Schalter	x
-Backofen	x
-Säge	x
-Tänzerin	x
-Trinkgeld	x
-Bearbeiterin	x
-Besen	x
-Streich	x
-Handzettel	x
-Aushang	x
-Inhalt	x
-Saite	x
-Akrobat	x
-Bohrer	x
-Kind	x
-Melken	x
-Setzer	x
-Zimmerleute	x
-Raubüberfall	x
-Tasse	x
-Wurf	x
-Werkzeug	x
-Knistern	x
-Saxophon	x
-Greifer	x
-Beil	x
-Blockflöte	x
-Tip	x
-Spielplatz	x
-Kendo	x
-Jongleur	x
-Halter	x
-Kuchen	x
-Percussion	x
-Ringkampf	x
-Schriftsatz	x
-Rädchen	x
-Feder	x
-Bagger	x
-Verteiler	x
-Demo	x
-Sportstudio	x
-Gerätschaft	x
-Knebel	x
-Zapfhahn	x
-Triangel	x
-Akkordeon	x
-Hippe	x
-Brandbombe	x
-Rohrstock	x
-Spießer	x
-Uhrmacher	x
-Konsole	x
-Nachbau	x
-Kraftrad	x
-Hersteller	x
-Spieß	x
-Baseball	x
-Ortheil	x
-Flamenco	x
-Ringrichter	x
-Hardware	x
-Stoßzahn	x
-Spaziergang	x
-Dachdecker	x
-Druckschrift	x
-Pirouette	x
-Überschlag	x
-Bohle	x
-Kanne	x
-Quaken	x
-Klaviatur	x
-Drahtesel	x
-Schleifstein	x
-Spielzug	x
-Arbeiterin	x
-Truck	x
-Anzünden	x
-Klotz	x
-Blech	x
-Trampen	x
-Herausgabe	x
-Spucke	x
-Trommel	x
-Festumzug	x
-Klatschen	x
-Horn	x
-Goldschmied	x
-Stolpern	x
-Fußtritt	x
-Glasbläserei	x
-Blechbüchse	x
-Schweißnaht	x
-Striptease	x
-Bootsführer	x
-Gegner	x
-Golfspieler	x
-Lackierer	x
-Hüpfer	x
-Trampolin	x
-Quietschen	x
-Inventar	x
-Fön	x
-Zeltlager	x
-Zupfen	x
-Schuhmacher	x
-Gewichtheber	x
-Kinderbett	x
-Boß	x
-Erfinderin	x
-Puppenspiel	x
-Hufschmied	x
-Schmied	x
-Lehrplan	x
-Hänger	x
-Händedruck	x
-Würgen	x
-Xylophon	x
-Schalmei	x
-Heber	x
-Fütterung	x
-Ständchen	x
-Kinderwagen	x
-Dung	x
-Fibel	x
-Schlagfall	x
-Schläger	x
-Pausenbrot	x
-Krippe	x
-Taschendieb	x
-Klinge	x
-Schreiner	x
-Windsurfen	x
-Fritte	x
-Zeitnehmer	x
-Steg	x
-Abtasten	x
-Drehleier	x
-Schlagmann	x
-Schlagstock	x
-Holzfäller	x
-Streicheln	x
-Kratzen	x
-Scheller	x
-Seilzug	x
-Pfeife	x
-Hämmern	x
-Tastendruck	x
-Vibrieren	x
-Pulli	x
-Kampfrichter	x
-Zünder	x
-Hobel	x
-Sprengstoff	x
-Lasso	x
-Handwagen	x
-Mundstück	x
-Sandkiste	x
-Hebebühne	x
-Rednerpult	x
-Mitspieler	x
-Randalierer	x
-Kinderzimmer	x
-Azubi	x
-Fliesenleger	x
-Sandkasten	x
-Mäher	x
-Beckmesser	x
-Frisör	x
-Grimasse	x
-Schach	x
-Schlagloch	x
-Torhüter	x
-Amboß	x
-Bohrung	x
-Banjo	x
-Mörser	x
-Waffe	x
-Eierbecher	x
-Rufer	x
-Stöckchen	x
-Vorrichtung	x
-Formteil	x
-Glöckchen	x
-Bademeister	x
-Bogenschütze	x
-Alphorn	x
-Cartoon	x
-Auto	x
-Abfeuern	x
-Trick	x
-Mühlstein	x
-Halfter	x
-Anfassen	x
-Flugblatt	x
-Fuhrpark	x
-Metall	x
-Ladegerät	x
-Hausierer	x
-Plotter	x
-Wasserpfeife	x
-Nickerchen	x
-Zündholz	x
-Arbeitsblatt	x
-Krempel	x
-Menschenraub	x
-Beichtstuhl	x
-Herdplatte	x
-Klemme	x
-Knallkörper	x
-Hebel	x
-Video	x
-Klatsche	x
-Roller	x
-Workshop	x
-Stierkampf	x
-Wackeln	x
-Pokern	x
-Zündschnur	x
-Sauna	x
-Näherin	x
-Kribbeln	x
-Totschläger	x
-Kopfball	x
-Handspiel	x
-Querschläger	x
-Dampfwalze	x
-Tachometer	x
-Spieler	x
-Langfinger	x
-Umarmung	x
-Tamburin	x
-Korpus	x
-Imker	x
-Holzwurm	x
-Saustall	x
-Aufschlag	x
-Anschlag	x
-Schaustück	x
-Schäfchen	x
-Taste	x
-Haftrichter	x
-Arbeiter	x
-Bildtelefon	x
-Zug	x
-Gabelstapler	x
-Flöte	x
-Motorrad	x
-Fußpfleger	x
-Roboter	x
-Lauffeuer	x
-Klöppel	x
-Eßlöffel	x
-Spielzeug	x
-Tape	x
-Tamtam	x
-Spielerin	x
-Rechtshänder	x
-Werkmeister	x
-Schlagwerk	x
-Schleuder	x
-Aufhänger	x
-Geschenk	x
-Kinderfrau	x
-Handheld	x
-Polin	x
-Heimwerker	x
-Schütze	x
-Planierraupe	x
-Schaukel	x
-Sauger	x
-Korb	x
-Klappe	x
-Kühltruhe	x
-Mechaniker	x
-Vorarbeiter	x
-Einbrecher	x
-Software	x
-Backgammon	x
-Feuerwaffe	x
-Taubenschlag	x
-Drucker	x
-Klempner	x
-Festwagen	x
-Tonabnehmer	x
-Apparatur	x
-Schleifer	x
-Sensenmann	x
-Stück	x
-Armatur	x
-Computer	x
-Haspel	x
-Großaufnahme	x
-Monteur	x
-Schlag	x
-Klopfen	x
-Knüppel	x
-Espresso	x
-Einkäufer	x
-Kran	x
-Axt	x
-Stapler	x
-Ahle	x
-Gitarre	x
-Pflüger	x
-Karambolage	x
-Geige	x
-Frau	x
-Sandsack	x
-Dusche	x
-Skater	x
-Fechter	x
-Platzverweis	x
-Zunge	x
-Hackbrett	x
+word	good_or_bad?	comment
+Bootsführer	x	y
+Geige	x	y
+Monteur	x	y
+Wischer	x	y
+Schriftsatz	x	y
+Azubi	x	y
+Schütze	x	y
+Geschenk	x	y
+Schäfchen	x	y
+Puppe	x	y
+Wasserpfeife	x	y
+Xylophon	x	y
+Nickerchen	x	y
+Schleuder	x	y
+Kratzen	x	y
+Anschlag	x	y
+Trampolin	x	y
+Rechtshänder	x	y
+Stoßzahn	x	y
+Boß	x	y
+Zündschnur	x	y
+Zapfhahn	x	y
+Workshop	x	y
+Software	x	y
+Schlag	x	y
+Streich	x	y
+Baseball	x	y
+Klöppel	x	y
+Fang	x	y
+Saxophon	x	y
+Dusche	x	y
+Werkmeister	x	y
+Anzünden	x	y
+Goldschmied	x	y
+Abwurf	x	y
+Abtasten	x	y
+Hebebühne	x	y
+Saustall	x	y
+Werkzeug	x	y
+Spieß	x	y
+Gabelstapler	x	y
+Hüpfen	x	y
+Ständchen	x	y
+Katechismus	x	y
+Blockflöte	x	y
+Kind	x	y
+Saite	x	y
+Nachschlag	x	y
+Standpauke	x	y
+Mitspieler	x	y
+Skater	x	y
+Säge	x	y
+Trommel	x	y
+Miststück	x	y
+Quarterback	x	y
+Vibrieren	x	y
+Kinderwagen	x	y
+Eßlöffel	x	y
+Überschlag	x	y
+Amboß	x	y
+Trinkgeld	x	y
+Heber	x	y
+Schleifer	x	y
+Schreiner	x	y
+Gegner	x	y
+Hänger	x	y
+Roboter	x	y
+Waffe	x	y
+Lebkuchen	x	y
+Windsurfen	x	y
+Festzug	x	y
+Kribbeln	x	y
+Löffel	x	y
+Gerät	x	y
+Vorarbeiter	x	y
+Anfassen	x	y
+Arbeiter	x	y
+Kutscher	x	y
+Zeltlager	x	y
+Stolpern	x	y
+Frau	x	y
+Handschlag	x	y
+Computer	x	y
+Tastendruck	x	y
+Klinge	x	y
+Schmied	x	y
+Frisör	x	y
+Quietschen	x	y
+Kran	x	y
+Hufschmied	x	y
+Imker	x	y
+Bademeister	x	y
+Zugmaschine	x	y
+Bohrung	x	y
+Schlagmann	x	y
+Trampen	x	y
+Sauger	x	y
+Triangel	x	y
+Aufschneider	x	y
+Fritte	x	y
+Karambolage	x	y
+Bohrer	x	y
+Briefträger	x	y
+Ballerina	x	y
+Striptease	x	y
+Blasebalg	x	y
+Hackbrett	x	y
+Truck	x	y
+Brandbombe	x	y
+Gerätschaft	x	y
+Konsole	x	y
+Arbeitsblatt	x	y
+Sprengstoff	x	y
+Rednerpult	x	y
+Hausierer	x	y
+Bausch	x	y
+Snowboarder	x	y
+Lasso	x	y
+Kühltruhe	x	y
+Klempner	x	y
+Ringrichter	x	y
+Umarmung	x	y
+Kendo	x	y
+Uhrmacher	x	y
+Spucke	x	y
+Zündholz	x	y
+Rufer	x	y
+Haspel	x	y
+Taschendieb	x	y
+Knebel	x	y
+Seilzug	x	y
+Großaufnahme	x	y
+Spielzug	x	y
+Flöte	x	y
+Roller	x	y
+Banjo	x	y
+Töpferei	x	y
+Lauffeuer	x	y
+Puppenspiel	x	y
+Demo	x	y
+Taubenschlag	x	y
+Hämmern	x	y
+Rohrstock	x	y
+Wippe	x	y
+Tip	x	y
+Pfeife	x	y
+Spielplatz	x	y
+Klopfer	x	y
+Apparatur	x	y
+Taktstock	x	y
+Kinderfrau	x	y
+Handheld	x	y
+Brief	x	y
+Karussell	x	y
+Schlagwerk	x	y
+Feuergefecht	x	y
+Aufhänger	x	y
+Tänzerin	x	y
+Zimmerleute	x	y
+Jongleur	x	y
+Schalmei	x	y
+Kopfball	x	y
+Knallkörper	x	y
+Herdplatte	x	y
+Zunge	x	y
+Cartoon	x	y
+Friseur	x	y
+Sandkasten	x	y
+Mundschutz	x	y
+Zeitnehmer	x	y
+Spieler	x	y
+Bohle	x	y
+Dung	x	y
+Fütterung	x	y
+Eierbecher	x	y
+Klatschen	x	y
+Kopfstoß	x	y
+Totschläger	x	y
+Steinschlag	x	y
+Klemme	x	y
+Korb	x	y
+Beckmesser	x	y
+Zug	x	y
+Blumenkübel	x	y
+Handspiel	x	y
+Korpus	x	y
+Heimwerker	x	y
+Randalierer	x	y
+Pulli	x	y
+Moped	x	y
+Verteiler	x	y
+Schlagloch	x	y
+Handwagen	x	y
+Arbeiterin	x	y
+Pausenbrot	x	y
+Wurf	x	y
+Horn	x	y
+Stoß	x	y
+Kehrmaschine	x	y
+Krabbeln	x	y
+Torhüter	x	y
+Stapler	x	y
+Gitarre	x	y
+Spritzer	x	y
+Fön	x	y
+Kopfnicken	x	y
+Hüpfer	x	y
+Maus	x	y
+Harfe	x	y
+Inhalt	x	y
+Pokern	x	y
+Fender	x	y
+Einparken	x	y
+Posaune	x	y
+Händedruck	x	y
+Video	x	y
+Klopfen	x	y
+Inventar	x	y
+Tachometer	x	y
+Plotter	x	y
+Bauteil	x	y
+Trick	x	y
+Brezel	x	y
+Motorsäge	x	y
+Mechaniker	x	y
+Schuhmacher	x	y
+Tanz	x	y
+Mäher	x	y
+Röckchen	x	y
+Lehrplan	x	y
+Grimasse	x	y
+Bildtelefon	x	y
+Trinken	x	y
+Spaziergang	x	y
+Tänzer	x	y
+Tasse	x	y
+Gewichtheber	x	y
+Herausgabe	x	y
+Haftrichter	x	y
+Fußtritt	x	y
+Traktor	x	y
+Schach	x	y
+Feuerwaffe	x	y
+Holzwurm	x	y
+Ortheil	x	y
+Aushang	x	y
+Feuerzeug	x	y
+Mähdrescher	x	y
+Formteil	x	y
+Motorrad	x	y
+Fußpfleger	x	y
+Planierraupe	x	y
+Sportstudio	x	y
+Pirouette	x	y
+Espresso	x	y
+Schläfchen	x	y
+Flugblatt	x	y
+Flamenco	x	y
+Schweißnaht	x	y
+Druckschrift	x	y
+Kuhglocke	x	y
+Halfter	x	y
+Alphorn	x	y
+Hebel	x	y
+Axt	x	y
+Stück	x	y
+Menschenraub	x	y
+Flinte	x	y
+Feder	x	y
+Stöckchen	x	y
+Stierkampf	x	y
+Pflüger	x	y
+Höhenmesser	x	y
+Glöckchen	x	y
+Tamburin	x	y
+Lagerfeuer	x	y
+Schalter	x	y
+Abschlag	x	y
+Melken	x	y
+Tonabnehmer	x	y
+Partnerin	x	y
+Tastatur	x	y
+Hardware	x	y
+Hippe	x	y
+Rädchen	x	y
+Kriecher	x	y
+Kraftrad	x	y
+Vorrichtung	x	y
+Platzverweis	x	y
+Streichholz	x	y
+Krempel	x	y
+Nachbau	x	y
+Auto	x	y
+Holzfäller	x	y
+Setzer	x	y
+Beil	x	y
+Bastler	x	y
+Kampfrichter	x	y
+Lehrbuch	x	y
+Spielzeug	x	y
+Würgen	x	y
+Bagger	x	y
+Festwagen	x	y
+Kegler	x	y
+Dudelsack	x	y
+Polizistin	x	y
+Gegenstand	x	y
+Bearbeiterin	x	y
+Schläger	x	y
+Klaviatur	x	y
+Spießer	x	y
+Polin	x	y
+Rehkitz	x	y
+Tischler	x	y
+Fund	x	y
+Zahnbürste	x	y
+Festumzug	x	y
+Handzettel	x	y
+Kuchen	x	y
+Spielstand	x	y
+Tape	x	y
+Töpfchen	x	y
+Langfinger	x	y
+Fuhrpark	x	y
+Streicheln	x	y
+Eckstoß	x	y
+Handstreich	x	y
+Greifer	x	y
+Zubehörteil	x	y
+Kanne	x	y
+Wettkämpfer	x	y
+Percussion	x	y
+Scheller	x	y
+Blech	x	y
+Abfeuern	x	y
+Querschläger	x	y
+Akkordeon	x	y
+Halter	x	y
+Einkäufer	x	y
+Schlagstock	x	y
+Sandsack	x	y
+Untersetzer	x	y
+Drahtesel	x	y
+Schaukel	x	y
+Armatur	x	y
+Schaustück	x	y
+Bogenschütze	x	y
+Klotz	x	y
+Knarre	x	y
+Walze	x	y
+Briefkasten	x	y
+Steg	x	y
+Knistern	x	y
+Sandkiste	x	y
+Taste	x	y
+Aufschlag	x	y
+Einbrecher	x	y
+Besen	x	y
+Krippe	x	y
+Golfspieler	x	y
+Sensenmann	x	y
+Mörser	x	y
+Hobel	x	y
+Zither	x	y
+Zupfen	x	y
+Näherin	x	y
+Steckenpferd	x	y
+Backofen	x	y
+Zünder	x	y
+Blechbüchse	x	y
+Balg	x	y
+Fibel	x	y
+Fliesenleger	x	y
+Mundstück	x	y
+Kinderbett	x	y
+Dachdecker	x	y
+Hammer	x	y
+Fechter	x	y
+Quaken	x	y
+Hersteller	x	y
+Kettensäge	x	y
+Sauna	x	y
+Metall	x	y
+Teilnehmerin	x	y
+Akrobat	x	y
+Torwart	x	y
+Tamtam	x	y
+Dampfwalze	x	y
+Ahle	x	y
+Glasbläserei	x	y
+Ringkampf	x	y
+Klappe	x	y
+Spielerin	x	y
+Wackeln	x	y
+Drucker	x	y
+Klatsche	x	y
+Knüppel	x	y
+Raubüberfall	x	y
+Stuntman	x	y
+Brecheisen	x	y
+Schlagfall	x	y
+Mühlstein	x	y
+Fuchtel	x	y
+Kinderzimmer	x	y
+Schleifstein	x	y
+Beichtstuhl	x	y
+Lackierer	x	y
+Backgammon	x	y
+Drehleier	x	y
+Schlagzeug	x	y
+Ladegerät	x	y
+Konditor	x	y
+Erfinderin	x	y
+Klinke	x	y

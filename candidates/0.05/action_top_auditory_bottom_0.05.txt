@@ -1,147 +1,147 @@
-word	good_or_bad?
-Montieren	x
-Möbelstück	x
-Paddel	x
-Planzen	x
-Kniescheibe	x
-Aufhängen	x
-Schrubber	x
-Schnur	x
-Manschette	x
-Papier	x
-Hosentasche	x
-Kicks	x
-Sitzfläche	x
-Bolzen	x
-Schuhwerk	x
-Befestigen	x
-Weben	x
-Befeuchtung	x
-Fußmatte	x
-Daumen	x
-Fingerkuppe	x
-Kochgeschirr	x
-Keilriemen	x
-Bettwäsche	x
-Handgelenk	x
-Fußgelenk	x
-Handkarren	x
-Handgriff	x
-Textilie	x
-Tätowieren	x
-Abrollen	x
-Schaft	x
-Knetmasse	x
-Bekleidung	x
-Leder	x
-Fußknöchel	x
-Brosche	x
-Rasieren	x
-Steigeisen	x
-Schnalle	x
-Kettchen	x
-Tisch	x
-Bleistift	x
-Schraubstock	x
-Stickerei	x
-Kleidung	x
-Schneebesen	x
-Fingernagel	x
-Spülkasten	x
-Einrad	x
-Kissen	x
-Haken	x
-Tischdecke	x
-Hand	x
-Schere	x
-Säbel	x
-Notizblock	x
-Fausthieb	x
-Halterung	x
-Griff	x
-Drehbank	x
-Handtasche	x
-Handfläche	x
-Stichsäge	x
-Kleben	x
-Knie	x
-Trocknen	x
-Bürste	x
-Taschentuch	x
-Besteck	x
-Riemen	x
-Zange	x
-Wäsche	x
-Lauffläche	x
-Messer	x
-Karabiner	x
-Kneten	x
-Strick	x
-Schnittgut	x
-Bügel	x
-Handschuh	x
-Schlitten	x
-Faltenwurf	x
-Ball	x
-Anfertigen	x
-Radiergummi	x
-Deckel	x
-Satteltasche	x
-Hacke	x
-Sticken	x
-Flicken	x
-Lidschlag	x
-Schränkchen	x
-Geschirr	x
-Segeltuch	x
-Garn	x
-Schuhkarton	x
-Pinzette	x
-Bettzeug	x
-Gestell	x
-Gurt	x
-Zaumzeug	x
-Klebstoff	x
-Bügeleisen	x
-Arbeitsgang	x
-Tischtuch	x
-Spitzhacke	x
-Textile	x
-Sandpapier	x
-Polsterung	x
-Webstuhl	x
-Fixieren	x
-Werkstück	x
-Bein	x
-Hantel	x
-Accessoire	x
-Möbel	x
-Strickjacke	x
-Beutel	x
-Maniküre	x
-Tablett	x
-Verrutschen	x
-Ellbogen	x
-Vorhängen	x
-Wickel	x
-Karton	x
-Bindfaden	x
-Schreibfeder	x
-Utensil	x
-Kelle	x
-Rucksack	x
-Liegestütze	x
-Schnürsenkel	x
-Oberschenkel	x
-Tragetuch	x
-Widerhaken	x
-Waschen	x
-Befestigung	x
-Unterarm	x
-Beschlag	x
-Tragekomfort	x
-Unterlage	x
-Stange	x
-Tasche	x
-Knobeln	x
-Ballen	x
+word	good_or_bad?	comment
+Handgriff	x	y
+Strickjacke	x	y
+Accessoire	x	y
+Befestigung	x	y
+Besteck	x	y
+Riemen	x	y
+Paddel	x	y
+Tablett	x	y
+Handfläche	x	y
+Fußgelenk	x	y
+Bekleidung	x	y
+Rucksack	x	y
+Schneebesen	x	y
+Fußknöchel	x	y
+Lidschlag	x	y
+Schnürsenkel	x	y
+Radiergummi	x	y
+Handkarren	x	y
+Keilriemen	x	y
+Kneten	x	y
+Schlitten	x	y
+Rasieren	x	y
+Gestell	x	y
+Bürste	x	y
+Textile	x	y
+Taschentuch	x	y
+Lauffläche	x	y
+Drehbank	x	y
+Schnur	x	y
+Kicks	x	y
+Maniküre	x	y
+Flicken	x	y
+Tasche	x	y
+Tätowieren	x	y
+Befeuchtung	x	y
+Webstuhl	x	y
+Säbel	x	y
+Steigeisen	x	y
+Fingernagel	x	y
+Zange	x	y
+Möbelstück	x	y
+Bettzeug	x	y
+Ball	x	y
+Schrubber	x	y
+Notizblock	x	y
+Halterung	x	y
+Montieren	x	y
+Geschirr	x	y
+Wäsche	x	y
+Griff	x	y
+Beschlag	x	y
+Deckel	x	y
+Karabiner	x	y
+Sandpapier	x	y
+Pinzette	x	y
+Utensil	x	y
+Tragekomfort	x	y
+Kochgeschirr	x	y
+Polsterung	x	y
+Textilie	x	y
+Weben	x	y
+Kleben	x	y
+Satteltasche	x	y
+Klebstoff	x	y
+Knie	x	y
+Tischtuch	x	y
+Wickel	x	y
+Messer	x	y
+Spülkasten	x	y
+Schere	x	y
+Bleistift	x	y
+Oberschenkel	x	y
+Karton	x	y
+Tragetuch	x	y
+Unterarm	x	y
+Handgelenk	x	y
+Schraubstock	x	y
+Handschuh	x	y
+Spitzhacke	x	y
+Daumen	x	y
+Schaft	x	y
+Waschen	x	y
+Manschette	x	y
+Faltenwurf	x	y
+Brosche	x	y
+Stickerei	x	y
+Anfertigen	x	y
+Bein	x	y
+Haken	x	y
+Tischdecke	x	y
+Ballen	x	y
+Papier	x	y
+Planzen	x	y
+Kniescheibe	x	y
+Abrollen	x	y
+Trocknen	x	y
+Unterlage	x	y
+Befestigen	x	y
+Arbeitsgang	x	y
+Möbel	x	y
+Fausthieb	x	y
+Hacke	x	y
+Handtasche	x	y
+Segeltuch	x	y
+Stange	x	y
+Strick	x	y
+Liegestütze	x	y
+Kissen	x	y
+Fingerkuppe	x	y
+Sitzfläche	x	y
+Bügel	x	y
+Knobeln	x	y
+Verrutschen	x	y
+Vorhängen	x	y
+Aufhängen	x	y
+Stichsäge	x	y
+Knetmasse	x	y
+Fixieren	x	y
+Kleidung	x	y
+Widerhaken	x	y
+Sticken	x	y
+Leder	x	y
+Schuhwerk	x	y
+Schreibfeder	x	y
+Tisch	x	y
+Schnalle	x	y
+Werkstück	x	y
+Bindfaden	x	y
+Ellbogen	x	y
+Schuhkarton	x	y
+Bettwäsche	x	y
+Schränkchen	x	y
+Hantel	x	y
+Einrad	x	y
+Hosentasche	x	y
+Kelle	x	y
+Zaumzeug	x	y
+Fußmatte	x	y
+Gurt	x	y
+Garn	x	y
+Bügeleisen	x	y
+Bolzen	x	y
+Hand	x	y
+Schnittgut	x	y
+Beutel	x	y
+Kettchen	x	y

@@ -1,18 +1,18 @@
-word	good_or_bad?
-Schlag	x
-Klopfen	x
-Rohrstock	x
-Motorsäge	x
-Schlagwerk	x
-Tanz	x
-Nachschlag	x
-Anschlag	x
-Schlagstock	x
-Streicheln	x
-Klatschen	x
-Fußtritt	x
-Hämmern	x
-Vibrieren	x
-Taktstock	x
-Klaviatur	x
-Klöppel	x
+word	good_or_bad?	comment
+Klaviatur	x	y
+Schlagstock	x	y
+Klopfen	x	y
+Fußtritt	x	y
+Klatschen	x	y
+Anschlag	x	y
+Hämmern	x	y
+Rohrstock	x	y
+Taktstock	x	y
+Nachschlag	x	y
+Streicheln	x	y
+Vibrieren	x	y
+Schlag	x	y
+Schlagwerk	x	y
+Motorsäge	x	y
+Klöppel	x	y
+Tanz	x	y

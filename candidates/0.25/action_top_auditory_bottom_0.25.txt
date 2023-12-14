@@ -1,718 +1,718 @@
-word	good_or_bad?
-Schraube	x
-Huf	x
-Planzen	x
-Pappe	x
-Kniescheibe	x
-Paddel	x
-Armlehne	x
-Fangarm	x
-Badeanzug	x
-Standfuß	x
-Baumwolle	x
-Weben	x
-Notizbuch	x
-Gelee	x
-Datenträger	x
-Gebinde	x
-Handabdruck	x
-Keilriemen	x
-Kochgeschirr	x
-Aktentasche	x
-Filet	x
-Standbein	x
-Kautschuk	x
-Torf	x
-Textilie	x
-Schärpe	x
-Würfel	x
-Bettlaken	x
-Kettchen	x
-Krempe	x
-Fußknöchel	x
-Spind	x
-Tisch	x
-Semmelbrösel	x
-Eisen	x
-Öffnung	x
-Bleistift	x
-Sichel	x
-Faden	x
-Stickerei	x
-Spielfeld	x
-Layout	x
-Schwellung	x
-Unterhose	x
-Fingernagel	x
-Revers	x
-Schulter	x
-Bahre	x
-Erhängen	x
-Einrad	x
-Perforation	x
-Pfote	x
-Füllhorn	x
-Badewanne	x
-Laufsteg	x
-Schere	x
-Spatel	x
-Geldbörse	x
-Säbel	x
-Laib	x
-Obst	x
-Höhlung	x
-Körper	x
-Ärmel	x
-Griff	x
-Handfläche	x
-Kamelie	x
-Brandwunde	x
-Stichsäge	x
-Schmutz	x
-Garen	x
-Stäbchen	x
-Rechen	x
-Absprung	x
-Locher	x
-Tabernakel	x
-Trocknen	x
-Postern	x
-Besteck	x
-Wäsche	x
-Fuß	x
-Verpackung	x
-Zutaten	x
-Teelöffel	x
-Schnittgut	x
-Scheide	x
-Achsel	x
-Holzschnitt	x
-Ball	x
-Karre	x
-Gamasche	x
-Messing	x
-Taille	x
-Lack	x
-Laufstall	x
-Steigbügel	x
-Scheibchen	x
-Segeltuch	x
-Einstich	x
-Geldbeutel	x
-Kunststoff	x
-Saatgut	x
-Korkenzieher	x
-Buchrücken	x
-Zigarre	x
-Bettzeug	x
-Schuhkarton	x
-Knäuel	x
-Dekolleté	x
-Reisegepäck	x
-Behältnis	x
-Waffenrock	x
-Fladenbrot	x
-Tischtuch	x
-Schenkel	x
-Lasche	x
-Textile	x
-Spitzhacke	x
-Hülse	x
-Tütchen	x
-Ellenbogen	x
-Korken	x
-Schachbrett	x
-Papierkram	x
-Revolver	x
-Salatgurke	x
-Kästchen	x
-Bademäntel	x
-Fältchen	x
-Fotomontage	x
-Paste	x
-Lebensmittel	x
-Beutel	x
-Maniküre	x
-Pfeilspitze	x
-Klaue	x
-Verrutschen	x
-Erbstück	x
-Schnittwunde	x
-Hydrant	x
-Reifen	x
-Vorhängen	x
-Zettel	x
-Ofenrohr	x
-Matte	x
-Sohle	x
-Korsett	x
-Sticker	x
-Teigware	x
-Gewehr	x
-Schreibfeder	x
-Wolldecke	x
-Seil	x
-Utensil	x
-Ordner	x
-Handschelle	x
-Seidenraupe	x
-Teig	x
-Anbau	x
-Lesebändchen	x
-Tätowierung	x
-Befestigung	x
-Matrize	x
-Filmstreifen	x
-Arbeitsmappe	x
-Heu	x
-Slip	x
-Tragekomfort	x
-Kopfstütze	x
-Schiffchen	x
-Nabe	x
-Brett	x
-Strumpf	x
-Fingerhut	x
-Kunstharz	x
-Schneeschuh	x
-Meniskus	x
-Teigtasche	x
-Polyamid	x
-Pferderücken	x
-Manschette	x
-Steckling	x
-Marihuana	x
-Prellung	x
-Gerte	x
-Hosentasche	x
-Kugellager	x
-Wurstware	x
-Bettchen	x
-Bolzen	x
-Knochen	x
-Oberteil	x
-Befeuchtung	x
-Befestigen	x
-Daumen	x
-Fingerkuppe	x
-Päckchen	x
-Lineal	x
-Feile	x
-Material	x
-Fußgelenk	x
-Kratzer	x
-Handkarren	x
-Strähne	x
-Säckchen	x
-Unterwäsche	x
-Fußraum	x
-Rohleder	x
-Abrollen	x
-Speisezettel	x
-Knetmasse	x
-Ringen	x
-Briefpapier	x
-Rute	x
-Styropor	x
-Steigeisen	x
-Schnalle	x
-Teekanne	x
-Gummi	x
-Sägemehl	x
-Schraubstock	x
-Lagerfeld	x
-Schneebesen	x
-Verzehren	x
-Häufchen	x
-Werkbank	x
-Abdeckung	x
-Futter	x
-Kugel	x
-Holzkohle	x
-Köcher	x
-Notizblock	x
-Sattel	x
-Anstecknadel	x
-Fahrrad	x
-Gurke	x
-Drehbank	x
-Umhüllung	x
-Tabak	x
-Aschenbecher	x
-Einkerbung	x
-Mitesser	x
-Leichentuch	x
-Behälter	x
-Milchkaffee	x
-Turnschuh	x
-Kraftpaket	x
-Eiszapfen	x
-Köfferchen	x
-Fußboden	x
-Scheibe	x
-Bürste	x
-Pflugschar	x
-Feuerstelle	x
-Lendenschurz	x
-Kartoffel	x
-Barren	x
-Muskete	x
-Speiche	x
-Zange	x
-Riemen	x
-Pastell	x
-Kopfhaut	x
-Spielzimmer	x
-Topf	x
-Gelenk	x
-Aufreißen	x
-Kneten	x
-Kürbis	x
-Strick	x
-Sieb	x
-Jeanshose	x
-Gefäß	x
-Hinterteil	x
-Kolben	x
-Schnupftabak	x
-Faltenwurf	x
-Wandteppich	x
-Gemüse	x
-Schlinge	x
-Geländer	x
-Ebenholz	x
-Satteltasche	x
-Lasur	x
-Pflücken	x
-Tampon	x
-Aussparung	x
-Sandale	x
-Waschküche	x
-Scharnier	x
-Latzhose	x
-Ständer	x
-Brotkrume	x
-Badekleidung	x
-Pergament	x
-Garn	x
-Leintuch	x
-Zwangsjacke	x
-Nagel	x
-Furnier	x
-Abbildung	x
-Brokat	x
-Bargeld	x
-Kopfkissen	x
-Puzzle	x
-Sonnenschirm	x
-Bügeleisen	x
-Kandare	x
-Harnisch	x
-Rollstuhl	x
-Tupfer	x
-Arm	x
-Webstuhl	x
-Jackett	x
-Folie	x
-Gefriertruhe	x
-Armband	x
-Hocke	x
-Gürtel	x
-Laufwerk	x
-Stab	x
-Standplatz	x
-Hosenbund	x
-Schultasche	x
-Acryl	x
-Strickjacke	x
-Toastbrot	x
-Akupressur	x
-Möbel	x
-Ellbogen	x
-Holzstamm	x
-Schälchen	x
-Zahnrad	x
-Karton	x
-Gabel	x
-Sakko	x
-Bäuchlein	x
-Bluse	x
-Haarnadel	x
-Anker	x
-Oberhemd	x
-Rucksack	x
-Schreibtisch	x
-Fahnenstange	x
-Prothese	x
-Pipette	x
-Pflasterung	x
-Bewehrung	x
-Regalbrett	x
-Tragetuch	x
-Armreif	x
-Bettdecke	x
-Würfelchen	x
-Portemonnaie	x
-Zahnersatz	x
-Bindemittel	x
-Rasiermesser	x
-Ferse	x
-Liegewiese	x
-Fingerspitze	x
-Unterlage	x
-Eisbahn	x
-Parken	x
-Handfessel	x
-Tasche	x
-Schriftrolle	x
-Knorpel	x
-Werkraum	x
-Mürbeteig	x
-Tunika	x
-Möbelstück	x
-Sitzstange	x
-Aufhängen	x
-Schrubber	x
-Drogerie	x
-Sitzfläche	x
-Buchbinder	x
-Gewinde	x
-Füßchen	x
-Etui	x
-Schemel	x
-Bajonett	x
-Fußmatte	x
-Zahnspange	x
-Bettwäsche	x
-Spargel	x
-Handgriff	x
-Knauf	x
-Stiefel	x
-Tätowieren	x
-Dachdeckung	x
-Tapete	x
-Hartholz	x
-Schleppe	x
-Erhitzen	x
-Ware	x
-Chip	x
-Brosche	x
-Holzscheit	x
-Fessel	x
-Montierung	x
-Stecknadel	x
-Schinken	x
-Gelatine	x
-Fotokopierer	x
-Kärtchen	x
-Stutzen	x
-Karaffe	x
-Bienenwachs	x
-Strumpfhose	x
-Hand	x
-Zimmerdecke	x
-Nylon	x
-Wachs	x
-Pflock	x
-Stellfläche	x
-Fußspitze	x
-Handtasche	x
-Schatulle	x
-Zehennagel	x
-Pflug	x
-Klette	x
-Wams	x
-Tafelsilber	x
-Hilfsmittel	x
-Seife	x
-Erntegut	x
-Bändchen	x
-Platzwunde	x
-Wand	x
-Geleise	x
-Radieschen	x
-Fußnagel	x
-Ranzen	x
-Boden	x
-Lehnstuhl	x
-Polster	x
-Pullover	x
-Schulranzen	x
-Schürze	x
-Augenbinde	x
-Kokon	x
-Höschen	x
-Karabiner	x
-Feuerholz	x
-Spinnwebe	x
-Schlitten	x
-Zigarillo	x
-Anfertigen	x
-Treibmittel	x
-Krümel	x
-Hacke	x
-Pickel	x
-Bodenbelag	x
-Blatt	x
-Abkochen	x
-Überwurf	x
-Lidschlag	x
-Geschirr	x
-Verpuppung	x
-Diskette	x
-Halskrause	x
-Täschchen	x
-Gurt	x
-Umschlag	x
-Gestell	x
-Pinne	x
-Gewebe	x
-Einpflanzen	x
-Jogginghose	x
-Dielenboden	x
-Muskel	x
-Shampoo	x
-Feldstecher	x
-Sweatshirt	x
-Arbeitsgang	x
-Futtern	x
-Schienbein	x
-Stola	x
-Koffer	x
-Alkoven	x
-Kimono	x
-Dreifuß	x
-Treibholz	x
-Zubereitung	x
-Hosenträger	x
-Töpferware	x
-Tiegel	x
-Schwert	x
-Aktenkoffer	x
-Shirt	x
-Elfenbein	x
-Bein	x
-Verzehr	x
-Rückenlehne	x
-Gliedmaß	x
-Accessoire	x
-Aufkleber	x
-Tablett	x
-Lanze	x
-Ohrläppchen	x
-Hausschuh	x
-Brustpanzer	x
-Bindfaden	x
-Regenschirm	x
-Fotoapparat	x
-Sortiment	x
-Hauswand	x
-Schmierstoff	x
-Tüll	x
-Gitternetz	x
-Kelle	x
-Stativ	x
-Konfekt	x
-Stückchen	x
-Überzug	x
-Felge	x
-Schnürsenkel	x
-Steißbein	x
-Sack	x
-Halskette	x
-Oberschenkel	x
-Schaumstoff	x
-Widerhaken	x
-Unterarm	x
-Steingut	x
-Jacke	x
-Fliese	x
-Grasnarbe	x
-Stiel	x
-Holz	x
-Stange	x
-Teebeutel	x
-Ofen	x
-Fladen	x
-Schminke	x
-Flechtwerk	x
-Markise	x
-Kunstleder	x
-Querlatte	x
-Montieren	x
-Monstranz	x
-Brustkorb	x
-Armbruster	x
-Schnur	x
-Kommode	x
-Papier	x
-Bordüre	x
-Kuvert	x
-Vitrine	x
-Kork	x
-Teppich	x
-Seide	x
-Kicks	x
-Teetasse	x
-Schuhwerk	x
-Handapparat	x
-Teller	x
-Genick	x
-Handgelenk	x
-Schießpulver	x
-Brot	x
-Bienenstock	x
-Schrank	x
-Öse	x
-Schaft	x
-Speichel	x
-Einband	x
-Hellebarde	x
-Bekleidung	x
-Kordel	x
-Leder	x
-Barhocker	x
-Rasieren	x
-Haarschnitt	x
-Zahnpaste	x
-Brieftasche	x
-Butter	x
-Skalpell	x
-Splitt	x
-Hufeisen	x
-Schöpfkelle	x
-Pantoffel	x
-Schuh	x
-Kleidung	x
-Bücherregal	x
-Zahnstocher	x
-Spülkasten	x
-Hefter	x
-Fotokopie	x
-Schnürchen	x
-Kissen	x
-Meerrettich	x
-Latz	x
-Nahrung	x
-Haken	x
-Anschnitt	x
-Vorderlauf	x
-Kleber	x
-Nadel	x
-Tischdecke	x
-Tüte	x
-Fausthieb	x
-Kauen	x
-Bündchen	x
-Mappe	x
-Halterung	x
-Tresorraum	x
-Kleben	x
-Ohrring	x
-Besatz	x
-Sanduhr	x
-Knie	x
-Knöchel	x
-Zügel	x
-Absaugen	x
-Taschentuch	x
-Speerspitze	x
-Puder	x
-Sehne	x
-Plastik	x
-Hanf	x
-Bottich	x
-Lauffläche	x
-Bündel	x
-Spanplatte	x
-Messer	x
-Silikon	x
-Waschlappen	x
-Sessel	x
-Lederhaut	x
-Stecher	x
-Bügel	x
-Handschuh	x
-Kleister	x
-Waage	x
-Blattwerk	x
-Maserung	x
-Filz	x
-Degen	x
-Radiergummi	x
-Deckel	x
-Fläschchen	x
-Sticken	x
-Hüfte	x
-Hose	x
-Flicken	x
-Schränkchen	x
-Besprühen	x
-Handikap	x
-Pinzette	x
-Klumpen	x
-Zaumzeug	x
-Schnittlauch	x
-Klebstoff	x
-Unterhemd	x
-Bandage	x
-Zopf	x
-Anprobe	x
-Zeichnung	x
-Packung	x
-Maultasche	x
-Sandpapier	x
-Bademode	x
-Polsterung	x
-Serviette	x
-Urinieren	x
-Rad	x
-Strippen	x
-Innenseite	x
-Fixieren	x
-Plüsch	x
-Umhang	x
-Werkstück	x
-Saugen	x
-Lesezeichen	x
-Deichsel	x
-Schlaufe	x
-Brechstange	x
-Hantel	x
-Briefchen	x
-Belag	x
-Abtropfen	x
-Zubereiten	x
-Bodybuilding	x
-Kondom	x
-Baugrund	x
-Wickel	x
-Verschlucken	x
-Tuch	x
-Flaschenzug	x
-Schale	x
-Blumenvase	x
-Teelicht	x
-Wunde	x
-Schalung	x
-Schnitt	x
-Kilt	x
-Deckelung	x
-Matratze	x
-Kappe	x
-Notizzettel	x
-Krokette	x
-Jute	x
-Flegel	x
-Liegestütze	x
-Kiste	x
-Biomaterial	x
-Waschen	x
-Kupferstich	x
-Beschlag	x
-Krawatte	x
-Weste	x
-Knobeln	x
-Ballen	x
-Zunder	x
-Joghurt	x
+word	good_or_bad?	comment
+Hellebarde	x	y
+Handgriff	x	y
+Lebensmittel	x	y
+Schneeschuh	x	y
+Wandteppich	x	y
+Schießpulver	x	y
+Kandare	x	y
+Sitzstange	x	y
+Riemen	x	y
+Parken	x	y
+Aufkleber	x	y
+Koffer	x	y
+Bekleidung	x	y
+Speerspitze	x	y
+Hüfte	x	y
+Pflug	x	y
+Speiche	x	y
+Lidschlag	x	y
+Armband	x	y
+Tresorraum	x	y
+Querlatte	x	y
+Reifen	x	y
+Verpackung	x	y
+Abdeckung	x	y
+Lesebändchen	x	y
+Zutaten	x	y
+Häufchen	x	y
+Messing	x	y
+Textile	x	y
+Dachdeckung	x	y
+Drehbank	x	y
+Verzehr	x	y
+Brandwunde	x	y
+Schulranzen	x	y
+Kicks	x	y
+Furnier	x	y
+Joghurt	x	y
+Rasiermesser	x	y
+Bademäntel	x	y
+Kartoffel	x	y
+Heu	x	y
+Leichentuch	x	y
+Notizbuch	x	y
+Deichsel	x	y
+Tätowieren	x	y
+Päckchen	x	y
+Grasnarbe	x	y
+Einstich	x	y
+Fläschchen	x	y
+Steigeisen	x	y
+Stola	x	y
+Schmutz	x	y
+Kauen	x	y
+Besprühen	x	y
+Schnupftabak	x	y
+Besatz	x	y
+Kopfkissen	x	y
+Notizblock	x	y
+Lagerfeld	x	y
+Tampon	x	y
+Karre	x	y
+Hose	x	y
+Stecher	x	y
+Sandpapier	x	y
+Utensil	x	y
+Spatel	x	y
+Oberteil	x	y
+Textilie	x	y
+Steigbügel	x	y
+Weben	x	y
+Klebstoff	x	y
+Nylon	x	y
+Tüte	x	y
+Geldbörse	x	y
+Kugellager	x	y
+Bewehrung	x	y
+Zettel	x	y
+Werkraum	x	y
+Liegewiese	x	y
+Krokette	x	y
+Kopfhaut	x	y
+Kürbis	x	y
+Faden	x	y
+Unterarm	x	y
+Karton	x	y
+Erhitzen	x	y
+Bettdecke	x	y
+Rollstuhl	x	y
+Fotokopierer	x	y
+Umhüllung	x	y
+Lanze	x	y
+Laib	x	y
+Stickerei	x	y
+Bein	x	y
+Briefpapier	x	y
+Gabel	x	y
+Dekolleté	x	y
+Gemüse	x	y
+Trocknen	x	y
+Fußraum	x	y
+Dielenboden	x	y
+Bajonett	x	y
+Unterlage	x	y
+Gewehr	x	y
+Ferse	x	y
+Schlaufe	x	y
+Seidenraupe	x	y
+Armreif	x	y
+Hinterteil	x	y
+Tütchen	x	y
+Zügel	x	y
+Stab	x	y
+Arbeitsgang	x	y
+Matte	x	y
+Schriftrolle	x	y
+Fausthieb	x	y
+Handtasche	x	y
+Stange	x	y
+Torf	x	y
+Behälter	x	y
+Schatulle	x	y
+Bändchen	x	y
+Huf	x	y
+Spielfeld	x	y
+Wunde	x	y
+Hydrant	x	y
+Klaue	x	y
+Eisen	x	y
+Liegestütze	x	y
+Ohrläppchen	x	y
+Fuß	x	y
+Futtern	x	y
+Lederhaut	x	y
+Sitzfläche	x	y
+Zopf	x	y
+Tuch	x	y
+Sandale	x	y
+Fixieren	x	y
+Anker	x	y
+Urinieren	x	y
+Kratzer	x	y
+Pfeilspitze	x	y
+Elfenbein	x	y
+Postern	x	y
+Füllhorn	x	y
+Markise	x	y
+Fußboden	x	y
+Schnalle	x	y
+Gitternetz	x	y
+Schärpe	x	y
+Gummi	x	y
+Hosentasche	x	y
+Polyamid	x	y
+Acryl	x	y
+Aufreißen	x	y
+Kelle	x	y
+Schnürchen	x	y
+Leintuch	x	y
+Tapete	x	y
+Spanplatte	x	y
+Pfote	x	y
+Garn	x	y
+Anschnitt	x	y
+Speichel	x	y
+Handschelle	x	y
+Ringen	x	y
+Überzug	x	y
+Vitrine	x	y
+Gewebe	x	y
+Gürtel	x	y
+Meerrettich	x	y
+Teelicht	x	y
+Werkbank	x	y
+Zahnstocher	x	y
+Zahnpaste	x	y
+Holzschnitt	x	y
+Holzstamm	x	y
+Kilt	x	y
+Accessoire	x	y
+Befestigung	x	y
+Karaffe	x	y
+Akupressur	x	y
+Rad	x	y
+Salatgurke	x	y
+Tablett	x	y
+Fessel	x	y
+Zubereiten	x	y
+Bienenstock	x	y
+Holzkohle	x	y
+Rechen	x	y
+Teller	x	y
+Teekanne	x	y
+Bandage	x	y
+Halskrause	x	y
+Absprung	x	y
+Pflock	x	y
+Zehennagel	x	y
+Erhängen	x	y
+Bündel	x	y
+Radiergummi	x	y
+Pullover	x	y
+Krempe	x	y
+Hosenträger	x	y
+Absaugen	x	y
+Anbau	x	y
+Hilfsmittel	x	y
+Scheibe	x	y
+Gestell	x	y
+Tupfer	x	y
+Jogginghose	x	y
+Verschlucken	x	y
+Tätowierung	x	y
+Schnur	x	y
+Arm	x	y
+Fältchen	x	y
+Teppich	x	y
+Maniküre	x	y
+Gliedmaß	x	y
+Ebenholz	x	y
+Bettlaken	x	y
+Korsett	x	y
+Prothese	x	y
+Tasche	x	y
+Regenschirm	x	y
+Lasche	x	y
+Notizzettel	x	y
+Ohrring	x	y
+Befeuchtung	x	y
+Schienbein	x	y
+Fingernagel	x	y
+Fotokopie	x	y
+Wachs	x	y
+Standfuß	x	y
+Layout	x	y
+Sakko	x	y
+Möbelstück	x	y
+Zange	x	y
+Feldstecher	x	y
+Ball	x	y
+Schrubber	x	y
+Gefriertruhe	x	y
+Bodybuilding	x	y
+Kautschuk	x	y
+Öffnung	x	y
+Halterung	x	y
+Montieren	x	y
+Waffenrock	x	y
+Wäsche	x	y
+Griff	x	y
+Tüll	x	y
+Belag	x	y
+Pinzette	x	y
+Nabe	x	y
+Teelöffel	x	y
+Zwangsjacke	x	y
+Verpuppung	x	y
+Schnittlauch	x	y
+Fladen	x	y
+Sichel	x	y
+Spargel	x	y
+Krümel	x	y
+Höhlung	x	y
+Mappe	x	y
+Teigtasche	x	y
+Satteltasche	x	y
+Handabdruck	x	y
+Wickel	x	y
+Bücherregal	x	y
+Messer	x	y
+Augenbinde	x	y
+Knauf	x	y
+Schere	x	y
+Bleistift	x	y
+Kugel	x	y
+Tragetuch	x	y
+Revers	x	y
+Gamasche	x	y
+Bündchen	x	y
+Korken	x	y
+Schraubstock	x	y
+Felge	x	y
+Handschuh	x	y
+Shampoo	x	y
+Daumen	x	y
+Seife	x	y
+Waschen	x	y
+Manschette	x	y
+Schrank	x	y
+Lineal	x	y
+Fotoapparat	x	y
+Erbstück	x	y
+Hefter	x	y
+Serviette	x	y
+Sonnenschirm	x	y
+Kästchen	x	y
+Stückchen	x	y
+Haken	x	y
+Tischdecke	x	y
+Bottich	x	y
+Sessel	x	y
+Seide	x	y
+Kniescheibe	x	y
+Spinnwebe	x	y
+Schraube	x	y
+Brustkorb	x	y
+Innenseite	x	y
+Filmstreifen	x	y
+Einband	x	y
+Kokon	x	y
+Teig	x	y
+Schreibtisch	x	y
+Befestigen	x	y
+Blattwerk	x	y
+Achsel	x	y
+Teigware	x	y
+Abtropfen	x	y
+Möbel	x	y
+Fingerspitze	x	y
+Gerte	x	y
+Stutzen	x	y
+Packung	x	y
+Schalung	x	y
+Strick	x	y
+Chip	x	y
+Kappe	x	y
+Kordel	x	y
+Scharnier	x	y
+Ware	x	y
+Halskette	x	y
+Brett	x	y
+Tiegel	x	y
+Feile	x	y
+Jeanshose	x	y
+Sohle	x	y
+Korkenzieher	x	y
+Nagel	x	y
+Verrutschen	x	y
+Sägemehl	x	y
+Kunstleder	x	y
+Aufhängen	x	y
+Brechstange	x	y
+Schaumstoff	x	y
+Kunstharz	x	y
+Stichsäge	x	y
+Saatgut	x	y
+Degen	x	y
+Schuhwerk	x	y
+Lendenschurz	x	y
+Schreibfeder	x	y
+Hantel	x	y
+Klette	x	y
+Hosenbund	x	y
+Bettwäsche	x	y
+Bindemittel	x	y
+Gebinde	x	y
+Kork	x	y
+Haarschnitt	x	y
+Gurt	x	y
+Biomaterial	x	y
+Schmierstoff	x	y
+Scheide	x	y
+Bügeleisen	x	y
+Bolzen	x	y
+Schnittgut	x	y
+Revolver	x	y
+Kettchen	x	y
+Konfekt	x	y
+Schwellung	x	y
+Sortiment	x	y
+Toastbrot	x	y
+Mürbeteig	x	y
+Besteck	x	y
+Milchkaffee	x	y
+Paddel	x	y
+Gelee	x	y
+Handfläche	x	y
+Laufsteg	x	y
+Rucksack	x	y
+Fußknöchel	x	y
+Säckchen	x	y
+Garen	x	y
+Feuerstelle	x	y
+Schnürsenkel	x	y
+Anstecknadel	x	y
+Teebeutel	x	y
+Schuh	x	y
+Bienenwachs	x	y
+Unterwäsche	x	y
+Arbeitsmappe	x	y
+Knorpel	x	y
+Datenträger	x	y
+Styropor	x	y
+Kneten	x	y
+Täschchen	x	y
+Etui	x	y
+Zimmerdecke	x	y
+Schlitten	x	y
+Brot	x	y
+Sehne	x	y
+Holzscheit	x	y
+Silikon	x	y
+Kärtchen	x	y
+Abkochen	x	y
+Strähne	x	y
+Schminke	x	y
+Flicken	x	y
+Jacke	x	y
+Höschen	x	y
+Geleise	x	y
+Erntegut	x	y
+Kolben	x	y
+Eiszapfen	x	y
+Klumpen	x	y
+Shirt	x	y
+Sanduhr	x	y
+Geschirr	x	y
+Meniskus	x	y
+Hauswand	x	y
+Briefchen	x	y
+Schöpfkelle	x	y
+Unterhemd	x	y
+Brokat	x	y
+Beschlag	x	y
+Deckel	x	y
+Karabiner	x	y
+Pickel	x	y
+Knöchel	x	y
+Jute	x	y
+Kochgeschirr	x	y
+Strumpfhose	x	y
+Schemel	x	y
+Eisbahn	x	y
+Portemonnaie	x	y
+Kleben	x	y
+Tafelsilber	x	y
+Knie	x	y
+Schachbrett	x	y
+Bodenbelag	x	y
+Tischtuch	x	y
+Plastik	x	y
+Alkoven	x	y
+Sticker	x	y
+Spülkasten	x	y
+Splitt	x	y
+Überwurf	x	y
+Oberschenkel	x	y
+Kiste	x	y
+Standplatz	x	y
+Zahnspange	x	y
+Handgelenk	x	y
+Hülse	x	y
+Pantoffel	x	y
+Faltenwurf	x	y
+Fußnagel	x	y
+Krawatte	x	y
+Pastell	x	y
+Gelatine	x	y
+Holz	x	y
+Papier	x	y
+Schiffchen	x	y
+Abrollen	x	y
+Sattel	x	y
+Matrize	x	y
+Schultasche	x	y
+Kupferstich	x	y
+Schleppe	x	y
+Stativ	x	y
+Schlinge	x	y
+Pflugschar	x	y
+Steingut	x	y
+Fingerhut	x	y
+Schnittwunde	x	y
+Dreifuß	x	y
+Hacke	x	y
+Futter	x	y
+Rohleder	x	y
+Kamelie	x	y
+Zigarillo	x	y
+Fahnenstange	x	y
+Wolldecke	x	y
+Kleister	x	y
+Bügel	x	y
+Laufstall	x	y
+Monstranz	x	y
+Zahnersatz	x	y
+Vorhängen	x	y
+Schinken	x	y
+Plüsch	x	y
+Sack	x	y
+Knetmasse	x	y
+Strumpf	x	y
+Ofenrohr	x	y
+Haarnadel	x	y
+Fangarm	x	y
+Turnschuh	x	y
+Handfessel	x	y
+Gurke	x	y
+Harnisch	x	y
+Puder	x	y
+Pinne	x	y
+Behältnis	x	y
+Bindfaden	x	y
+Schuhkarton	x	y
+Ellbogen	x	y
+Maserung	x	y
+Verzehren	x	y
+Schränkchen	x	y
+Einrad	x	y
+Speisezettel	x	y
+Umhang	x	y
+Perforation	x	y
+Zaumzeug	x	y
+Badeanzug	x	y
+Bademode	x	y
+Pappe	x	y
+Fußmatte	x	y
+Waage	x	y
+Hausschuh	x	y
+Hand	x	y
+Köcher	x	y
+Buchrücken	x	y
+Umschlag	x	y
+Beutel	x	y
+Fahrrad	x	y
+Töpferware	x	y
+Skalpell	x	y
+Einpflanzen	x	y
+Baumwolle	x	y
+Strickjacke	x	y
+Standbein	x	y
+Aktentasche	x	y
+Scheibchen	x	y
+Schälchen	x	y
+Prellung	x	y
+Saugen	x	y
+Abbildung	x	y
+Stäbchen	x	y
+Ärmel	x	y
+Gewinde	x	y
+Pipette	x	y
+Fußgelenk	x	y
+Schneebesen	x	y
+Bordüre	x	y
+Füßchen	x	y
+Kondom	x	y
+Pergament	x	y
+Spielzimmer	x	y
+Barhocker	x	y
+Unterhose	x	y
+Einkerbung	x	y
+Semmelbrösel	x	y
+Mitesser	x	y
+Fladenbrot	x	y
+Gefäß	x	y
+Keilriemen	x	y
+Handkarren	x	y
+Spind	x	y
+Rasieren	x	y
+Bürste	x	y
+Pferderücken	x	y
+Taschentuch	x	y
+Regalbrett	x	y
+Lauffläche	x	y
+Kopfstütze	x	y
+Rute	x	y
+Puzzle	x	y
+Latzhose	x	y
+Tabak	x	y
+Rückenlehne	x	y
+Blumenvase	x	y
+Ordner	x	y
+Aschenbecher	x	y
+Köfferchen	x	y
+Zunder	x	y
+Schale	x	y
+Badekleidung	x	y
+Bargeld	x	y
+Webstuhl	x	y
+Säbel	x	y
+Knochen	x	y
+Kommode	x	y
+Schenkel	x	y
+Armlehne	x	y
+Jackett	x	y
+Folie	x	y
+Papierkram	x	y
+Zahnrad	x	y
+Stiel	x	y
+Zeichnung	x	y
+Muskete	x	y
+Bettzeug	x	y
+Reisegepäck	x	y
+Kimono	x	y
+Treibmittel	x	y
+Kunststoff	x	y
+Seil	x	y
+Tunika	x	y
+Genick	x	y
+Ständer	x	y
+Gelenk	x	y
+Bäuchlein	x	y
+Würfel	x	y
+Lehnstuhl	x	y
+Stecknadel	x	y
+Weste	x	y
+Öse	x	y
+Teetasse	x	y
+Oberhemd	x	y
+Vorderlauf	x	y
+Baugrund	x	y
+Tragekomfort	x	y
+Steißbein	x	y
+Montierung	x	y
+Polsterung	x	y
+Badewanne	x	y
+Taille	x	y
+Kraftpaket	x	y
+Brotkrume	x	y
+Hufeisen	x	y
+Barren	x	y
+Nadel	x	y
+Stiefel	x	y
+Anprobe	x	y
+Hocke	x	y
+Fliese	x	y
+Topf	x	y
+Kuvert	x	y
+Flechtwerk	x	y
+Pflücken	x	y
+Geldbeutel	x	y
+Geländer	x	y
+Fotomontage	x	y
+Blatt	x	y
+Bluse	x	y
+Wurstware	x	y
+Material	x	y
+Wand	x	y
+Würfelchen	x	y
+Hanf	x	y
+Locher	x	y
+Spitzhacke	x	y
+Latz	x	y
+Bahre	x	y
+Polster	x	y
+Schaft	x	y
+Matratze	x	y
+Diskette	x	y
+Brosche	x	y
+Laufwerk	x	y
+Anfertigen	x	y
+Schwert	x	y
+Schnitt	x	y
+Ballen	x	y
+Schürze	x	y
+Planzen	x	y
+Lasur	x	y
+Marihuana	x	y
+Filz	x	y
+Wams	x	y
+Waschlappen	x	y
+Pflasterung	x	y
+Maultasche	x	y
+Radieschen	x	y
+Flegel	x	y
+Hartholz	x	y
+Obst	x	y
+Stellfläche	x	y
+Slip	x	y
+Brustpanzer	x	y
+Handapparat	x	y
+Aktenkoffer	x	y
+Treibholz	x	y
+Segeltuch	x	y
+Fußspitze	x	y
+Boden	x	y
+Butter	x	y
+Ellenbogen	x	y
+Kissen	x	y
+Handikap	x	y
+Fingerkuppe	x	y
+Bettchen	x	y
+Körper	x	y
+Sweatshirt	x	y
+Knobeln	x	y
+Paste	x	y
+Muskel	x	y
+Platzwunde	x	y
+Zubereitung	x	y
+Steckling	x	y
+Nahrung	x	y
+Schulter	x	y
+Kleidung	x	y
+Widerhaken	x	y
+Sticken	x	y
+Leder	x	y
+Ranzen	x	y
+Filet	x	y
+Tisch	x	y
+Knäuel	x	y
+Deckelung	x	y
+Armbruster	x	y
+Zigarre	x	y
+Tabernakel	x	y
+Werkstück	x	y
+Aussparung	x	y
+Drogerie	x	y
+Strippen	x	y
+Lesezeichen	x	y
+Lack	x	y
+Brieftasche	x	y
+Sieb	x	y
+Ofen	x	y
+Waschküche	x	y
+Flaschenzug	x	y
+Feuerholz	x	y
+Kleber	x	y
+Buchbinder	x	y

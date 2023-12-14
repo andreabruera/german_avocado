@@ -1,1383 +1,1383 @@
-word	good_or_bad?
-Teleskop	x
-Coupon	x
-Zyste	x
-Barrel	x
-Fleischhauer	x
-Leitplanke	x
-Grabmal	x
-Box	x
-Hinterleib	x
-Totenkopf	x
-Schwarze	x
-Faß	x
-Fliegenpilz	x
-Mietskaserne	x
-Pünktchen	x
-Kalzium	x
-Okular	x
-Schnellbahn	x
-Kardamom	x
-Ziegelstein	x
-Weide	x
-Drehkreuz	x
-Kopftuch	x
-Atoll	x
-Vorraum	x
-Fachwerk	x
-Barte	x
-Dachgeschoß	x
-Grüne	x
-Profil	x
-Umrandung	x
-Harnleiter	x
-Kloake	x
-Tragwerk	x
-Laich	x
-Meersalz	x
-Jeans	x
-Skorpion	x
-Schaubild	x
-Buchweizen	x
-Fjord	x
-Sonnenbrand	x
-Palast	x
-Abbild	x
-Krustentier	x
-Bruchbude	x
-Brombeere	x
-Brillenglas	x
-Kismet	x
-Mikrogramm	x
-Knotenpunkt	x
-Eiermann	x
-Gruft	x
-Salz	x
-Vulva	x
-Onyx	x
-Radrennbahn	x
-Schopf	x
-Dotter	x
-Götzenbild	x
-Stammheimer	x
-Harz	x
-Vorschiff	x
-Polyeder	x
-Kaschemme	x
-Dach	x
-Omelett	x
-Weintraube	x
-Fluß	x
-Prärie	x
-Bazillus	x
-Amber	x
-Schlund	x
-Ziegelhausen	x
-Galgen	x
-Stadtplan	x
-Körnchen	x
-Biosensor	x
-Strauch	x
-Korridor	x
-Mausoleum	x
-Theke	x
-Kapsel	x
-Gaze	x
-Schwefel	x
-Sonnencreme	x
-Mehlwurm	x
-Friedhof	x
-Blütenblatt	x
-Parfum	x
-Wandgemälde	x
-Moor	x
-Schattenriß	x
-Sirup	x
-Foliant	x
-Veranda	x
-Zusatzstoff	x
-Wacholder	x
-Faultier	x
-Diamant	x
-Hautarzt	x
-Faserstoff	x
-Akazie	x
-Eisenhut	x
-Verdickung	x
-Süßstoff	x
-Holzhaus	x
-Pollen	x
-Binde	x
-Urin	x
-Essig	x
-Sekret	x
-Kiwi	x
-Sternbild	x
-Stute	x
-Atom	x
-Pudel	x
-Walroß	x
-Pfirsich	x
-Schienenbahn	x
-Patientin	x
-Auswuchs	x
-Semmel	x
-Spurweite	x
-Sextant	x
-Reklametafel	x
-Schuppe	x
-Zwiebel	x
-Sombrero	x
-Mehlschwitze	x
-Armenviertel	x
-Bärtige	x
-Tatze	x
-Flecken	x
-Schnauzbart	x
-Eselsohr	x
-Iglu	x
-Ranch	x
-Gebüsch	x
-Vorstadt	x
-Anemone	x
-Rezeptur	x
-Ftp	x
-Vesuv	x
-Lake	x
-Husar	x
-Kentaur	x
-Pfefferminz	x
-Wassergraben	x
-Sonnentau	x
-Beiboot	x
-Kiesel	x
-Lichthof	x
-Maggi	x
-Hieroglyphe	x
-Mineralstoff	x
-Ambrosia	x
-Fahrkarte	x
-Fleckchen	x
-Bohnenkraut	x
-Pflanze	x
-Gefach	x
-Vereinshaus	x
-Stadthaus	x
-Treibhaus	x
-S&P	x
-Kreide	x
-Sonde	x
-Hülsenfrucht	x
-Schneeregen	x
-Format	x
-Pixel	x
-Rebe	x
-Bier	x
-Nektar	x
-Griffel	x
-Hirschgeweih	x
-Regenrinne	x
-Kalbfleisch	x
-Rosette	x
-Magen	x
-Pflaume	x
-Myrrhe	x
-Labyrinth	x
-Heckklappe	x
-Dock	x
-Inkubator	x
-Gestein	x
-Sonnenbank	x
-Neugeborene	x
-Eintopf	x
-Planet	x
-Lotus	x
-Rotauge	x
-Libelle	x
-Unterleib	x
-Nebenfluß	x
-Krematorium	x
-Zahnfleisch	x
-Königstraße	x
-Weingärtner	x
-Schriftzug	x
-Glyzerin	x
-Armenhaus	x
-Staub	x
-Flagschiff	x
-Zimt	x
-Patina	x
-Garnele	x
-Infarkt	x
-Einfriedung	x
-Aquarium	x
-Schemen	x
-Tempelhof	x
-Baum	x
-Cocktail	x
-Breme	x
-Antimon	x
-Marienstraße	x
-Kristall	x
-Behaarung	x
-Felsspalte	x
-Zyanid	x
-Kleeblatt	x
-Rouge	x
-Pavillon	x
-Zipfel	x
-Galle	x
-Antlitz	x
-Mangrove	x
-Waisenhaus	x
-Zecke	x
-Handelsmarke	x
-Nachbild	x
-Marienkäfer	x
-Franse	x
-Sarkophag	x
-Bestäubung	x
-Tagebuch	x
-Schlupfloch	x
-Kreuzotter	x
-Gecko	x
-Gärtchen	x
-Plunder	x
-Pappel	x
-Baumkrone	x
-Heilbutt	x
-Wannenbad	x
-Bahndamm	x
-Achteck	x
-Volumen	x
-Blütenstaub	x
-Rennpferd	x
-Elektron	x
-Zapfstelle	x
-Likör	x
-Flügeldecke	x
-Zusammenfluß	x
-Amulett	x
-Querschiff	x
-Nektarine	x
-Blinddarm	x
-Lavendel	x
-Wagenlenker	x
-Acker	x
-Margerite	x
-Apfelwein	x
-Schlafmütze	x
-Kaulquappe	x
-Dateiname	x
-Geburtshaus	x
-Rollbahn	x
-Vordach	x
-Torbogen	x
-Bastion	x
-Gipfel	x
-Bernstein	x
-Saft	x
-Panier	x
-Joppe	x
-Nelke	x
-Brösel	x
-Liter	x
-Leberfleck	x
-Schneeball	x
-Pool	x
-Blei	x
-H&M	x
-Eiter	x
-Spitze	x
-Sakristei	x
-Buckel	x
-Kohlenhydrat	x
-Rindfleisch	x
-Schlamm	x
-Säulengang	x
-Starterin	x
-Kleinod	x
-Efeu	x
-Gewächshaus	x
-Matterhorn	x
-Pilger	x
-Heer	x
-Ludwigstraße	x
-Wandelhalle	x
-Molekül	x
-Gaswerk	x
-Hexenschuß	x
-Restaurant	x
-Düne	x
-Hagelkorn	x
-Phosphor	x
-Buchsbaum	x
-Dreieck	x
-Seezunge	x
-Azalee	x
-Bakterie	x
-Velodrom	x
-Latrine	x
-Beuteltier	x
-Spital	x
-Zugbrücke	x
-Refraktor	x
-Wein	x
-Heidelbeere	x
-Gebälk	x
-Swastika	x
-Signet	x
-Creme	x
-Dunst	x
-Fernrohr	x
-Kapillare	x
-Mensa	x
-Sumpfland	x
-Banane	x
-Petroleum	x
-Lunge	x
-Kleinode	x
-Lehm	x
-Viertel	x
-Streifen	x
-Fadenwurm	x
-Tomate	x
-Casino	x
-Trabant	x
-Saum	x
-Trikolore	x
-Anorak	x
-Pocke	x
-Fliege	x
-Gallenblase	x
-Hoden	x
-Sauerkraut	x
-Zebra	x
-Beule	x
-Fenchel	x
-Bracke	x
-Botulismus	x
-Rückleuchte	x
-Wasserdampf	x
-Adreßbuch	x
-Quarter	x
-Licht	x
-Kopfende	x
-Festung	x
-Türpfosten	x
-Apartment	x
-Sandelholz	x
-Randstein	x
-Yachthafen	x
-Wanze	x
-Geschwür	x
-Kleinhirn	x
-Beton	x
-Rost	x
-Omelette	x
-Markstein	x
-Magnesium	x
-Büschel	x
-Euter	x
-Mauerstraße	x
-Trottoir	x
-Grüngürtel	x
-Etikett	x
-Flügel	x
-Erdkugel	x
-Seevogel	x
-Joker	x
-Alge	x
-Schrein	x
-Pfau	x
-Wasser	x
-Stadtviertel	x
-Speisesalz	x
-Sphinx	x
-Nabel	x
-Jahnplatz	x
-Flocke	x
-Kassenbon	x
-Brustwarze	x
-Fangzahn	x
-Mast	x
-Himmelszelt	x
-Kotflügel	x
-Fell	x
-Haus	x
-Sediment	x
-Säule	x
-Lagune	x
-Silhouette	x
-Espe	x
-Gift	x
-Zeder	x
-Büste	x
-Pagode	x
-Schlafsaal	x
-Ballon	x
-Borte	x
-Aceton	x
-Flunder	x
-Aorta	x
-Rispe	x
-Küste	x
-Schweif	x
-Felsbrocken	x
-Cognac	x
-Edelstein	x
-Buschland	x
-Irrgarten	x
-Stiege	x
-Haarer	x
-Steinweg	x
-Grünspan	x
-Terpentin	x
-Kichererbse	x
-Tumor	x
-Hundehütte	x
-Wallstraße	x
-Weißdorn	x
-Unkraut	x
-Gebirge	x
-Köpfchen	x
-Symptom	x
-Kalk	x
-Kittel	x
-Lyoner	x
-Minze	x
-Bioreaktor	x
-Seehafen	x
-Blutegel	x
-Haubitze	x
-Rille	x
-Kieme	x
-Sepia	x
-Ecke	x
-Giftstoff	x
-Fahrgestell	x
-Villa	x
-Coupé	x
-Torhaus	x
-Sandhügel	x
-Schindel	x
-Router	x
-Sonnenschein	x
-Fries	x
-Wimpel	x
-Plätzchen	x
-Rachen	x
-Bruchstück	x
-Glashaus	x
-Lämmchen	x
-Wandbild	x
-Flieder	x
-Seestern	x
-Nessel	x
-Hohlraum	x
-Pier	x
-Porree	x
-Ovarium	x
-Membrane	x
-Lungenflügel	x
-Glas	x
-Lorbeer	x
-Banknote	x
-Gerinnsel	x
-Zement	x
-Palais	x
-Klümpchen	x
-Schilfrohr	x
-Viech	x
-Siedlerin	x
-Weinrebe	x
-Brauhaus	x
-Europaplatz	x
-Haut	x
-Fischsuppe	x
-Fühler	x
-Pigment	x
-Checkpoint	x
-Ast	x
-Muttermal	x
-Harnröhre	x
-Gesicht	x
-Satin	x
-Mundwasser	x
-Nordhaus	x
-Karawane	x
-Wasserkopf	x
-Souvenir	x
-Plutonium	x
-Zwischenstop	x
-Tintenfisch	x
-Mahnmal	x
-Milch	x
-Rinde	x
-Sensor	x
-Cabrio	x
-Kubus	x
-Sund	x
-Gelände	x
-Tibeter	x
-Feldstein	x
-Sonnenbad	x
-Protein	x
-Reservoir	x
-Hemmstoff	x
-Steinpilz	x
-Schleim	x
-Bullauge	x
-Nilpferd	x
-Bauwerk	x
-Mond	x
-Löwenzahn	x
-Paddock	x
-Pilz	x
-Limonade	x
-Beere	x
-Basilikum	x
-Frucht	x
-Gourmet	x
-Karlsplatz	x
-Jungtier	x
-Schattenbild	x
-Königsplatz	x
-Kocher	x
-Weichtier	x
-Morast	x
-Gras	x
-Kranz	x
-Gin	x
-Manna	x
-Erdboden	x
-Stickstoff	x
-Hirninfarkt	x
-Alaun	x
-Parzelle	x
-Embryo	x
-Schwanz	x
-Milchzucker	x
-Quartier	x
-Bidet	x
-Bluter	x
-Hotel	x
-Schleier	x
-Blume	x
-Supermodel	x
-Tropfen	x
-Augenbraue	x
-Salamander	x
-Törtchen	x
-Kajüte	x
-Eckzahn	x
-Toast	x
-Yard	x
-Pore	x
-Laubblatt	x
-Steinbock	x
-Schlehe	x
-Grünkohl	x
-Treppe	x
-Glatze	x
-Gebärmutter	x
-Ufer	x
-Grünzeug	x
-Weinberg	x
-Möhre	x
-Höcker	x
-Schweinswal	x
-Nasenbluten	x
-Standarte	x
-Zwerchfell	x
-Depot	x
-Arterie	x
-Fenster	x
-Dachboden	x
-Krug	x
-Retina	x
-Karree	x
-Piste	x
-Erde	x
-Schlafgemach	x
-Pulpa	x
-Luftröhre	x
-Blaubeere	x
-Rosenstock	x
-Vlies	x
-Dunkelkammer	x
-Häuserblock	x
-Sturmtruppe	x
-Schildkröte	x
-Sojabohne	x
-Albumin	x
-Wolke	x
-Oberhaut	x
-Appartement	x
-Promenade	x
-Limousine	x
-Beiwagen	x
-Soße	x
-Granatapfel	x
-Mikrobiologe	x
-Säckel	x
-Schwertfisch	x
-Sari	x
-Grasland	x
-Fels	x
-Stadtstaat	x
-Nebengebäude	x
-Quader	x
-Mokka	x
-Natter	x
-Scheinwerfer	x
-Tragfläche	x
-Raupe	x
-Wanne	x
-Frontseite	x
-Stausee	x
-Grenadier	x
-Florfliege	x
-Schal	x
-Imbiß	x
-Taverne	x
-Fistel	x
-Karosse	x
-Sauce	x
-Farmland	x
-Blase	x
-Eichel	x
-Fernglas	x
-Schalentier	x
-Garbe	x
-Kodex	x
-Apfelsine	x
-Straßenrand	x
-Languste	x
-Stulle	x
-Papyrus	x
-Heidekraut	x
-Aquädukt	x
-Nußschale	x
-Autostadt	x
-Kobra	x
-Mastdarm	x
-Schlange	x
-Ratskeller	x
-Kohlehydrat	x
-Lamm	x
-Kofferraum	x
-Jägerstraße	x
-Rechteck	x
-Treppchen	x
-Kerzenlicht	x
-Baskenmütze	x
-Kord	x
-Auguststraße	x
-Fototermin	x
-Thuja	x
-Dickdarm	x
-Zitrone	x
-Käfer	x
-Dampfschiff	x
-Bahnstraße	x
-Fackel	x
-Visier	x
-Melone	x
-Apotheke	x
-Werkhalle	x
-Topas	x
-Fußspur	x
-Mädchen	x
-Tintenfaß	x
-Deck	x
-Hüttenwerk	x
-Querkopf	x
-Diagramm	x
-Gläschen	x
-Infanterie	x
-Hausberg	x
-Blüte	x
-Blütenpollen	x
-Feuerkugel	x
-Gitter	x
-Fleck	x
-Porträt	x
-Sandstein	x
-Sonnenmilch	x
-Buschwerk	x
-Gartenstraße	x
-Tentakel	x
-Oxid	x
-Schlafraum	x
-Lammfleisch	x
-Gerbstoff	x
-Krem	x
-Stoßfänger	x
-Honig	x
-Küstenlinie	x
-Mauerstein	x
-Speiseröhre	x
-Asbest	x
-Relief	x
-Pinie	x
-Kliff	x
-Tulpe	x
-Süßwasser	x
-Turmspitze	x
-Brille	x
-Glanzpunkt	x
-Nanogramm	x
-Herzkammer	x
-Rind	x
-Hügel	x
-Bachstraße	x
-Reflektor	x
-Unze	x
-Raumfahrzeug	x
-Vogelbeere	x
-Gegengipfel	x
-Wasserlinie	x
-Kellerkind	x
-Zwerg	x
-Luftblase	x
-Wildbret	x
-Umzäunung	x
-Thorax	x
-Zuckerbrot	x
-Palisade	x
-Mondkalb	x
-Speckstein	x
-Arsen	x
-Tinktur	x
-Bahnsteig	x
-Pentagon	x
-Kügelchen	x
-Tankschiff	x
-Blütenstand	x
-Trockenmauer	x
-Phalanx	x
-Leopard	x
-Bauchfell	x
-Wasserlassen	x
-Goldfinger	x
-Schilf	x
-Gletscher	x
-Heftchen	x
-Marschland	x
-Hörnchen	x
-Rippchen	x
-Haar	x
-Hochhaus	x
-Abhang	x
-Pulver	x
-Tröpfchen	x
-Aroma	x
-Wandschrank	x
-Robe	x
-Toga	x
-Lilie	x
-Granat	x
-Stern	x
-Mantel	x
-Datensatz	x
-Maisfeld	x
-Ammonit	x
-Guckloch	x
-Quetzal	x
-Halbmond	x
-Flanke	x
-Kolosseum	x
-Schiffswrack	x
-Mikroalge	x
-Frostbeule	x
-Rote	x
-Burgstraße	x
-Birne	x
-Mongole	x
-Röschen	x
-Zwinger	x
-Kopeke	x
-Brust	x
-Sonnenblume	x
-Pelikan	x
-Mauer	x
-Champagner	x
-Vorbau	x
-Aprikose	x
-Winterhude	x
-Lutscher	x
-Square	x
-Kapuze	x
-Kornfeld	x
-Brandmauer	x
-Rotunde	x
-Jerusalemer	x
-Leuchtfeuer	x
-Karat	x
-Koralle	x
-Augenlid	x
-Bungalow	x
-Sardelle	x
-Farmhaus	x
-Asche	x
-Himmel	x
-Marienplatz	x
-Zirrhose	x
-Bildzeichen	x
-Erdhügel	x
-Zimmer	x
-Zyankali	x
-Schellfisch	x
-Dachrinne	x
-Obelisk	x
-Barfüßer	x
-Kolbenhirse	x
-Atrium	x
-Auster	x
-Beinkleid	x
-Steinbutt	x
-Inhaltsstoff	x
-Küchenzeile	x
-Hohlweg	x
-Leuchtdiode	x
-Kreuz	x
-Lava	x
-Turban	x
-Ringelblume	x
-Anatom	x
-Flagge	x
-Staude	x
-Stachelbeere	x
-Moschus	x
-Uferstreifen	x
-Meer	x
-Niere	x
-Champignon	x
-Narbe	x
-Altar	x
-Baldrian	x
-Süßholz	x
-Flußpferd	x
-Flor	x
-Kiosk	x
-Container	x
-Egge	x
-Frikadelle	x
-Wehrgang	x
-Tonerde	x
-Getränk	x
-Drogist	x
-Zedernholz	x
-Baumbestand	x
-Dromedar	x
-Appartment	x
-Chrom	x
-Mütze	x
-Siesta	x
-Lippenstift	x
-Küchlein	x
-Kitt	x
-Kirschwasser	x
-Dahlie	x
-Schimmelpilz	x
-Schatzhaus	x
-Birke	x
-Bachlauf	x
-Dickicht	x
-Bakterium	x
-Soda	x
-Paß	x
-Schatzkammer	x
-Bitumen	x
-Frontscheibe	x
-Larve	x
-Betrachter	x
-Kieselalge	x
-Talg	x
-Schiebedach	x
-Brennessel	x
-Erdapfel	x
-Erbse	x
-Whiskey	x
-Kaviar	x
-Bazar	x
-Wurmfortsatz	x
-Habit	x
-Bauch	x
-Meßbuch	x
-Honigtau	x
-Traube	x
-Fußgängerweg	x
-Netzhaut	x
-Hühnerauge	x
-Gote	x
-Klitoris	x
-Meeresboden	x
-Schlangenbiß	x
-Leitungsbahn	x
-Wunderkerze	x
-Spirituose	x
-Seebrücke	x
-Vorhof	x
-Glimmstengel	x
-Seepferdchen	x
-Strand	x
-Grab	x
-Whisky	x
-Eiskappe	x
-Steilküste	x
-Landzunge	x
-Reihenhaus	x
-Würmchen	x
-Tempel	x
-Raumfahrer	x
-Mango	x
-Katakombe	x
-Lämpchen	x
-Vorzimmer	x
-Darm	x
-Suppe	x
-Bibliothek	x
-Buchläden	x
-Gekreuzigte	x
-Busen	x
-Acre	x
-Schädel	x
-Kragen	x
-Nautilus	x
-Falter	x
-Trakt	x
-Ladenlokal	x
-Knäckebrot	x
-Zelle	x
-Sand	x
-Fragment	x
-Augenoptiker	x
-Boot	x
-Kruste	x
-Yoghurt	x
-Zentaur	x
-Karpfen	x
-Olive	x
-Thymian	x
-Sternenstaub	x
-Treppenhaus	x
-Insekt	x
-Hafen	x
-Heroin	x
-Chrysantheme	x
-Süßware	x
-Wildblume	x
-Lupine	x
-Kot	x
-Bodega	x
-Landseite	x
-Seitenschiff	x
-Ulme	x
-Falkensee	x
-Essener	x
-Raster	x
-Gehöft	x
-Kartell	x
-Orange	x
-Eiweiß	x
-Schirm	x
-Wandale	x
-Nikotin	x
-Makrele	x
-Fruchtzucker	x
-Alabaster	x
-Spermium	x
-Brückenkopf	x
-Rezept	x
-Spiegel	x
-Schlüpfer	x
-Borax	x
-Gaumen	x
-Hirnstamm	x
-Wasserlauf	x
-Röte	x
-Skelett	x
-Münsterplatz	x
-Pfahl	x
-Spalt	x
-Planetarium	x
-Schutzhütte	x
-Blaue	x
-Zifferblatt	x
-Findling	x
-Kakao	x
-Paraffin	x
-Knolle	x
-Südland	x
-Drüse	x
-Neon	x
-Oblate	x
-Kokain	x
-Curry	x
-Kammer	x
-Hahnenfuß	x
-Pulsader	x
-Tropf	x
-Bindehaut	x
-Kordon	x
-Monogramm	x
-Kamel	x
-Vorplatz	x
-Blättchen	x
-Indio	x
-Gürtelrose	x
-Kirsche	x
-Schimmel	x
-Barett	x
-Hibiskus	x
-Halstuch	x
-Marzipan	x
-Blazer	x
-Asphalt	x
-Felsgestein	x
-Wassermelone	x
-Schandfleck	x
-Pfarrhof	x
-Pfeiler	x
-Perle	x
-Nougat	x
-Einhorn	x
-Slum	x
-Waschhaus	x
-Schalotte	x
-Trikot	x
-Tran	x
-Nasenflügel	x
-Weinstock	x
-Präparat	x
-Polyp	x
-Wodka	x
-Gewürznelke	x
-Mohrrübe	x
-Sumpf	x
-Halde	x
-Kiefer	x
-Eis	x
-Lende	x
-Stockwerk	x
-Kegel	x
-Schnecke	x
-Südstadt	x
-Hämatom	x
-Plattfisch	x
-Faksimile	x
-Fahrstreifen	x
-Krater	x
-Grabplatte	x
-Talisman	x
-Vene	x
-Nacken	x
-Sandbank	x
-Kuppel	x
-Heimchen	x
-Helm	x
-Kieselstein	x
-Kies	x
-Kasino	x
-Horoskop	x
-Vorderfront	x
-Faßbinder	x
-Prisma	x
-Hornhaut	x
-Spinnentier	x
-Emulsion	x
-Teer	x
-Agave	x
-Goldene	x
-Vorhaut	x
-Süßspeise	x
-Tiara	x
-Hummer	x
-Portrait	x
-Kornblume	x
-Gefechtskopf	x
-Ringbahn	x
-Anlegestelle	x
-Medaillon	x
-Sauerampfer	x
-Meeresgrund	x
-Vinaigrette	x
-Zypresse	x
-Soutane	x
-Geißel	x
-Mumie	x
-Basar	x
-Berg	x
-Schnurrbart	x
-Blinker	x
-Oststadt	x
-Sindelfinger	x
-Schlagader	x
-Sandwich	x
-Uniform	x
-Herd	x
-Birkenstock	x
-Halm	x
-Münzstätte	x
-Kessel	x
-Sümmchen	x
-Keil	x
-Brustwehr	x
-Sofa	x
-Wespe	x
-Klecks	x
-Auge	x
-Meßfühler	x
-Hafenstraße	x
-Körpergröße	x
-Kutte	x
-Seehecht	x
-Trüffel	x
-Stachel	x
-Schleppnetz	x
-Sonnenstich	x
-Quecksilber	x
-Bootshaus	x
-Bronchitis	x
-Goetheplatz	x
-Harnblase	x
-Schlot	x
-Areal	x
-Hämoglobin	x
-Stamm	x
-Flaneur	x
-Uterus	x
-Verdeck	x
-Rinne	x
-Farbstoff	x
-Feuerball	x
-Paella	x
-Spektrometer	x
-Gabelung	x
-Dicke	x
-Bergwerk	x
-Börsenblatt	x
-Gasse	x
-Spalier	x
-Radstand	x
-Anwesen	x
-Saat	x
-Zähnchen	x
-Sommerkleid	x
-Pissoir	x
-Tank	x
-Pyjama	x
-Nimbus	x
-Rebstock	x
-Hügelgrab	x
-Eierlikör	x
-Abzeichen	x
-Knoblauch	x
-Madonna	x
-Mikroskop	x
-Marone	x
-Retorte	x
-Innenhof	x
-Pfeffer	x
-Garnison	x
-Asiatin	x
-Karamel	x
-Schneefeld	x
-Stalaktit	x
-Qualm	x
-Äderchen	x
-Stützpunkt	x
-Krabbe	x
-Hermannplatz	x
-Meeresfrucht	x
-Kamm	x
-Nachthemd	x
-Altarraum	x
-Fohlen	x
-Patte	x
-Brei	x
-Verlies	x
-Hafer	x
-Hirse	x
-Marmor	x
-Sonnenhut	x
-Wasserfarbe	x
-Cafeteria	x
-Fontäne	x
-Kabeljau	x
-Siedlung	x
-Schnee	x
-Schnauze	x
-Grapefruit	x
-Kaninchen	x
-Zwickel	x
-Glimmer	x
-Gefieder	x
-Gramm	x
-Totenschädel	x
-Nest	x
-Lätzchen	x
-Halsband	x
-Hausboot	x
-Kirchhof	x
-Äuglein	x
-Dampfboot	x
-Kaliber	x
-Mutterleib	x
-Gästehaus	x
-Strichcode	x
-Regenwasser	x
-Bildnis	x
-Holunder	x
-Oleander	x
-Mosaik	x
-Lotos	x
-Marstall	x
-Lidschatten	x
-Rumpf	x
-Loch	x
-Mahagoni	x
-Spaghetti	x
-Krone	x
-Mauerwerk	x
-Absorber	x
-Kehle	x
-Blondschopf	x
-Quai	x
-Knospe	x
-Bauernhaus	x
-Territorium	x
-Facelift	x
-Aufdruck	x
-Miesmuschel	x
-Steckrübe	x
-Zitronengras	x
-Ulan	x
-Currywurst	x
-Hofgarten	x
-Aster	x
-Speisekarte	x
-Drehgestell	x
-Wiederkäuer	x
-Nordstadt	x
-Raute	x
-Scheidewand	x
-Altarbild	x
-Filmmaterial	x
-Erdbeere	x
-Kinn	x
-Platz	x
-Regentropfen	x
-Mähne	x
-Fresko	x
-Ladenhüter	x
-Unterkleid	x
-Aktenstück	x
-Sparre	x
-Regiment	x
-Diele	x
-Emblem	x
-Backbone	x
-Ziegel	x
-Buttermilch	x
-Fassade	x
-Spring	x
-Wegweiser	x
-Exkrement	x
-Bohrturm	x
-Fettback	x
-Superman	x
-Namenszug	x
-Schafgarbe	x
-Limo	x
-Felsblock	x
-Feststoff	x
-Kalkstein	x
-Graben	x
-Phallus	x
-Hochstraße	x
-Rinnstein	x
-Straßenzug	x
-Zisterne	x
-Rauhfaser	x
-Fotograf	x
-Anis	x
-Trankopfer	x
-Kadaver	x
-Triptychon	x
-Duplikat	x
-Herberge	x
-Täfelchen	x
-Koloß	x
-Zapfen	x
-Flüssigkeit	x
-Wohnstatt	x
-Meile	x
-Bridge	x
-Orchidee	x
-Kastanie	x
-Huftier	x
-Britin	x
-Mammutbaum	x
-Viereck	x
-Haube	x
-Ginster	x
-Limone	x
-Kavallerie	x
-Samenkorn	x
-Bildpunkt	x
-Wölkchen	x
-Stirnlampe	x
-Ikone	x
-Stadtrand	x
-Viadukt	x
-Pfefferminze	x
-Träne	x
-Lid	x
-Vorspeise	x
-Stirn	x
-Linse	x
-Pudding	x
-Borke	x
-Hermelin	x
-Speisekammer	x
-Duft	x
-Trog	x
-Siegel	x
-Bikini	x
-Rachenraum	x
-Floß	x
-Flurstück	x
-Hockenheim	x
-Kavallerist	x
-Warze	x
-Leber	x
-Mikrofilm	x
-Vestibül	x
-Oberseite	x
-Laubengang	x
-Zitadelle	x
-Nicolette	x
-Zentrum	x
-Buddha	x
-Statue	x
-Vietnamesin	x
-Riß	x
-Judengasse	x
-Reliquie	x
-Tunnel	x
-Biotop	x
-Bläschen	x
-Sonnendach	x
-Badehaus	x
-Dachfenster	x
-Eingeweide	x
-Ringstraße	x
-Tarsus	x
-Seeufer	x
-Sockel	x
-Muschel	x
-Quadrat	x
-Barke	x
+word	good_or_bad?	comment
+Markstein	x	y
+Volumen	x	y
+Flecken	x	y
+Profil	x	y
+Süßware	x	y
+Küstenlinie	x	y
+Regenrinne	x	y
+Lehm	x	y
+Membrane	x	y
+Sonnenmilch	x	y
+Geißel	x	y
+Olive	x	y
+Bachstraße	x	y
+Curry	x	y
+Schnauzbart	x	y
+Grenadier	x	y
+Ziegelhausen	x	y
+Harnblase	x	y
+Bootshaus	x	y
+Topas	x	y
+Sandwich	x	y
+Planetarium	x	y
+Orange	x	y
+Vorraum	x	y
+Hotel	x	y
+Atom	x	y
+Trüffel	x	y
+Haar	x	y
+Spinnentier	x	y
+Floß	x	y
+Kies	x	y
+Sonnenstich	x	y
+Dreieck	x	y
+Pappel	x	y
+Hofgarten	x	y
+Fangzahn	x	y
+Villa	x	y
+Hochhaus	x	y
+Trikot	x	y
+Router	x	y
+Luftröhre	x	y
+Lyoner	x	y
+Atoll	x	y
+Zapfen	x	y
+Anorak	x	y
+Hausboot	x	y
+Kirchhof	x	y
+Werkhalle	x	y
+Verdickung	x	y
+Honigtau	x	y
+Mauer	x	y
+Linse	x	y
+Siedlerin	x	y
+Rückleuchte	x	y
+Saum	x	y
+Gebirge	x	y
+Porree	x	y
+Fell	x	y
+Heidelbeere	x	y
+Anatom	x	y
+Nasenflügel	x	y
+Aquarium	x	y
+Rachen	x	y
+Sirup	x	y
+Rinne	x	y
+Lidschatten	x	y
+Weintraube	x	y
+Haubitze	x	y
+Lämmchen	x	y
+Uterus	x	y
+Viertel	x	y
+Koloß	x	y
+Scheidewand	x	y
+Stachelbeere	x	y
+Schindel	x	y
+Schirm	x	y
+Schuppe	x	y
+Phalanx	x	y
+Soda	x	y
+Pinie	x	y
+Fresko	x	y
+Weißdorn	x	y
+Raumfahrzeug	x	y
+Knospe	x	y
+Bauchfell	x	y
+Felsbrocken	x	y
+Schlupfloch	x	y
+Nasenbluten	x	y
+Blondschopf	x	y
+Feuerball	x	y
+Nektar	x	y
+Lunge	x	y
+Eintopf	x	y
+Buschland	x	y
+Trockenmauer	x	y
+Grüne	x	y
+Dahlie	x	y
+Dicke	x	y
+Klecks	x	y
+Pool	x	y
+Brauhaus	x	y
+Augenoptiker	x	y
+Petroleum	x	y
+Schafgarbe	x	y
+Möhre	x	y
+Häuserblock	x	y
+Trankopfer	x	y
+Bauch	x	y
+Warze	x	y
+Agave	x	y
+Sombrero	x	y
+Sonnentau	x	y
+Treppenhaus	x	y
+Schiffswrack	x	y
+Eierlikör	x	y
+Büste	x	y
+Drehgestell	x	y
+Wildbret	x	y
+Matterhorn	x	y
+Graben	x	y
+Buchweizen	x	y
+Akazie	x	y
+Goldene	x	y
+Brustwarze	x	y
+Hafen	x	y
+Medaillon	x	y
+Rouge	x	y
+Gabelung	x	y
+Horoskop	x	y
+Rollbahn	x	y
+Halm	x	y
+Imbiß	x	y
+Asche	x	y
+Beton	x	y
+Limonade	x	y
+Gewächshaus	x	y
+Bazar	x	y
+Siegel	x	y
+Bungalow	x	y
+Auster	x	y
+Wasserlassen	x	y
+Vesuv	x	y
+Vinaigrette	x	y
+Spalt	x	y
+Hornhaut	x	y
+Basilikum	x	y
+Schellfisch	x	y
+Stirnlampe	x	y
+Küchlein	x	y
+Schilf	x	y
+Armenviertel	x	y
+Heroin	x	y
+Beiwagen	x	y
+Aufdruck	x	y
+Casino	x	y
+Karawane	x	y
+Löwenzahn	x	y
+Rezeptur	x	y
+Mehlschwitze	x	y
+Nacken	x	y
+Sumpf	x	y
+Träne	x	y
+Phosphor	x	y
+Flüssigkeit	x	y
+Baumkrone	x	y
+Reihenhaus	x	y
+Ufer	x	y
+Hügelgrab	x	y
+Erdhügel	x	y
+Klümpchen	x	y
+Tibeter	x	y
+Miesmuschel	x	y
+Fistel	x	y
+Haube	x	y
+Gefechtskopf	x	y
+Rinde	x	y
+Süßstoff	x	y
+Faserstoff	x	y
+Prärie	x	y
+Pilz	x	y
+Himmel	x	y
+Hafer	x	y
+Haarer	x	y
+Faultier	x	y
+Elektron	x	y
+Eckzahn	x	y
+Kehle	x	y
+Friedhof	x	y
+Speiseröhre	x	y
+Mikrofilm	x	y
+Frontscheibe	x	y
+Ziegelstein	x	y
+S&P	x	y
+Innenhof	x	y
+Strauch	x	y
+Hirse	x	y
+Bernstein	x	y
+Kessel	x	y
+Stausee	x	y
+Palais	x	y
+Mokka	x	y
+Alaun	x	y
+Bachlauf	x	y
+Straßenzug	x	y
+Biotop	x	y
+Tragfläche	x	y
+Antlitz	x	y
+Ludwigstraße	x	y
+Fenchel	x	y
+Kasino	x	y
+Schemen	x	y
+Spaghetti	x	y
+Lungenflügel	x	y
+Restaurant	x	y
+Festung	x	y
+Bahndamm	x	y
+Wassergraben	x	y
+Kellerkind	x	y
+Blütenstand	x	y
+Hemmstoff	x	y
+Grüngürtel	x	y
+Leopard	x	y
+Acre	x	y
+Fleck	x	y
+Saft	x	y
+Fliege	x	y
+Torhaus	x	y
+Zifferblatt	x	y
+Kopftuch	x	y
+Planet	x	y
+Kieme	x	y
+Zitrone	x	y
+Champignon	x	y
+Omelett	x	y
+Aorta	x	y
+Dateiname	x	y
+Mastdarm	x	y
+Eingeweide	x	y
+Hohlweg	x	y
+Mammutbaum	x	y
+Vorhaut	x	y
+Quarter	x	y
+Sojabohne	x	y
+Äderchen	x	y
+Holzhaus	x	y
+Insekt	x	y
+Diagramm	x	y
+Spital	x	y
+Strichcode	x	y
+Jägerstraße	x	y
+Vietnamesin	x	y
+Espe	x	y
+Toga	x	y
+Schal	x	y
+Lätzchen	x	y
+Ovarium	x	y
+Oberhaut	x	y
+Blaue	x	y
+Fassade	x	y
+Unze	x	y
+Kruste	x	y
+Sumpfland	x	y
+Gramm	x	y
+Florfliege	x	y
+Turban	x	y
+Kerzenlicht	x	y
+Rindfleisch	x	y
+Höcker	x	y
+Papyrus	x	y
+Monogramm	x	y
+Bullauge	x	y
+Viech	x	y
+Toast	x	y
+Milchzucker	x	y
+Gin	x	y
+Koralle	x	y
+Steinweg	x	y
+Herberge	x	y
+Mähne	x	y
+Standarte	x	y
+Krem	x	y
+Tropf	x	y
+Drüse	x	y
+Maisfeld	x	y
+Infarkt	x	y
+Gourmet	x	y
+Brei	x	y
+Franse	x	y
+Magnesium	x	y
+Vorspeise	x	y
+Marzipan	x	y
+Treppe	x	y
+Frontseite	x	y
+Waschhaus	x	y
+Brust	x	y
+Namenszug	x	y
+Habit	x	y
+Stulle	x	y
+Kartell	x	y
+Dampfschiff	x	y
+Kaviar	x	y
+Kliff	x	y
+Areal	x	y
+Nußschale	x	y
+Schnellbahn	x	y
+Nachthemd	x	y
+Blutegel	x	y
+Rosenstock	x	y
+Salamander	x	y
+Triptychon	x	y
+Sockel	x	y
+Baumbestand	x	y
+Landzunge	x	y
+Harnleiter	x	y
+Mikroalge	x	y
+Harnröhre	x	y
+Gipfel	x	y
+Blei	x	y
+Gelände	x	y
+Mütze	x	y
+Schattenbild	x	y
+Wandale	x	y
+Wallstraße	x	y
+Kornfeld	x	y
+Seehecht	x	y
+Börsenblatt	x	y
+Pudel	x	y
+Hibiskus	x	y
+Schlot	x	y
+Schlangenbiß	x	y
+Bidet	x	y
+Bronchitis	x	y
+Champagner	x	y
+Leuchtfeuer	x	y
+Ammonit	x	y
+Skelett	x	y
+Sardelle	x	y
+Arterie	x	y
+Wohnstatt	x	y
+Schnauze	x	y
+Rechteck	x	y
+Mutterleib	x	y
+Spalier	x	y
+Grabplatte	x	y
+Fischsuppe	x	y
+Zyankali	x	y
+Vorstadt	x	y
+Rauhfaser	x	y
+Wasserdampf	x	y
+Grasland	x	y
+Libelle	x	y
+Zyste	x	y
+Egge	x	y
+Gote	x	y
+Erdboden	x	y
+Milch	x	y
+Promenade	x	y
+Frucht	x	y
+Piste	x	y
+Symptom	x	y
+Fliegenpilz	x	y
+Fachwerk	x	y
+Tintenfisch	x	y
+Iglu	x	y
+Lotos	x	y
+Stadthaus	x	y
+Container	x	y
+Polyp	x	y
+Duplikat	x	y
+Fels	x	y
+Hautarzt	x	y
+Bakterie	x	y
+Aquädukt	x	y
+Guckloch	x	y
+Querschiff	x	y
+Lammfleisch	x	y
+Apfelwein	x	y
+Bakterium	x	y
+Saat	x	y
+Drehkreuz	x	y
+Makrele	x	y
+Mensa	x	y
+Gefach	x	y
+Betrachter	x	y
+Gerbstoff	x	y
+Bioreaktor	x	y
+Zement	x	y
+Yachthafen	x	y
+Anemone	x	y
+Knotenpunkt	x	y
+Kreuz	x	y
+Stiege	x	y
+Ast	x	y
+Würmchen	x	y
+Borax	x	y
+Pfeiler	x	y
+Deck	x	y
+Speckstein	x	y
+Zypresse	x	y
+Korridor	x	y
+Ringelblume	x	y
+Vorschiff	x	y
+Hinterleib	x	y
+Heftchen	x	y
+Bitumen	x	y
+Creme	x	y
+Melone	x	y
+Raumfahrer	x	y
+Ranch	x	y
+Neon	x	y
+Mikrogramm	x	y
+Tentakel	x	y
+Stoßfänger	x	y
+Kapuze	x	y
+Antimon	x	y
+Meer	x	y
+Schlafmütze	x	y
+Facelift	x	y
+Sextant	x	y
+Wimpel	x	y
+Randstein	x	y
+Holunder	x	y
+Amber	x	y
+Duft	x	y
+Bergwerk	x	y
+Schlund	x	y
+Lava	x	y
+Cabrio	x	y
+Trottoir	x	y
+Birne	x	y
+Weinberg	x	y
+Birkenstock	x	y
+Beuteltier	x	y
+Retina	x	y
+Kubus	x	y
+Kornblume	x	y
+Lilie	x	y
+Stickstoff	x	y
+Pflanze	x	y
+Faksimile	x	y
+Kentaur	x	y
+Seevogel	x	y
+Gitter	x	y
+Sturmtruppe	x	y
+Ginster	x	y
+Sund	x	y
+Wandschrank	x	y
+Morast	x	y
+Honig	x	y
+Mohrrübe	x	y
+Manna	x	y
+Reflektor	x	y
+Krone	x	y
+Anis	x	y
+Kiosk	x	y
+Quader	x	y
+Schilfrohr	x	y
+Weide	x	y
+Tankschiff	x	y
+Frostbeule	x	y
+Semmel	x	y
+Irrgarten	x	y
+Beule	x	y
+Ladenlokal	x	y
+Europaplatz	x	y
+Oblate	x	y
+Pavillon	x	y
+Blazer	x	y
+Mangrove	x	y
+Thorax	x	y
+Vordach	x	y
+Kalk	x	y
+Bauwerk	x	y
+Kocher	x	y
+Kord	x	y
+Apotheke	x	y
+Liter	x	y
+Sparre	x	y
+Zeder	x	y
+Dickicht	x	y
+Biosensor	x	y
+Zentaur	x	y
+Absorber	x	y
+Leitungsbahn	x	y
+Nicolette	x	y
+Regenwasser	x	y
+Knäckebrot	x	y
+Schildkröte	x	y
+Ftp	x	y
+Fahrgestell	x	y
+Blütenpollen	x	y
+Herzkammer	x	y
+Marschland	x	y
+Statue	x	y
+Mond	x	y
+Kitt	x	y
+Steckrübe	x	y
+Handelsmarke	x	y
+Schleppnetz	x	y
+Ulan	x	y
+Rost	x	y
+Schnurrbart	x	y
+Regentropfen	x	y
+Essig	x	y
+Essener	x	y
+Urin	x	y
+Halde	x	y
+Birke	x	y
+Äuglein	x	y
+Pulpa	x	y
+Kopfende	x	y
+Farmland	x	y
+Querkopf	x	y
+Zwerg	x	y
+Tinktur	x	y
+Sonnencreme	x	y
+Embryo	x	y
+Pfirsich	x	y
+Chrysantheme	x	y
+Bikini	x	y
+Marienkäfer	x	y
+Hoden	x	y
+Limousine	x	y
+Speisesalz	x	y
+Bracke	x	y
+Pfahl	x	y
+Gerinnsel	x	y
+Ballon	x	y
+Eisenhut	x	y
+Tröpfchen	x	y
+Gürtelrose	x	y
+Klitoris	x	y
+Kleinhirn	x	y
+Felsspalte	x	y
+Brösel	x	y
+Weichtier	x	y
+Sofa	x	y
+Gletscher	x	y
+Berg	x	y
+Streifen	x	y
+Stockwerk	x	y
+Kiefer	x	y
+Hügel	x	y
+Flußpferd	x	y
+Hockenheim	x	y
+Depot	x	y
+Leuchtdiode	x	y
+Landseite	x	y
+Barte	x	y
+Mauerstein	x	y
+Banknote	x	y
+Indio	x	y
+Schlamm	x	y
+Goetheplatz	x	y
+Prisma	x	y
+Narbe	x	y
+Blaubeere	x	y
+Mietskaserne	x	y
+Steinpilz	x	y
+Buchläden	x	y
+Riß	x	y
+Zimmer	x	y
+Dotter	x	y
+Sternbild	x	y
+Gegengipfel	x	y
+Nebengebäude	x	y
+Erbse	x	y
+Autostadt	x	y
+Ringstraße	x	y
+Törtchen	x	y
+Stern	x	y
+Sindelfinger	x	y
+Wunderkerze	x	y
+Kakao	x	y
+Kassenbon	x	y
+Kragen	x	y
+Karamel	x	y
+Fleischhauer	x	y
+Unterleib	x	y
+Wanne	x	y
+Nelke	x	y
+Schneeregen	x	y
+Mauerstraße	x	y
+Vlies	x	y
+Staude	x	y
+Feststoff	x	y
+Apartment	x	y
+Reklametafel	x	y
+Refraktor	x	y
+Pfeffer	x	y
+Wannenbad	x	y
+Kamm	x	y
+Haut	x	y
+Mosaik	x	y
+Eselsohr	x	y
+Fluß	x	y
+Meßbuch	x	y
+Sepia	x	y
+Kreide	x	y
+Myrrhe	x	y
+Stützpunkt	x	y
+Hundehütte	x	y
+Spitze	x	y
+Dachfenster	x	y
+Reservoir	x	y
+Bildzeichen	x	y
+Schlehe	x	y
+Raute	x	y
+Coupon	x	y
+Sekret	x	y
+Zusammenfluß	x	y
+Kieselstein	x	y
+Heckklappe	x	y
+Dock	x	y
+Eiskappe	x	y
+Tagebuch	x	y
+Nikotin	x	y
+Baum	x	y
+Kapillare	x	y
+Walroß	x	y
+Bohnenkraut	x	y
+Lutscher	x	y
+Paß	x	y
+Abhang	x	y
+Sonnenbrand	x	y
+Hörnchen	x	y
+Ambrosia	x	y
+Rotauge	x	y
+Brombeere	x	y
+Tarsus	x	y
+Glanzpunkt	x	y
+Teer	x	y
+Schleim	x	y
+Blase	x	y
+Sommerkleid	x	y
+Wandbild	x	y
+Mundwasser	x	y
+Zipfel	x	y
+Vestibül	x	y
+Unkraut	x	y
+Spektrometer	x	y
+Zugbrücke	x	y
+Schatzkammer	x	y
+Visier	x	y
+Format	x	y
+Latrine	x	y
+Lake	x	y
+Mahnmal	x	y
+Veranda	x	y
+Götzenbild	x	y
+Bahnsteig	x	y
+Edelstein	x	y
+Sonnendach	x	y
+Rotunde	x	y
+Burgstraße	x	y
+Käfer	x	y
+Dachrinne	x	y
+Steinbutt	x	y
+Uferstreifen	x	y
+Glimmer	x	y
+Joker	x	y
+Limo	x	y
+Seezunge	x	y
+Tempel	x	y
+Tumor	x	y
+Wandelhalle	x	y
+Kastanie	x	y
+Pünktchen	x	y
+Flagge	x	y
+Neugeborene	x	y
+Beinkleid	x	y
+Marienstraße	x	y
+Karlsplatz	x	y
+Erde	x	y
+Pfarrhof	x	y
+Wölkchen	x	y
+Augenbraue	x	y
+Feldstein	x	y
+Bruchstück	x	y
+Einfriedung	x	y
+Wasserfarbe	x	y
+Platz	x	y
+Spermium	x	y
+Patientin	x	y
+Husar	x	y
+Torbogen	x	y
+Bestäubung	x	y
+Azalee	x	y
+Galle	x	y
+Taverne	x	y
+Wasserlauf	x	y
+Wiederkäuer	x	y
+Bärtige	x	y
+Ecke	x	y
+Dachgeschoß	x	y
+Radstand	x	y
+Bridge	x	y
+Ulme	x	y
+Gaze	x	y
+Säckel	x	y
+Faß	x	y
+Patina	x	y
+Schweinswal	x	y
+Swastika	x	y
+Jungtier	x	y
+Harz	x	y
+Zahnfleisch	x	y
+Parzelle	x	y
+Superman	x	y
+Schopf	x	y
+Hohlraum	x	y
+Loch	x	y
+Seitenschiff	x	y
+Borte	x	y
+Hirnstamm	x	y
+Salz	x	y
+Grünkohl	x	y
+Kranz	x	y
+Talg	x	y
+Sandelholz	x	y
+Felsgestein	x	y
+Pulsader	x	y
+Schaubild	x	y
+Palast	x	y
+Vorzimmer	x	y
+Schwefel	x	y
+Cafeteria	x	y
+Sonnenbad	x	y
+Südstadt	x	y
+Robe	x	y
+Moschus	x	y
+H&M	x	y
+Hexenschuß	x	y
+Kapsel	x	y
+Nachbild	x	y
+Altarbild	x	y
+Münzstätte	x	y
+Efeu	x	y
+Gärtchen	x	y
+Lotus	x	y
+Wildblume	x	y
+Regiment	x	y
+Stammheimer	x	y
+Gehöft	x	y
+Inhaltsstoff	x	y
+Halbmond	x	y
+Tragwerk	x	y
+Buschwerk	x	y
+Hausberg	x	y
+Fernglas	x	y
+Gartenstraße	x	y
+Lämpchen	x	y
+Faßbinder	x	y
+Lid	x	y
+Ikone	x	y
+Albumin	x	y
+Fjord	x	y
+Tiara	x	y
+Pfefferminz	x	y
+Eis	x	y
+Sandhügel	x	y
+Labyrinth	x	y
+Wein	x	y
+Stute	x	y
+Tatze	x	y
+Sümmchen	x	y
+Weinrebe	x	y
+Hermelin	x	y
+Haus	x	y
+Säulengang	x	y
+Wagenlenker	x	y
+Schalentier	x	y
+Nektarine	x	y
+Wasserlinie	x	y
+Sakristei	x	y
+Turmspitze	x	y
+Lagune	x	y
+Tintenfaß	x	y
+Röschen	x	y
+Felsblock	x	y
+Hirschgeweih	x	y
+Paraffin	x	y
+Theke	x	y
+Schutzhütte	x	y
+Palisade	x	y
+Sauce	x	y
+Starterin	x	y
+Moor	x	y
+Oberseite	x	y
+Bier	x	y
+Lorbeer	x	y
+Fahrkarte	x	y
+Pfefferminze	x	y
+Scheinwerfer	x	y
+Nebenfluß	x	y
+Kaulquappe	x	y
+Pilger	x	y
+Eiermann	x	y
+Schimmelpilz	x	y
+Sarkophag	x	y
+Schlafgemach	x	y
+Quecksilber	x	y
+Maggi	x	y
+Küchenzeile	x	y
+Sauerampfer	x	y
+Diamant	x	y
+Fühler	x	y
+Rezept	x	y
+Schriftzug	x	y
+Bläschen	x	y
+Kavallerie	x	y
+Bluter	x	y
+Quetzal	x	y
+Signet	x	y
+Blinker	x	y
+Totenkopf	x	y
+Unterkleid	x	y
+Wasserkopf	x	y
+Onyx	x	y
+Flügel	x	y
+Sonnenhut	x	y
+Treibhaus	x	y
+Bazillus	x	y
+Meile	x	y
+Sandstein	x	y
+Siedlung	x	y
+Schlüpfer	x	y
+Nimbus	x	y
+Röte	x	y
+Kalzium	x	y
+Gaumen	x	y
+Soße	x	y
+Waisenhaus	x	y
+Zähnchen	x	y
+Whisky	x	y
+Stachel	x	y
+Atrium	x	y
+Trakt	x	y
+Pulver	x	y
+Britin	x	y
+Banane	x	y
+Pigment	x	y
+Schandfleck	x	y
+Treppchen	x	y
+Schlafsaal	x	y
+Behaarung	x	y
+Pissoir	x	y
+Drogist	x	y
+Glashaus	x	y
+Diele	x	y
+Sternenstaub	x	y
+Obelisk	x	y
+Grünspan	x	y
+Täfelchen	x	y
+Bauernhaus	x	y
+Luftblase	x	y
+Wassermelone	x	y
+Seehafen	x	y
+Seestern	x	y
+Dickdarm	x	y
+Seebrücke	x	y
+Barett	x	y
+Cocktail	x	y
+Likör	x	y
+Nautilus	x	y
+Meersalz	x	y
+Dach	x	y
+Königstraße	x	y
+Zecke	x	y
+Türpfosten	x	y
+Totenschädel	x	y
+Tran	x	y
+Stirn	x	y
+Hahnenfuß	x	y
+Mineralstoff	x	y
+Silhouette	x	y
+Pore	x	y
+Staub	x	y
+Barrel	x	y
+Vulva	x	y
+Pocke	x	y
+Backbone	x	y
+Katakombe	x	y
+Oststadt	x	y
+Abbild	x	y
+Steinbock	x	y
+Botulismus	x	y
+Fackel	x	y
+Nest	x	y
+Paella	x	y
+Sediment	x	y
+Nilpferd	x	y
+Dunkelkammer	x	y
+Falkensee	x	y
+Rosette	x	y
+Schienenbahn	x	y
+Zimt	x	y
+Kichererbse	x	y
+Spurweite	x	y
+Winterhude	x	y
+Stadtrand	x	y
+Huftier	x	y
+Vorhof	x	y
+Krematorium	x	y
+Viereck	x	y
+Raster	x	y
+Binde	x	y
+Beere	x	y
+Tunnel	x	y
+Schwertfisch	x	y
+Inkubator	x	y
+Lupine	x	y
+Kirsche	x	y
+Zapfstelle	x	y
+Körpergröße	x	y
+Kotflügel	x	y
+Mikrobiologe	x	y
+Bildpunkt	x	y
+Gras	x	y
+Blinddarm	x	y
+Bruchbude	x	y
+Zentrum	x	y
+Portrait	x	y
+Wolke	x	y
+Blütenblatt	x	y
+Altar	x	y
+Pudding	x	y
+Schattenriß	x	y
+Umzäunung	x	y
+Auge	x	y
+Gebälk	x	y
+Souvenir	x	y
+Emblem	x	y
+Meßfühler	x	y
+Muschel	x	y
+Seeufer	x	y
+Chrom	x	y
+Pyjama	x	y
+Armenhaus	x	y
+Margerite	x	y
+Griffel	x	y
+Kalbfleisch	x	y
+Süßwasser	x	y
+Fotograf	x	y
+Pflaume	x	y
+Mondkalb	x	y
+Checkpoint	x	y
+Porträt	x	y
+Madonna	x	y
+Seepferdchen	x	y
+Garnele	x	y
+Rippchen	x	y
+Karat	x	y
+Weinstock	x	y
+Küste	x	y
+Alabaster	x	y
+Trabant	x	y
+Rennpferd	x	y
+Flurstück	x	y
+Spring	x	y
+Borke	x	y
+Aprikose	x	y
+Baskenmütze	x	y
+Pfau	x	y
+Auguststraße	x	y
+Farbstoff	x	y
+Falter	x	y
+Tonerde	x	y
+Einhorn	x	y
+Flaneur	x	y
+Abzeichen	x	y
+Zirrhose	x	y
+Gekreuzigte	x	y
+Fahrstreifen	x	y
+Zwischenstop	x	y
+Mahagoni	x	y
+Hämoglobin	x	y
+Grünzeug	x	y
+Südland	x	y
+Gesicht	x	y
+Trikolore	x	y
+Muttermal	x	y
+Kinn	x	y
+Speisekammer	x	y
+Ladenhüter	x	y
+Tempelhof	x	y
+Gästehaus	x	y
+Traube	x	y
+Spirituose	x	y
+Rispe	x	y
+Skorpion	x	y
+Köpfchen	x	y
+Terpentin	x	y
+Pollen	x	y
+Molekül	x	y
+Perle	x	y
+Erdbeere	x	y
+Bohrturm	x	y
+Münsterplatz	x	y
+Dromedar	x	y
+Netzhaut	x	y
+Karree	x	y
+Keil	x	y
+Himmelszelt	x	y
+Nabel	x	y
+Süßholz	x	y
+Velodrom	x	y
+Nanogramm	x	y
+Umrandung	x	y
+Schwanz	x	y
+Buttermilch	x	y
+Nougat	x	y
+Bahnstraße	x	y
+Hummer	x	y
+Coupé	x	y
+Zedernholz	x	y
+Datensatz	x	y
+Körnchen	x	y
+Tropfen	x	y
+Patte	x	y
+Präparat	x	y
+Marone	x	y
+Quadrat	x	y
+Emulsion	x	y
+Etikett	x	y
+Pelikan	x	y
+Flunder	x	y
+Infanterie	x	y
+Glas	x	y
+Aceton	x	y
+Lende	x	y
+Stadtstaat	x	y
+Tomate	x	y
+Fettback	x	y
+Magen	x	y
+Buddha	x	y
+Halsband	x	y
+Yard	x	y
+Flor	x	y
+Siesta	x	y
+Gewürznelke	x	y
+Schrein	x	y
+Pixel	x	y
+Rebe	x	y
+Oxid	x	y
+Speisekarte	x	y
+Mast	x	y
+Viadukt	x	y
+Laubblatt	x	y
+Glatze	x	y
+Brille	x	y
+Sari	x	y
+Kofferraum	x	y
+Zuckerbrot	x	y
+Pier	x	y
+Rille	x	y
+Hirninfarkt	x	y
+Hermannplatz	x	y
+Leitplanke	x	y
+Rind	x	y
+Mädchen	x	y
+Kamel	x	y
+Plutonium	x	y
+Flagschiff	x	y
+Blume	x	y
+Kalkstein	x	y
+Marmor	x	y
+Tank	x	y
+Gläschen	x	y
+Altarraum	x	y
+Omelette	x	y
+Vene	x	y
+Kaninchen	x	y
+Wespe	x	y
+Karpfen	x	y
+Leber	x	y
+Marienplatz	x	y
+Joppe	x	y
+Vorbau	x	y
+Buchsbaum	x	y
+Slum	x	y
+Appartement	x	y
+Phallus	x	y
+Zyanid	x	y
+Panier	x	y
+Kaschemme	x	y
+Amulett	x	y
+Wehrgang	x	y
+Kleinod	x	y
+Pagode	x	y
+Arsen	x	y
+Blättchen	x	y
+Ratskeller	x	y
+Wandgemälde	x	y
+Jahnplatz	x	y
+Sonde	x	y
+Erdapfel	x	y
+Spiegel	x	y
+Geschwür	x	y
+Rachenraum	x	y
+Mehlwurm	x	y
+Kaliber	x	y
+Kordon	x	y
+Vorderfront	x	y
+Schnee	x	y
+Säule	x	y
+Kieselalge	x	y
+Augenlid	x	y
+Flügeldecke	x	y
+Kismet	x	y
+Cognac	x	y
+Brandmauer	x	y
+Wacholder	x	y
+Brillenglas	x	y
+Orchidee	x	y
+Kammer	x	y
+Geburtshaus	x	y
+Zisterne	x	y
+Beiboot	x	y
+Gecko	x	y
+Apfelsine	x	y
+Supermodel	x	y
+Vogelbeere	x	y
+Sandbank	x	y
+Meeresfrucht	x	y
+Fohlen	x	y
+Zwiebel	x	y
+Helm	x	y
+Findling	x	y
+Straßenrand	x	y
+Meeresboden	x	y
+Aktenstück	x	y
+Rebstock	x	y
+Schwarze	x	y
+Barfüßer	x	y
+Plunder	x	y
+Sauerkraut	x	y
+Hämatom	x	y
+Zebra	x	y
+Glimmstengel	x	y
+Tulpe	x	y
+Krug	x	y
+Suppe	x	y
+Blütenstaub	x	y
+Adreßbuch	x	y
+Zwerchfell	x	y
+Gefieder	x	y
+Zwinger	x	y
+Darm	x	y
+Limone	x	y
+Kajüte	x	y
+Grapefruit	x	y
+Filmmaterial	x	y
+Zwickel	x	y
+Schnecke	x	y
+Mausoleum	x	y
+Gasse	x	y
+Granatapfel	x	y
+Mongole	x	y
+Judengasse	x	y
+Lamm	x	y
+Brennessel	x	y
+Wurmfortsatz	x	y
+Auswuchs	x	y
+Rinnstein	x	y
+Marstall	x	y
+Oleander	x	y
+Vereinshaus	x	y
+Aroma	x	y
+Thuja	x	y
+Krustentier	x	y
+Flanke	x	y
+Kohlehydrat	x	y
+Acker	x	y
+Zitadelle	x	y
+Kodex	x	y
+Euter	x	y
+Karosse	x	y
+Quai	x	y
+Heilbutt	x	y
+Meeresgrund	x	y
+Ringbahn	x	y
+Eiweiß	x	y
+Flieder	x	y
+Düne	x	y
+Territorium	x	y
+Mantel	x	y
+Wasser	x	y
+Gestein	x	y
+Brustwehr	x	y
+Kleeblatt	x	y
+Sonnenschein	x	y
+Brückenkopf	x	y
+Hüttenwerk	x	y
+Wegweiser	x	y
+Gallenblase	x	y
+Kegel	x	y
+Nordstadt	x	y
+Sonnenbank	x	y
+Appartment	x	y
+Kirschwasser	x	y
+Anlegestelle	x	y
+Vorplatz	x	y
+Basar	x	y
+Zelle	x	y
+Hülsenfrucht	x	y
+Dachboden	x	y
+Weingärtner	x	y
+Frikadelle	x	y
+Kutte	x	y
+Plätzchen	x	y
+Schlafraum	x	y
+Grab	x	y
+Bastion	x	y
+Hochstraße	x	y
+Polyeder	x	y
+Fußspur	x	y
+Gaswerk	x	y
+Kobra	x	y
+Gebärmutter	x	y
+Hieroglyphe	x	y
+Okular	x	y
+Mumie	x	y
+Uniform	x	y
+Rumpf	x	y
+Talisman	x	y
+Kokain	x	y
+Sensor	x	y
+Exkrement	x	y
+Fototermin	x	y
+Verdeck	x	y
+Larve	x	y
+Feuerkugel	x	y
+Blüte	x	y
+Grabmal	x	y
+Schneeball	x	y
+Samenkorn	x	y
+Sonnenblume	x	y
+Kavallerist	x	y
+Schweif	x	y
+Baldrian	x	y
+Stalaktit	x	y
+Kopeke	x	y
+Herd	x	y
+Kabeljau	x	y
+Dampfboot	x	y
+Kuppel	x	y
+Flocke	x	y
+Rote	x	y
+Qualm	x	y
+Schiebedach	x	y
+Gift	x	y
+Stamm	x	y
+Bildnis	x	y
+Lichthof	x	y
+Bindehaut	x	y
+Natter	x	y
+Schalotte	x	y
+Teleskop	x	y
+Boot	x	y
+Garnison	x	y
+Schimmel	x	y
+Yoghurt	x	y
+Hühnerauge	x	y
+Schatzhaus	x	y
+Getränk	x	y
+Bodega	x	y
+Kristall	x	y
+Büschel	x	y
+Fontäne	x	y
+Busen	x	y
+Currywurst	x	y
+Galgen	x	y
+Heidekraut	x	y
+Kohlenhydrat	x	y
+Halstuch	x	y
+Foliant	x	y
+Zusatzstoff	x	y
+Krater	x	y
+Zitronengras	x	y
+Asiatin	x	y
+Square	x	y
+Stadtplan	x	y
+Kadaver	x	y
+Radrennbahn	x	y
+Mauerwerk	x	y
+Lavendel	x	y
+Süßspeise	x	y
+Knolle	x	y
+Glyzerin	x	y
+Fruchtzucker	x	y
+Reliquie	x	y
+Knoblauch	x	y
+Wodka	x	y
+Kot	x	y
+Nessel	x	y
+Krabbe	x	y
+Languste	x	y
+Erdkugel	x	y
+Mikroskop	x	y
+Satin	x	y
+Barke	x	y
+Buckel	x	y
+Sand	x	y
+Thymian	x	y
+Paddock	x	y
+Schleier	x	y
+Achteck	x	y
+Wanze	x	y
+Kleinode	x	y
+Alge	x	y
+Licht	x	y
+Garbe	x	y
+Fernrohr	x	y
+Schädel	x	y
+Verlies	x	y
+Asbest	x	y
+Schneefeld	x	y
+Farmhaus	x	y
+Granat	x	y
+Whiskey	x	y
+Lippenstift	x	y
+Breme	x	y
+Schlagader	x	y
+Asphalt	x	y
+Ziegel	x	y
+Fußgängerweg	x	y
+Hagelkorn	x	y
+Kittel	x	y
+Raupe	x	y
+Fadenwurm	x	y
+Giftstoff	x	y
+Eichel	x	y
+Kardamom	x	y
+Stadtviertel	x	y
+Niere	x	y
+Kolosseum	x	y
+Sphinx	x	y
+Eiter	x	y
+Fries	x	y
+Goldfinger	x	y
+Heer	x	y
+Retorte	x	y
+Gebüsch	x	y
+Fragment	x	y
+Schlange	x	y
+Fleckchen	x	y
+Kiesel	x	y
+Dunst	x	y
+Pentagon	x	y
+Trog	x	y
+Protein	x	y
+Gruft	x	y
+Kiwi	x	y
+Heimchen	x	y
+Leberfleck	x	y
+Plattfisch	x	y
+Kolbenhirse	x	y
+Kügelchen	x	y
+Kreuzotter	x	y
+Aster	x	y
+Parfum	x	y
+Laich	x	y
+Hafenstraße	x	y
+Box	x	y
+Königsplatz	x	y
+Quartier	x	y
+Soutane	x	y
+Jerusalemer	x	y
+Mango	x	y
+Anwesen	x	y
+Jeans	x	y
+Nordhaus	x	y
+Steilküste	x	y
+Relief	x	y
+Strand	x	y
+Kloake	x	y
+Laubengang	x	y
+Badehaus	x	y
+Fenster	x	y
+Bibliothek	x	y
+Minze	x	y

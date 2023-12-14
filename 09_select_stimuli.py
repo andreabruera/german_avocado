@@ -138,9 +138,9 @@ for top_perc in [
     for k, v in candidates.items():
         f_k = '_'.join(k)
         with open(os.path.join(cand_out, '{}_{}.txt'.format(f_k, top_perc)), 'w') as o:
-            o.write('word\tgood_or_bad?\n')
+            o.write('word\tgood_or_bad?\tcomment\n')
             for w in v:
-                o.write('{}\tx\n'.format(w))
+                o.write('{}\tx\ty\n'.format(w))
 
     ### putting it all together
 
