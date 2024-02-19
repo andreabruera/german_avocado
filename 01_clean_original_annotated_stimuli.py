@@ -32,13 +32,13 @@ for f in os.listdir(folder):
 ### now bringing it all together
 relevant_keys = set(phil_data['v46'].keys()).intersection(set(phil_data['v9'].keys()))
 
-all_phil = {k : list() for k in relevant_keys if k!='Included'}
+all_phil = {k : list() for k in relevant_keys}
 for _, d in phil_data.items():
     total = len(d['Words'])
     for i in range(total):
         for h in relevant_keys:
-            if h == 'Included':
-                continue
+            #if h == 'Included':
+            #    continue
             val = d[h][i].replace(',', '.')
             try:
                 val = float(val)

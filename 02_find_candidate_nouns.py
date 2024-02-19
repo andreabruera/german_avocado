@@ -15,6 +15,8 @@ with open(os.path.join('pickles', 'sdewac_lemma_pos_freqs.pkl'), 'rb') as i:
 with open(os.path.join('pickles', 'sdewac_lemma_freqs.pkl'), 'rb') as i:
     lemma_freqs = pickle.load(i)
 ### loading word frequencies
+with open(os.path.join('pickles', 'sdewac_word_pos_freqs.pkl'), 'rb') as i:
+    word_pos = pickle.load(i)
 with open(os.path.join('pickles', 'sdewac_word_freqs.pkl'), 'rb') as i:
     word_freqs = pickle.load(i)
 
@@ -37,17 +39,18 @@ else:
 ### frequency threshold: 1000
 freq_threshold = 100
 nouns_candidates = list()
-for w, freq in lemma_freqs.items():
+#for w, freq in lemma_freqs.items():
+for w, freq in word_freqs.items():
     if freq > freq_threshold:
-        w_pos = sorted(lemma_pos[w].items(), key=lambda item : item[1], reverse=True)
+        w_pos = sorted(word_pos[w].items(), key=lambda item : item[1], reverse=True)
         marker = False
-        ### recognizing as nouns words with high relative dominance (>40%) of the noun usage
+        ### recognizing as nouns words with high relative dominance (>50%) of the noun usage
         if w_pos[0][0] == 'NN':
             marker = True
         else:
             if 'NN' in [p[0] for p in w_pos]:
-                proportion = lemma_pos[w]['NN'] / sum([p[1] for p in w_pos])
-                if proportion > 0.4:
+                proportion = word_pos[w]['NN'] / sum([p[1] for p in w_pos])
+                if proportion > 0.75:
                     marker = True
         if marker:
             if w.lower() in ft_de.keys():
@@ -55,7 +58,7 @@ for w, freq in lemma_freqs.items():
 
 ### just trying not to translate if not needed...
 trans_de = dict()
-with open(os.path.join('output', 'nouns_phil_semantic_norms.tsv')) as i:
+with open(os.path.join('output', 'phil_original_annotated_clean.tsv')) as i:
     for l_i, l in enumerate(i):
         line = l.strip().split('\t')
         if l_i == 0:

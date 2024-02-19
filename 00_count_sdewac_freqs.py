@@ -171,3 +171,5 @@ else:
         pickle.dump(word_pos_freqs, o)
     with open(lemma_pos_freqs_file, 'wb') as o:
         pickle.dump(lemma_pos_freqs, o)
+
+import pdb; pdb.set_trace()
