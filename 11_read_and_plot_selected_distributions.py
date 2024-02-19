@@ -75,49 +75,55 @@ with open(old_file) as i:
         old_goods[label].add(line[word])
 print([(k, len(v)) for k, v in old_goods.items()])
 
-for mode in ('good_only', 'good_mid'):
+### testing p-vals
+ps = list()
+cases = list()
+
+for mode in ('good_only', 'original_exp','good_mid'):
 
     ### reading selected nouns
     good = {l : v for l, v in old_goods.items()}
-    localizer = {
-                 'action' : set(), 
-                 'sound' : set(),
-                 }
+    if mode != 'original_exp':
 
-    folder = 'Stimuli_annotated'
-    for f in os.listdir(folder):
-        if 'tsv' not in f:
-            continue
-        ### category
-        label = '_'.join(f.split('_')[:2])
-        #if label not in good.keys():
-        #    good[label] = set()
-        with open(os.path.join(folder, f)) as i:
-            for l_i, l in enumerate(i):
-                if l_i == 0:
-                    continue
-                line = l.strip().split('\t')
-                if line[0] == 'word':
-                    continue
-                if mode == 'good_only':
-                    if line[1] in ['mid', 'bad']:
+        localizer = {
+                     'action' : set(), 
+                     'sound' : set(),
+                     }
+
+        folder = 'Stimuli_annotated'
+        for f in os.listdir(folder):
+            if 'tsv' not in f:
+                continue
+            ### category
+            label = '_'.join(f.split('_')[:2])
+            #if label not in good.keys():
+            #    good[label] = set()
+            with open(os.path.join(folder, f)) as i:
+                for l_i, l in enumerate(i):
+                    if l_i == 0:
                         continue
-                    elif line[1] in ['action', 'sound']:
-                        localizer[line[1]].add(line[0])
-                    else:
-                        good[label].add(line[0])
-                else:
-                    if line[1] in ['bad']:
+                    line = l.strip().split('\t')
+                    if line[0] == 'word':
                         continue
-                    elif line[1] in ['action', 'sound']:
-                        localizer[line[1]].add(line[0])
+                    if mode == 'good_only':
+                        if line[1] in ['mid', 'bad']:
+                            continue
+                        elif line[1] in ['action', 'sound']:
+                            localizer[line[1]].add(line[0])
+                        else:
+                            good[label].add(line[0])
                     else:
-                        good[label].add(line[0])
+                        if line[1] in ['bad']:
+                            continue
+                        elif line[1] in ['action', 'sound']:
+                            localizer[line[1]].add(line[0])
+                        else:
+                            good[label].add(line[0])
+        print('localizer items')
+        print([(k, len(v)) for k, v in localizer.items()])
+    ### plotting distributions
     print('good items')
     print([(k, len(v)) for k, v in good.items()])
-    print('localizer items')
-    print([(k, len(v)) for k, v in localizer.items()])
-    ### plotting distributions
 
     ### plotting violinplots
     violin_folder = os.path.join('violins', mode)
@@ -125,6 +131,14 @@ for mode in ('good_only', 'good_mid'):
     xs = [val for val in good.keys()]
     for k in relevant_keys:
         print(k)
+        if mode == 'original_exp':
+            xs = [val for val in good.keys()]
+            combs = list(itertools.combinations(xs, r=2))
+            vals = {xs[_] : [float(variables[k][w]) for w in good[xs[_]]] for _ in range(len(xs))}
+            for c in combs:
+                p = scipy.stats.ttest_ind(vals[c[0]], vals[c[1]]).pvalue
+                ps.append(p)
+                cases.append([k, c[0], c[1]])
         file_name = os.path.join(violin_folder, '{}.jpg'.format(k))
         fig, ax = pyplot.subplots(constrained_layout=True)
         for _ in range(len(xs)):
@@ -135,6 +149,12 @@ for mode in ('good_only', 'good_mid'):
         pyplot.savefig(file_name)
         pyplot.clf()
         pyplot.close()
+corrected_ps = mne.stats.fdr_correction(ps)[1]
+#for case, p in zip(cases, ps):
+for case, p in zip(cases, corrected_ps):
+    if p<=0.05:
+        print([case, p])
+print(k)
 
 ### propose selection of stimuli
 ### compute averages for each condition
