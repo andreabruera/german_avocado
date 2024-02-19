@@ -54,7 +54,7 @@ with open(old_file) as i:
         eval_val = float(line[included].replace(',', '.'))
         #print(eval_val)
         assert eval_val >= 0. and eval_val <=1.
-        if eval_val == 0.:
+        if eval_val < 0.9:
             continue
         curr_action = float(line[action].replace(',', '.'))
         curr_sound = float(line[sound].replace(',', '.'))
