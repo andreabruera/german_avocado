@@ -37,6 +37,8 @@ remove = [
           ]
 relevant_keys = [h for h in variables.keys() if 'en_' not in h and 'raw_' not in h and h not in remove and 'proto' not in h]
 
+amount_stim = 36
+
 ### reading words from previous experiments
 old_file = os.path.join('output', 'phil_original_annotated_clean.tsv')
 old_goods = dict()
@@ -169,7 +171,7 @@ ps = list()
 cases = list()
 combs = list(itertools.combinations(xs, r=2))
 for k in relevant_keys:
-    vals = {xs[_] : [float(variables[k][w]) for w in best_good[xs[_]]][:48] for _ in range(len(xs))}
+    vals = {xs[_] : [float(variables[k][w]) for w in best_good[xs[_]]][:amount_stim] for _ in range(len(xs))}
     for c in combs:
         p = scipy.stats.ttest_ind(vals[c[0]], vals[c[1]]).pvalue
         ps.append(p)
@@ -177,7 +179,7 @@ for k in relevant_keys:
     file_name = os.path.join(violin_folder, '{}.jpg'.format(k))
     fig, ax = pyplot.subplots(constrained_layout=True)
     for _ in range(len(xs)):
-        ax.violinplot(positions=[_], dataset=[float(variables[k][w]) for w in best_good[xs[_]][:48]], showmeans=True)
+        ax.violinplot(positions=[_], dataset=[float(variables[k][w]) for w in best_good[xs[_]][:amount_stim]], showmeans=True)
     ax.set_xticks(range(len(xs)))
     ax.set_xticklabels([x.replace('_', '_') for x in xs])
     ax.set_title('{} distributions for selected words'.format(k))
@@ -201,7 +203,7 @@ for k in relevant_keys:
     file_name = os.path.join(violin_folder, '{}.jpg'.format(k))
     fig, ax = pyplot.subplots(constrained_layout=True)
     for _ in range(len(xs)):
-        ax.violinplot(positions=[_], dataset=[float(variables[k][w]) for w in best_good[xs[_]][48:]], showmeans=True)
+        ax.violinplot(positions=[_], dataset=[float(variables[k][w]) for w in best_good[xs[_]][amount_stim:]], showmeans=True)
     ax.set_xticks(range(len(xs)))
     ax.set_xticklabels([x.replace('_', '_') for x in xs])
     ax.set_title('{} distributions for selected words'.format(k))
