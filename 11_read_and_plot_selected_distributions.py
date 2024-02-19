@@ -142,7 +142,7 @@ for mode in ('good_only', 'original_exp','good_mid'):
         file_name = os.path.join(violin_folder, '{}.jpg'.format(k))
         fig, ax = pyplot.subplots(constrained_layout=True)
         for _ in range(len(xs)):
-            ax.violinplot(positions=[_], dataset=[float(variables[k][w]) for w in good[xs[_]]], showmeans=False)
+            ax.violinplot(positions=[_], dataset=[float(variables[k][w]) for w in good[xs[_]]], showmeans=True)
         ax.set_xticks(range(len(xs)))
         ax.set_xticklabels([x.replace('_', '_') for x in xs])
         ax.set_title('{} distributions for selected words'.format(k))
