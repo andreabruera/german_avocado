@@ -139,30 +139,28 @@ for mode in ('good_only', 'good_mid'):
 ### propose selection of stimuli
 ### compute averages for each condition
 
-idxs = [var for var in relevant_keys if 'hand' not in var and 'auditory' not in var]
-exp_idxs = [var for var in relevant_keys if 'hand' in var or 'auditory' in var]
+idxs = [var for var in relevant_keys if 'hand' not in var and 'auditory' not in var and 'concreteness' not in var]
+exp_idxs = [var for var in relevant_keys if 'hand' in var or 'auditory' in var or 'concreteness' in var]
 variable_avgs = {var: numpy.average([float(variables[var][w]) for v in good.values() for w in v]) for var in idxs}
 exp_avgs = {var: numpy.average([float(variables[var][w]) for v in good.values() for w in v]) for var in exp_idxs}
 distances = {w : list() for v in good.values() for w in v}
 for _, v in good.items():
     for w in v:
         for var, var_avg in variable_avgs.items():
-            if 'concreteness' not in var:
-                distances[w].append(abs(float(variables[var][w])-var_avg))
-            else:
-                if 'lowA' in _:
-                    distances[w].append(var_avg-float(variables[var][w]))
-                elif 'highA' in _:
-                    distances[w].append(-float(variables[var][w])+var_avg)
+            distances[w].append(abs(float(variables[var][w])-var_avg))
 
         if 'lowS' in _:
             distances[w].append(abs(exp_avgs['predicted_auditory']-float(variables['predicted_auditory'][w])))
+            distances[w].append(abs(float(variables['predicted_concreteness'][w])-exp_avgs['predicted_concreteness']))
         elif 'highS' in _:
             distances[w].append(abs(float(variables['predicted_auditory'][w])-exp_avgs['predicted_auditory']))
+            distances[w].append(abs(float(variables['predicted_concreteness'][w])-exp_avgs['predicted_concreteness']))
         if 'lowA' in _:
             distances[w].append(abs(exp_avgs['predicted_hand']-float(variables['predicted_hand'][w])))
+            distances[w].append(abs(exp_avgs['predicted_concreteness']-float(variables['predicted_concreteness'][w])))
         elif 'highA' in _:
             distances[w].append(abs(float(variables['predicted_hand'][w])-exp_avgs['predicted_hand']))
+            distances[w].append(abs(exp_avgs['predicted_concreteness']-float(variables['predicted_concreteness'][w])))
 distances = {k : numpy.average(v) for k, v in distances.items()}
 
 best_good = {label : {w : distances[w] for w in v} for label, v in good.items()}
