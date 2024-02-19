@@ -157,7 +157,7 @@ for _, v in good.items():
             distances[w].append(abs(exp_avgs['predicted_hand']-float(variables['predicted_hand'][w])))
         elif 'highA' in _:
             distances[w].append(abs(float(variables['predicted_hand'][w])-exp_avgs['predicted_hand']))
-distances = {k : numpy.average(v) for k, v in distances.items()}
+distances = {k : numpy.average(v)+(numpy.std(v)*0.5) for k, v in distances.items()}
 
 best_good = {label : {w : distances[w] for w in v} for label, v in good.items()}
 best_good = {label : [w[0] for w in sorted(v.items(), key=lambda item : item[1])] for label, v in best_good.items()}
