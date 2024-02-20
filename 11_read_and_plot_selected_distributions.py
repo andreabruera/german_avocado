@@ -3,6 +3,7 @@ import matplotlib
 import mne
 import numpy
 import os
+import random
 import scipy
 
 from matplotlib import pyplot
@@ -45,7 +46,7 @@ remove = [
           ]
 relevant_keys = [h for h in variables.keys() if 'en_' not in h and 'raw_' not in h and h not in remove and 'proto' not in h]
 
-amount_stim = 48
+amount_stim = 36
 
 ### reading words from previous experiments
 old_file = os.path.join('output', 'phil_original_annotated_clean.tsv')
@@ -175,7 +176,7 @@ for mode in (
     os.makedirs(violin_folder, exist_ok=True)
     xs = [val for val in good.keys()]
     for k in relevant_keys:
-        print(k)
+        #print(k)
         if mode == 'original_exp':
             xs = [val for val in good.keys()]
             combs = list(itertools.combinations(xs, r=2))
@@ -195,25 +196,26 @@ for mode in (
         pyplot.clf()
         pyplot.close()
 corrected_ps = mne.stats.fdr_correction(ps)[1]
-#for case, p in zip(cases, ps):
-for case, p in zip(cases, corrected_ps):
+#for case, p in zip(cases, corrected_ps):
+for case, p in zip(cases, ps):
     if p<=0.05:
         print([case, p])
-print(k)
+#print(k)
 
 ### propose selection of stimuli
 ### compute averages for each condition
 
-### criterion: average across all
 idxs = [var for var in relevant_keys if 'hand' not in var and 'auditory' not in var]
 exp_idxs = [var for var in relevant_keys if 'hand' in var or 'auditory' in var]
+distances = {w : list() for v in good.values() for w in v}
+### criterion: average across all
+'''
 variable_avgs = {var: numpy.average([float(variables[var][w]) for k, v in good.items() for w in v]) for var in idxs}
 exp_avgs = {var: numpy.average([float(variables[var][w]) for k, v in good.items() for w in v]) for var in exp_idxs}
-distances = {w : list() for v in good.values() for w in v}
 for _, v in good.items():
     for w in v:
-        #for var, var_avg in variable_avgs.items():
-        #    distances[w].append(abs(float(variables[var][w])-var_avg))
+        for var, var_avg in variable_avgs.items():
+            distances[w].append(abs(float(variables[var][w])-var_avg))
 
         if 'lowS' in _:
             distances[w].append(abs(exp_avgs['predicted_auditory']-float(variables['predicted_auditory'][w])))
@@ -223,11 +225,13 @@ for _, v in good.items():
             distances[w].append(abs(exp_avgs['predicted_hand']-float(variables['predicted_hand'][w])))
         elif 'highA' in _:
             distances[w].append(abs(float(variables['predicted_hand'][w])-exp_avgs['predicted_hand']))
-
 distances = {k : numpy.average(v) for k, v in distances.items()}
+
 
 best_good = {label : {w : distances[w] for w in v} for label, v in good.items()}
 best_good = {label : [w[0] for w in sorted(v.items(), key=lambda item : item[1])] for label, v in best_good.items()}
+### criterion: average separately for high/low action/sound
+best_good = {k : random.sample(list(v), k=len(v)) for k, v in good.items()}
 for v in best_good.values():
     assert len(v) >= amount_stim*2
 
@@ -279,3 +283,4 @@ for k in relevant_keys:
     pyplot.savefig(file_name)
     pyplot.clf()
     pyplot.close()
+'''
