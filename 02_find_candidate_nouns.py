@@ -76,8 +76,8 @@ for w in tqdm(nouns_candidates):
     trans = translator.translate(w, src='de', dest='en').text.lower()
     counter += 1
     ### avoiding being kicked out
-    if counter == 2000:
-        time.sleep(60)
+    if counter == 1000:
+        time.sleep(600)
         translator = googletrans.Translator()
         counter = 0
     trans_de[w] = trans

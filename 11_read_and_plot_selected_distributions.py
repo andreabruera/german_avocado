@@ -46,7 +46,7 @@ remove = [
           ]
 relevant_keys = [h for h in variables.keys() if 'en_' not in h and 'raw_' not in h and h not in remove and 'proto' not in h]
 
-amount_stim = 48
+amount_stim = 36
 
 ### reading words from previous experiments
 old_file = os.path.join('output', 'phil_original_annotated_clean.tsv')
@@ -203,19 +203,42 @@ distances = {k : numpy.average(v) for k, v in distances.items()}
 '''
 
 distances = dict()
-for k, v in good.items():
-    split_k = k.split('_')
+for good_k, v in good.items():
+    split_k = good_k.split('_')
     ### every word
     for w in v:
         distances[w] = list()
         ### the thing we really care about are hand and audition
-        for var_i, var in enumerate(['predicted_hand', 'predicted_auditory']):
-            rel_keys = [k for k in good.keys() if split_k[var_i] in k]
-            assert len(rel_keys) == 2
-            rel_vals = [float(variables[var][w_two]) for key in rel_keys for  w_two in good[key]]
+        for var_i, var in enumerate([
+                                     'predicted_hand', 
+                                     'predicted_auditory',
+                                     ]):
+            ### promoting similarity
+            rel_keys = [k for k in good.keys() if split_k[var_i] in k and k!=good_k]
+            #assert len(rel_keys) == 2
+            assert len(rel_keys) == 1
+            rel_vals = [float(variables[var][w_two]) for key in rel_keys for w_two in good[key]]
             rel_avg = numpy.average(rel_vals)
             dist = abs(rel_avg-float(variables[var][w]))
             distances[w].append(dist)
+            ### promoting dissimilarity
+            unrel_keys = [k for k in good.keys() if split_k[var_i] not in k]
+            assert len(unrel_keys) == 2
+            rel_vals = [float(variables[var][w_two]) for key in unrel_keys for  w_two in good[key]]
+            rel_avg = numpy.average(rel_vals)
+            dist = -abs(rel_avg-float(variables[var][w]))
+            distances[w].append(dist)
+            ### also trying to match more fundamental variables
+            for rel, more_var in enumerate([
+                             'log10_word_frequency_sdewac',
+                             'old20_score',
+                             #'word_average_bigram_frequency',
+                             #'word_average_trigram_frequency',
+                             ]):
+                rel_vals = [float(variables[more_var][w_two]) for key in rel_keys for w_two in good[key]]
+                rel_avg = numpy.average(rel_vals)
+                dist = (0.5/(rel+1))*abs(rel_avg-float(variables[more_var][w]))
+                distances[w].append(dist)
 distances = {w : numpy.average(v) for w, v in distances.items()}
 
 best_good = {label : {w : distances[w] for w in v} for label, v in good.items()}
@@ -258,9 +281,39 @@ for case, p in zip(cases, corrected_ps):
         print([case, p])
 print(k)
 
+### writing to files the pairwise tests
+with open('pairwise_comparisons_main_experiment.tsv', 'w') as o:
+    o.write('variable\tlow_sound_avg_zscore\thigh_sound_std\tsound_T\tsound_p\t'\
+                      'low_action_avg_zscore\thigh_action_std\taction_T\taction_p\n')
+    for k in relevant_keys:
+        o.write('{}\t'.format(k))
+        ### sound
+        low_sound = [float(variables[k][w])  for _ in xs for w in selected_words[_] if 'lowS' in _]
+        o.write('{}\t{}\t'.format(round(numpy.average(low_sound), 4),round(numpy.std(low_sound), 4)))
+        hi_sound = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'highS' in _]
+        o.write('{}\t{}\t'.format(round(numpy.average(hi_sound), 4),round(numpy.std(hi_sound), 4)))
+        stat_comp = scipy.stats.ttest_ind(low_sound, hi_sound)
+        o.write('{}\t{}\t'.format(round(stat_comp.statistic, 4),round(stat_comp.pvalue, 5)))
+        ### action
+        low_action = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'lowA' in _]
+        o.write('{}\t{}\t'.format(round(numpy.average(low_action), 4),round(numpy.std(low_action), 4)))
+        hi_action = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'highA' in _]
+        o.write('{}\t{}\t'.format(round(numpy.average(hi_action), 4),round(numpy.std(hi_action), 4)))
+        stat_comp = scipy.stats.ttest_ind(low_action, hi_action)
+        o.write('{}\t{}\n'.format(round(stat_comp.statistic, 4),round(stat_comp.pvalue, 5)))
+
+with open('main_experiment_words.tsv', 'w') as o:
+    o.write('word\tcategory\n')
+    for cat, ws in selected_words.items():
+        for w in ws:
+            o.write('{}\t{}\n'.format(w, cat))
+
+'''
 ### localizer now
 xs = [val for val in best_good.keys()]
-all_localizer = {_ : set(best_good[_][amount_stim*2:]) | localizer[_] for _ in xs}
+passage_localizer = {_ : set(best_good[_][amount_stim*2:]) | localizer[_] for _ in xs}
+all_localizer = {
+
 distances = dict()
 for k, v in all_localizer.items():
     split_k = k.split('_')
@@ -297,3 +350,31 @@ for k in relevant_keys:
     pyplot.savefig(file_name)
     pyplot.clf()
     pyplot.close()
+
+### writing to files the pairwise tests
+with open('pairwise_comparisons_localizer.tsv', 'w') as o:
+    o.write('variable\tlow_sound_avg_zscore\thigh_sound_std\tsound_T\tsound_p\t'\
+                      'low_action_avg_zscore\thigh_action_std\taction_T\taction_p\n')
+    for k in relevant_keys:
+        o.write('{}\t'.format(k))
+        ### sound
+        low_sound = [[float(variables[k][w]) for w in best_localizer[_] for _ in xs if 'lowS' in _]
+        o.write('{}\t{}\t'.format(round(numpy.average(low_sound), 4),round(numpy.std(low_sound), 4)))
+        hi_sound = [[float(variables[k][w]) for w in best_localizer[_] for _ in xs if 'highS' in _]
+        o.write('{}\t{}\t'.format(round(numpy.average(hi_sound), 4),round(numpy.std(hi_sound), 4)))
+        stat_comp = scipy.stats.ttest_ind(low_sound, hi_sound)
+        o.write('{}\t{}\t'.format(round(stat_comp.statistic, 4),round(stat_comp.pvalue, 5)))
+        ### action
+        low_action = [[float(variables[k][w]) for w in best_localizer[_] for _ in xs if 'lowA' in _]
+        o.write('{}\t{}\t'.format(round(numpy.average(low_action), 4),round(numpy.std(low_action), 4)))
+        hi_action = [[float(variables[k][w]) for w in best_localizer[_] for _ in xs if 'highA' in _]
+        o.write('{}\t{}\t'.format(round(numpy.average(hi_action), 4),round(numpy.std(hi_action), 4)))
+        stat_comp = scipy.stats.ttest_ind(low_action, hi_action)
+        o.write('{}\t{}\n'.format(round(stat_comp.statistic, 4),round(stat_comp.pvalue, 5)))
+
+with open('main_experiment_words.tsv', 'w') as o:
+    o.write('word\tcategory\n')
+    for cat, ws in selected_words.items():
+        for w in ws:
+            o.write('{}\t{}\n'.format(w, cat))
+'''
