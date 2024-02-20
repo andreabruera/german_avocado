@@ -4,6 +4,7 @@ import os
 import pickle
 import scipy
 import sklearn
+import time
 
 from scipy import spatial
 from sklearn import linear_model
