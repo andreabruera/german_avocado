@@ -15,12 +15,16 @@ with open(os.path.join('output', 'candidate_nouns_all_variables.tsv')) as i:
         line = l.strip().split('\t')
         if l_i == 0:
             header = line.copy()
-            variables = {h : dict() for h in line[1:]}
+            variables = {h : dict() for h in line[1:] if 'lemma' not in h and h not in ['predicted_dominance', 'predicted_arousal', 'predicted_valence']}
         else:
             for h, val in zip(header, line):
                 if h == 'word':
                     word = val
                     full_words.append(word)
+                elif 'lemma' in h:
+                    continue
+                elif h in ['predicted_dominance', 'predicted_arousal', 'predicted_valence']:
+                    continue
                 else:
                     if val.isnumeric():
                         val = float(val)
@@ -34,6 +38,10 @@ remove = [
           'predicted_mouth', 
           'predicted_head', 
           'predicted_torso', 
+          'predicted_visual',
+          'predicted_olfactory',
+          'predicted_gustatory',
+          'predicted_hearing',
           ]
 relevant_keys = [h for h in variables.keys() if 'en_' not in h and 'raw_' not in h and h not in remove and 'proto' not in h]
 
@@ -253,7 +261,6 @@ for case, p in zip(cases, corrected_ps):
         print([case, p])
 print(k)
 
-'''
 ### plotting violinplots
 violin_folder = os.path.join('violins', 'left_for_localizer')
 os.makedirs(violin_folder, exist_ok=True)
@@ -270,4 +277,3 @@ for k in relevant_keys:
     pyplot.savefig(file_name)
     pyplot.clf()
     pyplot.close()
-'''
