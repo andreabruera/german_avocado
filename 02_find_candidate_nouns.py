@@ -58,7 +58,8 @@ for w, freq in word_freqs.items():
 
 ### just trying not to translate if not needed...
 trans_de = dict()
-with open(os.path.join('output', 'phil_original_annotated_clean.tsv')) as i:
+#with open(os.path.join('output', 'phil_original_annotated_clean.tsv')) as i:
+with open(os.path.join('output', 'candidate_nouns_min_100.tsv')) as i:
     for l_i, l in enumerate(i):
         line = l.strip().split('\t')
         if l_i == 0:
@@ -67,10 +68,17 @@ with open(os.path.join('output', 'phil_original_annotated_clean.tsv')) as i:
 
 ### learning a transformation of tf_de words
 translator = googletrans.Translator()
+counter = 0
 for w in tqdm(nouns_candidates):
     if w in trans_de.keys():
         continue
     trans = translator.translate(w, src='de', dest='en').text.lower()
+    counter += 1
+    ### avoiding being kicked out
+    if counter == 2000:
+        time.sleep(60)
+        translator = googletrans.Translator()
+        counter = 0
     trans_de[w] = trans
 
 with open(os.path.join('output', 'candidate_nouns_min_100.tsv'), 'w') as o:
