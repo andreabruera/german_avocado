@@ -211,16 +211,19 @@ for k, v in good.items():
         ### the thing we really care about are hand and audition
         for var_i, var in enumerate(['predicted_hand', 'predicted_auditory']):
             rel_keys = [k for k in good.keys() if split_k[var_i] in k]
+            assert len(rel_keys) == 2
             rel_vals = [float(variables[var][w_two]) for key in rel_keys for  w_two in good[key]]
-            dist = (numpy.average(rel_vals)**2)-(float(variables[var][w])**2)
+            rel_avg = numpy.average(rel_vals)
+            dist = abs(rel_avg-float(variables[var][w]))
             distances[w].append(dist)
 
 best_good = {label : {w : distances[w] for w in v} for label, v in good.items()}
 best_good = {label : [w[0] for w in sorted(v.items(), key=lambda item : item[1])] for label, v in best_good.items()}
+selected_words = {k : v[:amount_stim*2] for k, v in best_good.items()}
 ### criterion: average separately for high/low action/sound
 #best_good = {k : random.sample(list(v), k=len(v)) for k, v in good.items()}
-for v in best_good.values():
-    assert len(v) >= amount_stim*2
+for v in selected_words.values():
+    assert len(v) == amount_stim*2
 
 ### plotting violinplots
 violin_folder = os.path.join('violins', 'best_for_experiment')
@@ -231,7 +234,7 @@ ps = list()
 cases = list()
 combs = list(itertools.combinations(xs, r=2))
 for k in relevant_keys:
-    vals = {xs[_] : [float(variables[k][w]) for w in best_good[xs[_]]][:amount_stim*2] for _ in range(len(xs))}
+    vals = {xs[_] : [float(variables[k][w]) for w in selected_words[xs[_]]] for _ in range(len(xs))}
     for c in combs:
         p = scipy.stats.ttest_ind(vals[c[0]], vals[c[1]]).pvalue
         ps.append(p)
@@ -267,7 +270,7 @@ for k, v in all_localizer.items():
         for var_i, var in enumerate(['predicted_hand', 'predicted_auditory']):
             rel_keys = [k for k in all_localizer.keys() if split_k[var_i] in k]
             rel_vals = [float(variables[var][w_two]) for key in rel_keys for  w_two in all_localizer[key]]
-            dist = (numpy.average(rel_vals)**2)-(float(variables[var][w])**2)
+            dist = abs(numpy.average(rel_vals)-float(variables[var][w]))
             distances[w].append(dist)
 
 best_localizer = {label : {w : distances[w] for w in v} for label, v in all_localizer.items()}
