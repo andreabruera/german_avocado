@@ -271,11 +271,11 @@ for k, v in all_localizer.items():
             distances[w].append(dist)
 
 best_localizer = {label : {w : distances[w] for w in v} for label, v in all_localizer.items()}
-best_localizer = {label : [w[0] for w in sorted(v.items(), key=lambda item : item[1])][:amount_stim] for label, v in best_localizer.items()}
+best_localizer = {label : [w[0] for w in sorted(v.items(), key=lambda item : item[1])][:int(amount_stim*0.5)] for label, v in best_localizer.items()}
 ### criterion: average separately for high/low action/sound
 #best_good = {k : random.sample(list(v), k=len(v)) for k, v in good.items()}
 for v in best_localizer.values():
-    assert len(v) >= amount_stim
+    assert len(v) == int(amount_stim*0.5)
 
 ### plotting violinplots
 violin_folder = os.path.join('violins', 'best_for_localizer')
