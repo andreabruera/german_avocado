@@ -203,13 +203,13 @@ for case, p in zip(cases, ps):
 #print(k)
 
 ### propose selection of stimuli
+'''
 ### compute averages for each condition
 
 idxs = [var for var in relevant_keys if 'hand' not in var and 'auditory' not in var]
 exp_idxs = [var for var in relevant_keys if 'hand' in var or 'auditory' in var]
 distances = {w : list() for v in good.values() for w in v}
 ### criterion: average across all
-'''
 variable_avgs = {var: numpy.average([float(variables[var][w]) for k, v in good.items() for w in v]) for var in idxs}
 exp_avgs = {var: numpy.average([float(variables[var][w]) for k, v in good.items() for w in v]) for var in exp_idxs}
 for _, v in good.items():
@@ -226,7 +226,19 @@ for _, v in good.items():
         elif 'highA' in _:
             distances[w].append(abs(float(variables['predicted_hand'][w])-exp_avgs['predicted_hand']))
 distances = {k : numpy.average(v) for k, v in distances.items()}
-
+'''
+distances = dict()
+for k, v in good.items():
+    split_k = k.split('_')
+    ### every word
+    for w in v:
+        distances[w] = list()
+        ### the thing we really care about are hand and audition
+        for var_i, var in enumerate(['predicted_hand', 'predicted_auditory']):
+            rel_keys = [k for k in good.keys() if split_k[var_i] in k]
+            rel_vals = [float(variables[var][w_two]) for key in rel_keys for  w_two in good[key]]
+            dist = (numpy.average(rel_vals)**2)-(float(variables[var][w])**2)
+            distances[w].append(dist)
 
 best_good = {label : {w : distances[w] for w in v} for label, v in good.items()}
 best_good = {label : [w[0] for w in sorted(v.items(), key=lambda item : item[1])] for label, v in best_good.items()}
@@ -283,4 +295,3 @@ for k in relevant_keys:
     pyplot.savefig(file_name)
     pyplot.clf()
     pyplot.close()
-'''
