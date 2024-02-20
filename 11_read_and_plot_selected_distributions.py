@@ -216,6 +216,7 @@ for k, v in good.items():
             rel_avg = numpy.average(rel_vals)
             dist = abs(rel_avg-float(variables[var][w]))
             distances[w].append(dist)
+distances = {w : numpy.average(v) for w, v in distances.items()}
 
 best_good = {label : {w : distances[w] for w in v} for label, v in good.items()}
 best_good = {label : [w[0] for w in sorted(v.items(), key=lambda item : item[1])] for label, v in best_good.items()}
@@ -272,6 +273,7 @@ for k, v in all_localizer.items():
             rel_vals = [float(variables[var][w_two]) for key in rel_keys for  w_two in all_localizer[key]]
             dist = abs(numpy.average(rel_vals)-float(variables[var][w]))
             distances[w].append(dist)
+distances = {w : numpy.average(v) for w, v in distances.items()}
 
 best_localizer = {label : {w : distances[w] for w in v} for label, v in all_localizer.items()}
 best_localizer = {label : [w[0] for w in sorted(v.items(), key=lambda item : item[1])][:int(amount_stim*0.5)] for label, v in best_localizer.items()}
