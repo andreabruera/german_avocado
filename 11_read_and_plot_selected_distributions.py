@@ -280,8 +280,13 @@ for amount_stim in [36, 40, 42, 48]:
         res_f = os.path.join('txt_results', mode, str(amount_stim))
         os.makedirs(res_f, exist_ok=True)
         with open(os.path.join(res_f, 'pairwise_comparisons_main_experiment_{}_{}.tsv'.format(mode, str(amount_stim))), 'w') as o:
-            o.write('variable\tlow_sound_avg_zscore\thigh_sound_std\tsound_T\tsound_p_raw\tsound_p_corrected'\
-                              'low_action_avg_zscore\thigh_action_std\taction_T\taction_p\taction_p_corrected\n')
+            o.write('variable\t')
+            o.write('low_sound_avg_zscore\tlow_sound_std\t')
+            o.write('high_sound_avg_zscore\thigh_sound_std\t')
+            o.write('sound_T\tsound_p_raw\tsound_p_corrected\t')
+            o.write('low_action_avg_zscore\tlow_action_std\t')
+            o.write('high_action_avg_zscore\thigh_action_std\t')
+            o.write('action_T\taction_p_raw\taction_p_corrected\n')
             for k in relevant_keys:
                 o.write('{}\t'.format(k))
                 ### sound

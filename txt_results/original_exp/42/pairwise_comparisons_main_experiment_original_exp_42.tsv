@@ -1,4 +1,4 @@
-variable	low_sound_avg_zscore	high_sound_std	sound_T	sound_p_raw	sound_p_correctedlow_action_avg_zscore	high_action_std	action_T	action_p	action_p_corrected
+variable	low_sound_avg_zscore	low_sound_std	high_sound_avg_zscore	high_sound_std	sound_T	sound_p_raw	sound_p_corrected	low_action_avg_zscore	low_action_std	high_action_avg_zscore	high_action_std	action_T	action_p_raw	action_p_corrected
 word_length	6.9762	0.8994	6.8571	1.2831	0.6922	0.4898	0.57143	6.9167	1.0375	6.9167	1.1772	0.0	1.0	1.0
 log10_word_frequency_sdewac	2.9943	0.3968	2.9929	0.5158	0.0197	0.98433	0.98433	2.9652	0.3753	3.022	0.5301	-0.7966	0.42684	0.75299
 word_average_bigram_frequency	28755516.2567	17387963.2083	25641064.2267	17067812.3676	1.1645	0.24588	0.49175	28903097.7338	18442856.8984	25493482.7495	15891811.7762	1.2759	0.20376	0.51522
