@@ -80,6 +80,15 @@ with open(old_file) as i:
         if line[word] not in full_words:
             print(line[word])
             continue
+        if float(variables['predicted_concreteness'][line[word]]) > 2. and label == 'highA_lowS':
+            continue
+        '''
+            if random.choice([0, 1]) == 1:
+                print('remove')
+                continue
+            else:
+                print('kept')
+        '''
         if eval_val < 0.9:
             if eval_val > 0.5:
                 localizer[label].add(line[word])
@@ -108,6 +117,15 @@ for f in os.listdir(folder):
             line = l.strip().split('\t')
             if line[0] == 'word':
                 continue
+            if float(variables['predicted_concreteness'][line[0]]) > 2. and label == 'highA_lowS':
+                continue
+                '''
+                if random.choice([0, 1]) == 1:
+                    print('remove')
+                    continue
+                else:
+                    print('kept')
+                '''
             if line[1] in ['bad']:
                 continue
             elif line[1] in ['mid']:
@@ -121,7 +139,7 @@ for f in os.listdir(folder):
 print('localizer items')
 print([(k, len(v)) for k, v in localizer.items()])
 
-for amount_stim in [36, 40, 42, 48]:
+for amount_stim in [36, 42, 48]:
     for mode, good in (
                  ('original_exp', old_good),
                  ('good_only', new_good),
@@ -182,8 +200,8 @@ for amount_stim in [36, 40, 42, 48]:
                     rel_keys = [k for k in good.keys() if split_k[var_i] in k and k!=good_k]
                     #assert len(rel_keys) == 2
                     assert len(rel_keys) == 1
-                    #all_vars = [var, 'predicted_concreteness']
-                    all_vars = [var]
+                    all_vars = [var, 'predicted_concreteness']
+                    #all_vars = [var]
                     for all_var in all_vars:
                         rel_vals = [float(variables[all_var][w_two]) for key in rel_keys for w_two in good[key]]
                         rel_avg = numpy.average(rel_vals)
@@ -212,8 +230,8 @@ for amount_stim in [36, 40, 42, 48]:
                                      ]):
                         rel_vals = [float(variables[more_var][w_two]) for key in rel_keys for w_two in good[key]]
                         rel_avg = numpy.average(rel_vals)
-                        dist = (1/(rel+1))*abs(rel_avg-float(variables[more_var][w]))
-                        #dist = (0.75/(rel+1))*abs(rel_avg-float(variables[more_var][w]))
+                        #dist = (1/(rel+1))*abs(rel_avg-float(variables[more_var][w]))
+                        dist = (1.5/(rel+1))*abs(rel_avg-float(variables[more_var][w]))
                         distances[w].append(dist)
         distances = {w : numpy.average(v) for w, v in distances.items()}
 
@@ -259,8 +277,9 @@ for amount_stim in [36, 40, 42, 48]:
         #for case, p in zip(cases, ps):
         for case, p in zip(cases, corrected_ps):
             if p<=0.05:
-                print([case, p])
-        print(k)
+                #print([case, p])
+                pass
+        #print(k)
         ### corrected p-values
         corr_ps = dict()
         for k in relevant_keys:
