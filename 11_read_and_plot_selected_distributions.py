@@ -91,7 +91,7 @@ with open(old_file) as i:
         if line[word] not in full_words:
             print(line[word])
             continue
-        if float(variables['word_average_trigram_frequency'][line[word]]) > 10500000 and 'lowS' in label:
+        if float(variables['word_average_trigram_frequency'][line[word]]) > 11500000 and 'lowS' in label:
             continue
         if float(variables['predicted_hand'][line[word]]) > .15 and 'lowA_lowS' in label:
             continue
@@ -101,9 +101,11 @@ with open(old_file) as i:
             continue
         if float(variables['predicted_concreteness'][line[word]]) < .75 and 'lowA' in label:
             continue
-        if float(variables['predicted_concreteness'][line[word]]) > 2.5 and 'highA' in label:
+        if float(variables['predicted_concreteness'][line[word]]) > 2.3 and 'highA_lowS' in label:
             continue
-        if float(variables['predicted_concreteness'][line[word]]) > 1.75 and 'highA' in label:
+        if float(variables['predicted_concreteness'][line[word]]) > 2.7 and 'highA_highS' in label:
+            continue
+        if float(variables['predicted_concreteness'][line[word]]) > 1.3 and 'highA' in label:
             if random.choice([0, 1]) == 1:
                 print('remove')
                 continue
@@ -139,7 +141,7 @@ for f in os.listdir(folder):
             line = l.strip().split('\t')
             if line[0] == 'word':
                 continue
-            if float(variables['word_average_trigram_frequency'][line[0]]) > 10500000 and 'lowS' in label:
+            if float(variables['word_average_trigram_frequency'][line[0]]) > 11500000 and 'lowS' in label:
                 continue
             if float(variables['predicted_hand'][line[0]]) > .15 and 'lowA_lowS' in label:
                 continue
@@ -147,9 +149,11 @@ for f in os.listdir(folder):
                 continue
             if float(variables['log10_word_frequency_sdewac'][line[0]]) > 3.8 and 'lowA_lowS' in label:
                 continue
-            if float(variables['predicted_concreteness'][line[0]]) < .9 and 'lowA' in label:
+            if float(variables['predicted_concreteness'][line[0]]) < .75 and 'lowA' in label:
                 continue
-            if float(variables['predicted_concreteness'][line[0]]) > 2.4 and 'highA' in label:
+            if float(variables['predicted_concreteness'][line[0]]) > 2.3 and 'highA_lowS' in label:
+                continue
+            if float(variables['predicted_concreteness'][line[0]]) > 2.7 and 'highA_highS' in label:
                 continue
             if float(variables['predicted_concreteness'][line[0]]) > 1.3 and 'highA_lowS' in label:
                 if random.choice([0, 1]) == 1:
@@ -176,7 +180,9 @@ old_good = {l : set([w for w in v if w not in corrections.keys()]) for l, v in o
 new_good = {l : set([w for w in v if w not in corrections.keys()]) for l, v in new_good.items()}
 new_mid_good = {l : set([w for w in v if w not in corrections.keys() or corrections[w]=='mid']) for l, v in new_mid_good.items()}
 
-for amount_stim in [36, 42, 48]:
+for amount_stim in [
+                    #36, 42, 
+                    48]:
     for mode, good in (
                  ('original_exp', old_good),
                  ('good_only', new_good),

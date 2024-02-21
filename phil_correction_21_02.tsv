@@ -382,4 +382,69 @@ Feuerwaffe	highA_highS
 Brandbombe	highA_highS		
 Tuba	highA_highS		
 Klarinette	highA_highS		
-Auto	highA_highS		
+Elektron	lowA_lowS	mid	not really an object
+Lätzchen	lowA_lowS		
+Pappel	lowA_lowS		
+Prärie	lowA_lowS		
+Emblem	lowA_lowS		
+Vorplatz	lowA_lowS	bad	"too similar to ""Vorzimmer"""
+Gehöft	lowA_lowS		
+Torbogen	lowA_lowS		
+Hermelin	lowA_lowS	bad	too unfamiliar
+Hornhaut	lowA_lowS	mid	low action?
+Bakterium	lowA_lowS		
+Wacholder	lowA_lowS		
+Schalotte	lowA_lowS		
+Gletscher	lowA_lowS		
+Mausoleum	lowA_lowS		
+Sarkophag	lowA_lowS		
+Vorzimmer	lowA_lowS		
+Sandstein	lowA_lowS		
+Labyrinth	lowA_lowS	mid	low action?
+Waschbär	lowA_highS	mid	really high sound?
+Brandung	lowA_highS		
+Düsenjet	lowA_highS		
+Telegraf	lowA_highS		
+Staudamm	lowA_highS		
+Wachturm	lowA_highS	bad	not high sound
+Detektor	lowA_highS	bad	not high sound
+Biber	lowA_highS	mid	high sound?
+Sporthalle	lowA_highS	mid	action associations?
+Schaf	lowA_highS		
+Küken	lowA_highS		
+Nachtlokal	lowA_highS		
+Vogel	lowA_highS		
+Affe	lowA_highS		
+Gala	lowA_highS	mid	not really an object
+Jackett	highA_lowS		
+Zutaten	highA_lowS	bad	plural & very general
+Diskette	highA_lowS		
+Kandare	highA_lowS		
+Sticker	highA_lowS		
+Bandage	highA_lowS		
+Schrank	highA_lowS		
+Schürze	highA_lowS		
+Skalpell	highA_lowS		
+Armband	highA_lowS		
+Gestell	highA_lowS	mid	not really high action
+Riemen	highA_lowS	mid	not really high action
+Banane	highA_lowS		
+Lineal	highA_lowS		
+Armlehne	highA_lowS		
+Fessel	highA_lowS		
+Textilie	highA_lowS		
+Brandbombe	highA_highS	mid	"too similar to ""Bombe"""
+Sessel	highA_lowS		
+Skizze	highA_lowS		
+Werkzeug	highA_highS	mid	too general
+Kuvert	highA_lowS		
+Einrad	highA_lowS		
+Sohle	highA_lowS	mid	not really high action
+Reifen	highA_lowS		
+Feuerholz	highA_lowS		
+Pflug	highA_lowS	mid	too unfamiliar?
+Teigware	highA_lowS		
+Kartoffel	highA_lowS		
+Spaghetti	highA_lowS		
+Scharnier	highA_lowS		
+Kimono	highA_lowS	mid	unfamiliar?
