@@ -80,15 +80,24 @@ with open(old_file) as i:
         if line[word] not in full_words:
             print(line[word])
             continue
-        if float(variables['predicted_concreteness'][line[word]]) > 2. and label == 'highA_lowS':
+        if float(variables['word_average_trigram_frequency'][line[word]]) > 10500000 and 'lowS' in label:
             continue
-        '''
+        if float(variables['predicted_hand'][line[word]]) > .15 and 'lowA_lowS' in label:
+            continue
+        if float(variables['old20_score'][line[word]]) < 4.5 and 'lowA_lowS' in label:
+            continue
+        if float(variables['log10_word_frequency_sdewac'][line[word]]) > 3.8 and 'lowA_lowS' in label:
+            continue
+        if float(variables['predicted_concreteness'][line[word]]) < .9 and 'lowA' in label:
+            continue
+        if float(variables['predicted_concreteness'][line[word]]) > 2.5 and 'highA' in label:
+            continue
+        if float(variables['predicted_concreteness'][line[word]]) > 1.3 and 'highA' in label:
             if random.choice([0, 1]) == 1:
                 print('remove')
                 continue
             else:
                 print('kept')
-        '''
         if eval_val < 0.9:
             if eval_val > 0.5:
                 localizer[label].add(line[word])
@@ -117,15 +126,24 @@ for f in os.listdir(folder):
             line = l.strip().split('\t')
             if line[0] == 'word':
                 continue
-            if float(variables['predicted_concreteness'][line[0]]) > 2. and label == 'highA_lowS':
+            if float(variables['word_average_trigram_frequency'][line[0]]) > 10500000 and 'lowS' in label:
                 continue
-                '''
+            if float(variables['predicted_hand'][line[0]]) > .15 and 'lowA_lowS' in label:
+                continue
+            if float(variables['old20_score'][line[0]]) < 4.5 and 'lowA_lowS' in label:
+                continue
+            if float(variables['log10_word_frequency_sdewac'][line[0]]) > 3.8 and 'lowA_lowS' in label:
+                continue
+            if float(variables['predicted_concreteness'][line[0]]) < .9 and 'lowA' in label:
+                continue
+            if float(variables['predicted_concreteness'][line[0]]) > 2.5 and 'highA' in label:
+                continue
+            if float(variables['predicted_concreteness'][line[0]]) > 1.3 and 'highA_lowS' in label:
                 if random.choice([0, 1]) == 1:
                     print('remove')
                     continue
                 else:
                     print('kept')
-                '''
             if line[1] in ['bad']:
                 continue
             elif line[1] in ['mid']:
@@ -224,9 +242,10 @@ for amount_stim in [36, 42, 48]:
                                  #'word_average_trigram_frequency',
                     '''
                     for rel, more_var in enumerate([
-                                     'predicted_concreteness',
-                                     'log10_word_frequency_sdewac',
                                      'old20_score',
+                                     'log10_word_frequency_sdewac',
+                                     #'word_length',
+                                     #'predicted_concreteness',
                                      ]):
                         rel_vals = [float(variables[more_var][w_two]) for key in rel_keys for w_two in good[key]]
                         rel_avg = numpy.average(rel_vals)
