@@ -1,3 +1,4 @@
+import multiprocessing
 import numpy
 import os
 import pickle
@@ -30,13 +31,12 @@ def levenshtein(seq1, seq2):
                 )
     return (matrix[size_x - 1, size_y - 1])
 
-def multiprocessing_levenshtein(inputs):
-    w = inputs[0]
-    other_words = inputs[1]
+def multiprocessing_levenshtein(w):
     levs = list()
     for w_two in other_words:
         levs.append(levenshtein(w, w_two))
-    return (w, levs)
+    score = numpy.average(sorted(levs, reverse=True)[:20])
+    return (w, score)
 
 '''
 ### reading phil's annotated dataset
@@ -66,6 +66,7 @@ with open(os.path.join('pickles', 'sdewac_lemma_freqs.pkl'), 'rb') as i:
 all_sdewac_freqs = {k : v for k, v in all_sdewac_freqs.items() if len(k)>1 and len(re.findall('\||@|<|>',k))==0}
 ### number of words in the original OLD20 paper
 max_n = 35502
+global other_words
 other_words = sorted(all_sdewac_freqs.items(), key=lambda item : item[1], reverse=True)[:max_n]
 #print(other_words[-1])
 
@@ -73,11 +74,18 @@ def print_stuff(inputs):
     print(inputs)
 
 old20_scores = {w : 0 for w in relevant_words}
+'''
 for w in tqdm(relevant_words):
-    _, lev_vals = multiprocessing_levenshtein([w, other_words])
-    score = numpy.average(sorted(lev_vals, reverse=True)[:20])
+    _, score = multiprocessing_levenshtein([w, other_words])
     #print([w, score])
     old20_scores[w] = score
+'''
+with multiprocessing.Pool() as i:
+    res = i.map(multiprocessing_levenshtein, relevant_words)
+    i.terminate()
+    i.join()
+for w, val in res:
+    old20_scores[w] = val
 
 #with open('old20_scores.tsv', 'w') as o:
 with open(os.path.join('output', 'candidate_nouns_old20.tsv'), 'w') as o:

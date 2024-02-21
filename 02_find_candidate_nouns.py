@@ -73,6 +73,7 @@ counter = 0
 for w in tqdm(nouns_candidates):
     if w in trans_de.keys():
         continue
+    ''' 
     trans = translator.translate(w, src='de', dest='en').text.lower()
     counter += 1
     ### avoiding being kicked out
@@ -80,6 +81,8 @@ for w in tqdm(nouns_candidates):
         time.sleep(600)
         translator = googletrans.Translator()
         counter = 0
+    ''' 
+    trans = 'bug'
     trans_de[w] = trans
 
 with open(os.path.join('output', 'candidate_nouns_min_100.tsv'), 'w') as o:

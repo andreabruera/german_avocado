@@ -16,15 +16,13 @@ with open(os.path.join('output', 'candidate_nouns_all_variables.tsv')) as i:
         line = l.strip().split('\t')
         if l_i == 0:
             header = line.copy()
-            variables = {h : dict() for h in line[1:] if 'lemma' not in h and h not in ['predicted_dominance', 'predicted_arousal', 'predicted_valence']}
+            variables = {h : dict() for h in line[1:] if 'lemma' not in h}
         else:
             for h, val in zip(header, line):
                 if h == 'word':
                     word = val
                     full_words.append(word)
                 elif 'lemma' in h:
-                    continue
-                elif h in ['predicted_dominance', 'predicted_arousal', 'predicted_valence']:
                     continue
                 else:
                     if val.isnumeric():
@@ -46,11 +44,10 @@ remove = [
           ]
 relevant_keys = [h for h in variables.keys() if 'en_' not in h and 'raw_' not in h and h not in remove and 'proto' not in h]
 
-amount_stim = 36
 
 ### reading words from previous experiments
 old_file = os.path.join('output', 'phil_original_annotated_clean.tsv')
-old_goods = dict()
+old_good = dict()
 localizer = dict()
 with open(old_file) as i:
     for l_i, l in enumerate(i):
@@ -77,8 +74,8 @@ with open(old_file) as i:
             label = 'lowA_highS'
         if curr_action > 0. and curr_sound == 0.:
             label = 'highA_lowS'
-        if label not in old_goods.keys():
-            old_goods[label] = set()
+        if label not in old_good.keys():
+            old_good[label] = set()
             localizer[label] = set()
         if line[word] not in full_words:
             print(line[word])
@@ -87,226 +84,228 @@ with open(old_file) as i:
             if eval_val > 0.5:
                 localizer[label].add(line[word])
         else:
-            old_goods[label].add(line[word])
+            old_good[label].add(line[word])
 print('old items')
-print([(k, len(v)) for k, v in old_goods.items()])
+print([(k, len(v)) for k, v in old_good.items()])
 print('old localizers')
 print([(k, len(v)) for k, v in localizer.items()])
+### reading selected nouns
+new_good = {l : v for l, v in old_good.items()}
+new_mid_good = {l : v for l, v in old_good.items()}
 
-### testing p-vals
-ps = list()
-cases = list()
-
-for mode in (
-             'original_exp',
-             'good_only', 
-             #'good_mid',
-             ):
-    print('{}\n\n'.format(mode))
-
-    ### reading selected nouns
-    good = {l : v for l, v in old_goods.items()}
-    if mode != 'original_exp':
-
-
-        folder = 'Stimuli_annotated'
-        for f in os.listdir(folder):
-            if 'tsv' not in f:
+folder = 'Stimuli_annotated'
+for f in os.listdir(folder):
+    if 'tsv' not in f:
+        continue
+    ### category
+    label = '_'.join(f.split('_')[:2])
+    #if label not in good.keys():
+    #    good[label] = set()
+    with open(os.path.join(folder, f)) as i:
+        for l_i, l in enumerate(i):
+            if l_i == 0:
                 continue
-            ### category
-            label = '_'.join(f.split('_')[:2])
-            #if label not in good.keys():
-            #    good[label] = set()
-            with open(os.path.join(folder, f)) as i:
-                for l_i, l in enumerate(i):
-                    if l_i == 0:
-                        continue
-                    line = l.strip().split('\t')
-                    if line[0] == 'word':
-                        continue
-                    if mode == 'good_only':
-                        if line[1] in ['mid', 'bad']:
-                            continue
-                        elif line[1] in ['action', 'sound']:
-                            localizer[label].add(line[0])
-                        else:
-                            good[label].add(line[0])
-                    else:
-                        if line[1] in ['bad']:
-                            continue
-                        elif line[1] in ['action', 'sound']:
-                            localizer[label].add(line[0])
-                        else:
-                            good[label].add(line[0])
+            line = l.strip().split('\t')
+            if line[0] == 'word':
+                continue
+            if line[1] in ['bad']:
+                continue
+            elif line[1] in ['mid']:
+                new_mid_good[label].add(line[0])
+            elif line[1] in ['action', 'sound']:
+                localizer[label].add(line[0])
+            else:
+                ### good
+                new_mid_good[label].add(line[0])
+                new_good[label].add(line[0])
+print('localizer items')
+print([(k, len(v)) for k, v in localizer.items()])
+
+for amount_stim in [36, 40, 42, 48]:
+    for mode, good in (
+                 ('original_exp', old_good),
+                 ('good_only', new_good),
+                 ('good_mid', new_mid_good),
+                 ):
+        print('{}\n\n'.format(mode))
+        ### testing p-vals
+        ps = list()
+        cases = list()
+
+        ### plotting distributions
+        print('good items')
+        print([(k, len(v)) for k, v in good.items()])
         print('localizer items')
         print([(k, len(v)) for k, v in localizer.items()])
-    ### plotting distributions
-    print('good items')
-    print([(k, len(v)) for k, v in good.items()])
-    print('localizer items')
-    print([(k, len(v)) for k, v in localizer.items()])
 
-    ### plotting violinplots
-    violin_folder = os.path.join('violins', mode)
-    os.makedirs(violin_folder, exist_ok=True)
-    xs = [val for val in good.keys()]
-    for k in relevant_keys:
-        #print(k)
+        ### plotting violinplots
+        violin_folder = os.path.join('violins', mode, str(amount_stim))
+        os.makedirs(violin_folder, exist_ok=True)
         xs = [val for val in good.keys()]
-        combs = list(itertools.combinations(xs, r=2))
-        vals = {xs[_] : [float(variables[k][w]) for w in good[xs[_]]] for _ in range(len(xs))}
-        for c in combs:
-            p = scipy.stats.ttest_ind(vals[c[0]], vals[c[1]]).pvalue
-            ps.append(p)
-            cases.append([k, c[0], c[1]])
-        file_name = os.path.join(violin_folder, '{}.jpg'.format(k))
-        fig, ax = pyplot.subplots(constrained_layout=True)
-        for _ in range(len(xs)):
-            ax.violinplot(positions=[_], dataset=[float(variables[k][w]) for w in good[xs[_]]], showmeans=True)
-        ax.set_xticks(range(len(xs)))
-        ax.set_xticklabels([x.replace('_', '_') for x in xs])
-        ax.set_title('{} distributions for selected words'.format(k))
-        pyplot.savefig(file_name)
-        pyplot.clf()
-        pyplot.close()
-    corrected_ps = mne.stats.fdr_correction(ps)[1]
-    #for case, p in zip(cases, corrected_ps):
-    for case, p in zip(cases, ps):
-        if p<=0.05:
-            print([case, p])
-#print(k)
+        for k in relevant_keys:
+            #print(k)
+            xs = [val for val in good.keys()]
+            combs = list(itertools.combinations(xs, r=2))
+            vals = {xs[_] : [float(variables[k][w]) for w in good[xs[_]]] for _ in range(len(xs))}
+            for c in combs:
+                p = scipy.stats.ttest_ind(vals[c[0]], vals[c[1]]).pvalue
+                ps.append(p)
+                cases.append([k, c[0], c[1]])
+            file_name = os.path.join(violin_folder, 'all_{}_{}_{}.jpg'.format(k, mode, str(amount_stim)))
+            fig, ax = pyplot.subplots(constrained_layout=True)
+            for _ in range(len(xs)):
+                ax.violinplot(positions=[_], dataset=[float(variables[k][w]) for w in good[xs[_]]], showmeans=True)
+            ax.set_xticks(range(len(xs)))
+            ax.set_xticklabels([x.replace('_', '_') for x in xs])
+            ax.set_title('{} distributions for selected words'.format(k))
+            pyplot.savefig(file_name)
+            pyplot.clf()
+            pyplot.close()
+        corrected_ps = mne.stats.fdr_correction(ps)[1]
+        #for case, p in zip(cases, corrected_ps):
+        for case, p in zip(cases, ps):
+            if p<=0.05:
+                print([case, p])
 
-### propose selection of stimuli
-'''
-### compute averages for each condition
-
-idxs = [var for var in relevant_keys if 'hand' not in var and 'auditory' not in var]
-exp_idxs = [var for var in relevant_keys if 'hand' in var or 'auditory' in var]
-distances = {w : list() for v in good.values() for w in v}
-### criterion: average across all
-variable_avgs = {var: numpy.average([float(variables[var][w]) for k, v in good.items() for w in v]) for var in idxs}
-exp_avgs = {var: numpy.average([float(variables[var][w]) for k, v in good.items() for w in v]) for var in exp_idxs}
-for _, v in good.items():
-    for w in v:
-        for var, var_avg in variable_avgs.items():
-            distances[w].append(abs(float(variables[var][w])-var_avg))
-
-        if 'lowS' in _:
-            distances[w].append(abs(exp_avgs['predicted_auditory']-float(variables['predicted_auditory'][w])))
-        elif 'highS' in _:
-            distances[w].append(abs(float(variables['predicted_auditory'][w])-exp_avgs['predicted_auditory']))
-        if 'lowA' in _:
-            distances[w].append(abs(exp_avgs['predicted_hand']-float(variables['predicted_hand'][w])))
-        elif 'highA' in _:
-            distances[w].append(abs(float(variables['predicted_hand'][w])-exp_avgs['predicted_hand']))
-distances = {k : numpy.average(v) for k, v in distances.items()}
-'''
-
-distances = dict()
-for good_k, v in good.items():
-    split_k = good_k.split('_')
-    ### every word
-    for w in v:
-        distances[w] = list()
-        ### the thing we really care about are hand and audition
-        for var_i, var in enumerate([
-                                     'predicted_hand', 
-                                     'predicted_auditory',
+        distances = dict()
+        for good_k, v in good.items():
+            split_k = good_k.split('_')
+            ### every word
+            for w in v:
+                distances[w] = list()
+                ### the thing we really care about are hand and audition
+                for var_i, var in enumerate([
+                                             'predicted_hand', 
+                                             'predicted_auditory',
+                                             ]):
+                    ### promoting similarity
+                    rel_keys = [k for k in good.keys() if split_k[var_i] in k and k!=good_k]
+                    #assert len(rel_keys) == 2
+                    assert len(rel_keys) == 1
+                    #all_vars = [var, 'predicted_concreteness']
+                    all_vars = [var]
+                    for all_var in all_vars:
+                        rel_vals = [float(variables[all_var][w_two]) for key in rel_keys for w_two in good[key]]
+                        rel_avg = numpy.average(rel_vals)
+                        dist = abs(rel_avg-float(variables[all_var][w]))
+                        distances[w].append(dist)
+                    '''
+                    ### promoting dissimilarity
+                    unrel_keys = [k for k in good.keys() if split_k[var_i] not in k]
+                    assert len(unrel_keys) == 2
+                    rel_vals = [float(variables[all_var][w_two]) for key in unrel_keys for  w_two in good[key]]
+                    rel_avg = numpy.average(rel_vals)
+                    dist = -abs(rel_avg-float(variables[all_var][w]))
+                    distances[w].append(dist)
+                    '''
+                    ### also trying to match more fundamental variables
+                    '''
+                                 'log10_word_frequency_sdewac',
+                                 'old20_score',
+                                 #'word_average_bigram_frequency',
+                                 #'word_average_trigram_frequency',
+                    '''
+                    for rel, more_var in enumerate([
+                                     'predicted_concreteness',
+                                     'log10_word_frequency_sdewac',
+                                     'old20_score',
                                      ]):
-            ### promoting similarity
-            rel_keys = [k for k in good.keys() if split_k[var_i] in k and k!=good_k]
-            #assert len(rel_keys) == 2
-            assert len(rel_keys) == 1
-            rel_vals = [float(variables[var][w_two]) for key in rel_keys for w_two in good[key]]
-            rel_avg = numpy.average(rel_vals)
-            dist = abs(rel_avg-float(variables[var][w]))
-            distances[w].append(dist)
-            ### promoting dissimilarity
-            unrel_keys = [k for k in good.keys() if split_k[var_i] not in k]
-            assert len(unrel_keys) == 2
-            rel_vals = [float(variables[var][w_two]) for key in unrel_keys for  w_two in good[key]]
-            rel_avg = numpy.average(rel_vals)
-            dist = -abs(rel_avg-float(variables[var][w]))
-            distances[w].append(dist)
-            ### also trying to match more fundamental variables
-            for rel, more_var in enumerate([
-                             'log10_word_frequency_sdewac',
-                             'old20_score',
-                             #'word_average_bigram_frequency',
-                             #'word_average_trigram_frequency',
-                             ]):
-                rel_vals = [float(variables[more_var][w_two]) for key in rel_keys for w_two in good[key]]
-                rel_avg = numpy.average(rel_vals)
-                dist = (0.5/(rel+1))*abs(rel_avg-float(variables[more_var][w]))
-                distances[w].append(dist)
-distances = {w : numpy.average(v) for w, v in distances.items()}
+                        rel_vals = [float(variables[more_var][w_two]) for key in rel_keys for w_two in good[key]]
+                        rel_avg = numpy.average(rel_vals)
+                        dist = (1/(rel+1))*abs(rel_avg-float(variables[more_var][w]))
+                        #dist = (0.75/(rel+1))*abs(rel_avg-float(variables[more_var][w]))
+                        distances[w].append(dist)
+        distances = {w : numpy.average(v) for w, v in distances.items()}
 
-best_good = {label : {w : distances[w] for w in v} for label, v in good.items()}
-best_good = {label : [w[0] for w in sorted(v.items(), key=lambda item : item[1])] for label, v in best_good.items()}
-selected_words = {k : v[:amount_stim*2] for k, v in best_good.items()}
-### criterion: average separately for high/low action/sound
-#best_good = {k : random.sample(list(v), k=len(v)) for k, v in good.items()}
-for v in selected_words.values():
-    assert len(v) == amount_stim*2
+        best_good = {label : {w : distances[w] for w in v} for label, v in good.items()}
+        best_good = {label : [w[0] for w in sorted(v.items(), key=lambda item : item[1])] for label, v in best_good.items()}
+        if mode == 'original_exp':
+            selected_words = {k : v[:amount_stim] for k, v in best_good.items()}
+            for v in selected_words.values():
+                assert len(v) == amount_stim
+        else:
+            selected_words = {k : v[:amount_stim*2] for k, v in best_good.items()}
+            for v in selected_words.values():
+                assert len(v) == amount_stim*2
+        ### criterion: average separately for high/low action/sound
+        #best_good = {k : random.sample(list(v), k=len(v)) for k, v in good.items()}
 
-### plotting violinplots
-violin_folder = os.path.join('violins', 'best_for_experiment')
-os.makedirs(violin_folder, exist_ok=True)
-xs = [val for val in best_good.keys()]
-### testing p-vals
-ps = list()
-cases = list()
-combs = list(itertools.combinations(xs, r=2))
-for k in relevant_keys:
-    vals = {xs[_] : [float(variables[k][w]) for w in selected_words[xs[_]]] for _ in range(len(xs))}
-    for c in combs:
-        p = scipy.stats.ttest_ind(vals[c[0]], vals[c[1]]).pvalue
-        ps.append(p)
-        cases.append([k, c[0], c[1]])
-    file_name = os.path.join(violin_folder, '{}.jpg'.format(k))
-    fig, ax = pyplot.subplots(constrained_layout=True)
-    for _ in range(len(xs)):
-        ax.violinplot(positions=[_], dataset=[float(variables[k][w]) for w in best_good[xs[_]][:amount_stim*2]], showmeans=True)
-    ax.set_xticks(range(len(xs)))
-    ax.set_xticklabels([x.replace('_', '_') for x in xs])
-    ax.set_title('{} distributions for selected words'.format(k))
-    pyplot.savefig(file_name)
-    pyplot.clf()
-    pyplot.close()
+        ### plotting violinplots
+        violin_folder = os.path.join('violins', 'selected', mode, str(amount_stim))
+        os.makedirs(violin_folder, exist_ok=True)
+        xs = [val for val in best_good.keys()]
+        ### testing p-vals
+        ps = list()
+        cases = list()
+        combs = list(itertools.combinations(xs, r=2))
+        for k in relevant_keys:
+            vals = {xs[_] : [float(variables[k][w]) for w in selected_words[xs[_]]] for _ in range(len(xs))}
+            for c in combs:
+                p = scipy.stats.ttest_ind(vals[c[0]], vals[c[1]]).pvalue
+                ps.append(p)
+                cases.append([k, c[0], c[1]])
+            file_name = os.path.join(violin_folder, '{}_{}_{}.jpg'.format(str(amount_stim), mode, k))
+            fig, ax = pyplot.subplots(constrained_layout=True)
+            for _ in range(len(xs)):
+                ax.violinplot(positions=[_], dataset=[float(variables[k][w]) for w in best_good[xs[_]][:amount_stim*2]], showmeans=True)
+            ax.set_xticks(range(len(xs)))
+            ax.set_xticklabels([x.replace('_', '_') for x in xs])
+            ax.set_title('{} distributions for selected words'.format(k))
+            pyplot.savefig(file_name)
+            pyplot.clf()
+            pyplot.close()
 
-corrected_ps = mne.stats.fdr_correction(ps)[1]
-#for case, p in zip(cases, ps):
-for case, p in zip(cases, corrected_ps):
-    if p<=0.05:
-        print([case, p])
-print(k)
+        corrected_ps = mne.stats.fdr_correction(ps)[1]
+        #for case, p in zip(cases, ps):
+        for case, p in zip(cases, corrected_ps):
+            if p<=0.05:
+                print([case, p])
+        print(k)
+        ### corrected p-values
+        corr_ps = dict()
+        for k in relevant_keys:
+            low_sound = [float(variables[k][w])  for _ in xs for w in selected_words[_] if 'lowS' in _]
+            hi_sound = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'highS' in _]
+            sound_comp = scipy.stats.ttest_ind(low_sound, hi_sound)
+            low_action = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'lowA' in _]
+            hi_action = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'highA' in _]
+            action_comp = scipy.stats.ttest_ind(low_action, hi_action)
+            corr_ps[k] = [sound_comp.pvalue, action_comp.pvalue]
+        sound_corr = mne.stats.fdr_correction([corr_ps[k][0] for k in relevant_keys])[1]
+        action_corr = mne.stats.fdr_correction([corr_ps[k][1] for k in relevant_keys])[1]
+        for k_i, k in enumerate(relevant_keys):
+            corr_ps[k] = [sound_corr[k_i], action_corr[k_i]]
 
-### writing to files the pairwise tests
-with open('pairwise_comparisons_main_experiment.tsv', 'w') as o:
-    o.write('variable\tlow_sound_avg_zscore\thigh_sound_std\tsound_T\tsound_p\t'\
-                      'low_action_avg_zscore\thigh_action_std\taction_T\taction_p\n')
-    for k in relevant_keys:
-        o.write('{}\t'.format(k))
-        ### sound
-        low_sound = [float(variables[k][w])  for _ in xs for w in selected_words[_] if 'lowS' in _]
-        o.write('{}\t{}\t'.format(round(numpy.average(low_sound), 4),round(numpy.std(low_sound), 4)))
-        hi_sound = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'highS' in _]
-        o.write('{}\t{}\t'.format(round(numpy.average(hi_sound), 4),round(numpy.std(hi_sound), 4)))
-        stat_comp = scipy.stats.ttest_ind(low_sound, hi_sound)
-        o.write('{}\t{}\t'.format(round(stat_comp.statistic, 4),round(stat_comp.pvalue, 5)))
-        ### action
-        low_action = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'lowA' in _]
-        o.write('{}\t{}\t'.format(round(numpy.average(low_action), 4),round(numpy.std(low_action), 4)))
-        hi_action = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'highA' in _]
-        o.write('{}\t{}\t'.format(round(numpy.average(hi_action), 4),round(numpy.std(hi_action), 4)))
-        stat_comp = scipy.stats.ttest_ind(low_action, hi_action)
-        o.write('{}\t{}\n'.format(round(stat_comp.statistic, 4),round(stat_comp.pvalue, 5)))
+        ### writing to files the pairwise tests
+        res_f = os.path.join('txt_results', mode, str(amount_stim))
+        os.makedirs(res_f, exist_ok=True)
+        with open(os.path.join(res_f, 'pairwise_comparisons_main_experiment_{}_{}.tsv'.format(mode, str(amount_stim))), 'w') as o:
+            o.write('variable\tlow_sound_avg_zscore\thigh_sound_std\tsound_T\tsound_p_raw\tsound_p_corrected'\
+                              'low_action_avg_zscore\thigh_action_std\taction_T\taction_p\taction_p_corrected\n')
+            for k in relevant_keys:
+                o.write('{}\t'.format(k))
+                ### sound
+                low_sound = [float(variables[k][w])  for _ in xs for w in selected_words[_] if 'lowS' in _]
+                o.write('{}\t{}\t'.format(round(numpy.average(low_sound), 4),round(numpy.std(low_sound), 4)))
+                hi_sound = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'highS' in _]
+                o.write('{}\t{}\t'.format(round(numpy.average(hi_sound), 4),round(numpy.std(hi_sound), 4)))
+                stat_comp = scipy.stats.ttest_ind(low_sound, hi_sound)
+                o.write('{}\t{}\t'.format(round(stat_comp.statistic, 4),round(stat_comp.pvalue, 5)))
+                o.write('{}\t'.format(round(corr_ps[k][0], 5)))
+                ### action
+                low_action = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'lowA' in _]
+                o.write('{}\t{}\t'.format(round(numpy.average(low_action), 4),round(numpy.std(low_action), 4)))
+                hi_action = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'highA' in _]
+                o.write('{}\t{}\t'.format(round(numpy.average(hi_action), 4),round(numpy.std(hi_action), 4)))
+                stat_comp = scipy.stats.ttest_ind(low_action, hi_action)
+                o.write('{}\t{}\t'.format(round(stat_comp.statistic, 4),round(stat_comp.pvalue, 5)))
+                o.write('{}\n'.format(round(corr_ps[k][1], 5)))
 
-with open('main_experiment_words.tsv', 'w') as o:
-    o.write('word\tcategory\n')
-    for cat, ws in selected_words.items():
-        for w in ws:
-            o.write('{}\t{}\n'.format(w, cat))
+        with open(os.path.join(res_f, 'main_experiment_words_{}_{}.tsv'.format(mode, str(amount_stim))), 'w') as o:
+            o.write('word\tcategory\n')
+            for cat, ws in selected_words.items():
+                for w in ws:
+                    o.write('{}\t{}\n'.format(w, cat))
 
 '''
 ### localizer now
