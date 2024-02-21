@@ -44,6 +44,16 @@ remove = [
           ]
 relevant_keys = [h for h in variables.keys() if 'en_' not in h and 'raw_' not in h and h not in remove and 'proto' not in h]
 
+### reading latest corrections
+corrections = dict()
+with open('phil_correction_21_02.tsv') as i:
+    for l_i, l in enumerate(i):
+        if l_i == 0:
+            continue
+        line = l.strip().split('\t')
+        if len(line) > 2:
+            if line[2].strip() in ['bad', 'mid']:
+                corrections[line[0].strip()] = line[2].strip()
 
 ### reading words from previous experiments
 old_file = os.path.join('output', 'phil_original_annotated_clean.tsv')
@@ -77,6 +87,7 @@ with open(old_file) as i:
         if label not in old_good.keys():
             old_good[label] = set()
             localizer[label] = set()
+        marker = False
         if line[word] not in full_words:
             print(line[word])
             continue
@@ -90,7 +101,7 @@ with open(old_file) as i:
             continue
         if float(variables['predicted_concreteness'][line[word]]) < .9 and 'lowA' in label:
             continue
-        if float(variables['predicted_concreteness'][line[word]]) > 2.5 and 'highA' in label:
+        if float(variables['predicted_concreteness'][line[word]]) > 2.3 and 'highA' in label:
             continue
         if float(variables['predicted_concreteness'][line[word]]) > 1.3 and 'highA' in label:
             if random.choice([0, 1]) == 1:
@@ -107,9 +118,10 @@ print('old items')
 print([(k, len(v)) for k, v in old_good.items()])
 print('old localizers')
 print([(k, len(v)) for k, v in localizer.items()])
+
 ### reading selected nouns
-new_good = {l : v for l, v in old_good.items()}
-new_mid_good = {l : v for l, v in old_good.items()}
+new_good = {l : v for l, v in old_good.items() if l not in corrections.keys()}
+new_mid_good = {l : v for l, v in old_good.items() if l not in corrections.keys() or corrections[l]=='mid'}
 
 folder = 'Stimuli_annotated'
 for f in os.listdir(folder):
@@ -136,7 +148,7 @@ for f in os.listdir(folder):
                 continue
             if float(variables['predicted_concreteness'][line[0]]) < .9 and 'lowA' in label:
                 continue
-            if float(variables['predicted_concreteness'][line[0]]) > 2.5 and 'highA' in label:
+            if float(variables['predicted_concreteness'][line[0]]) > 2.3 and 'highA' in label:
                 continue
             if float(variables['predicted_concreteness'][line[0]]) > 1.3 and 'highA_lowS' in label:
                 if random.choice([0, 1]) == 1:
@@ -144,6 +156,8 @@ for f in os.listdir(folder):
                     continue
                 else:
                     print('kept')
+            if line[0] in corrections.keys():
+                line[1] = corrections[line[0]]
             if line[1] in ['bad']:
                 continue
             elif line[1] in ['mid']:
