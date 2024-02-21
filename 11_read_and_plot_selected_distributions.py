@@ -99,11 +99,11 @@ with open(old_file) as i:
             continue
         if float(variables['log10_word_frequency_sdewac'][line[word]]) > 3.8 and 'lowA_lowS' in label:
             continue
-        if float(variables['predicted_concreteness'][line[word]]) < .9 and 'lowA' in label:
+        if float(variables['predicted_concreteness'][line[word]]) < .75 and 'lowA' in label:
             continue
-        if float(variables['predicted_concreteness'][line[word]]) > 2.3 and 'highA' in label:
+        if float(variables['predicted_concreteness'][line[word]]) > 2.5 and 'highA' in label:
             continue
-        if float(variables['predicted_concreteness'][line[word]]) > 1.3 and 'highA' in label:
+        if float(variables['predicted_concreteness'][line[word]]) > 1.75 and 'highA' in label:
             if random.choice([0, 1]) == 1:
                 print('remove')
                 continue
@@ -119,9 +119,10 @@ print([(k, len(v)) for k, v in old_good.items()])
 print('old localizers')
 print([(k, len(v)) for k, v in localizer.items()])
 
+old_good = {l : v for l, v in old_good.items()}
 ### reading selected nouns
-new_good = {l : v for l, v in old_good.items() if l not in corrections.keys()}
-new_mid_good = {l : v for l, v in old_good.items() if l not in corrections.keys() or corrections[l]=='mid'}
+new_good = {l : v for l, v in old_good.items()}
+new_mid_good = {l : v for l, v in old_good.items()}
 
 folder = 'Stimuli_annotated'
 for f in os.listdir(folder):
@@ -148,7 +149,7 @@ for f in os.listdir(folder):
                 continue
             if float(variables['predicted_concreteness'][line[0]]) < .9 and 'lowA' in label:
                 continue
-            if float(variables['predicted_concreteness'][line[0]]) > 2.3 and 'highA' in label:
+            if float(variables['predicted_concreteness'][line[0]]) > 2.4 and 'highA' in label:
                 continue
             if float(variables['predicted_concreteness'][line[0]]) > 1.3 and 'highA_lowS' in label:
                 if random.choice([0, 1]) == 1:
@@ -156,9 +157,6 @@ for f in os.listdir(folder):
                     continue
                 else:
                     print('kept')
-            if line[0] in corrections.keys():
-                print(line[0])
-                line[1] = corrections[line[0]]
             if line[1] in ['bad']:
                 continue
             elif line[1] in ['mid']:
@@ -167,10 +165,16 @@ for f in os.listdir(folder):
                 localizer[label].add(line[0])
             else:
                 ### good
+                print(line[0])
                 new_mid_good[label].add(line[0])
                 new_good[label].add(line[0])
 print('localizer items')
 print([(k, len(v)) for k, v in localizer.items()])
+
+old_good = {l : set([w for w in v if w not in corrections.keys()]) for l, v in old_good.items()}
+### reading selected nouns
+new_good = {l : set([w for w in v if w not in corrections.keys()]) for l, v in new_good.items()}
+new_mid_good = {l : set([w for w in v if w not in corrections.keys() or corrections[w]=='mid']) for l, v in new_mid_good.items()}
 
 for amount_stim in [36, 42, 48]:
     for mode, good in (
