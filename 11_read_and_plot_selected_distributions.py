@@ -91,26 +91,26 @@ with open(old_file) as i:
         if line[word] not in full_words:
             print(line[word])
             continue
-        if float(variables['word_average_trigram_frequency'][line[word]]) > 11500000 and 'lowS' in label:
+        if float(variables['word_average_trigram_frequency'][line[word]]) > 10500000 and 'lowS' in label:
             continue
         if float(variables['predicted_hand'][line[word]]) > .15 and 'lowA_lowS' in label:
             continue
         if float(variables['old20_score'][line[word]]) < 4.5 and 'lowA_lowS' in label:
             continue
-        if float(variables['log10_word_frequency_sdewac'][line[word]]) > 3.8 and 'lowA_lowS' in label:
+        if float(variables['log10_word_frequency_sdewac'][line[word]]) > 4. and 'lowA_lowS' in label:
             continue
         if float(variables['predicted_concreteness'][line[word]]) < .75 and 'lowA' in label:
             continue
-        if float(variables['predicted_concreteness'][line[word]]) > 2.3 and 'highA_lowS' in label:
+        if float(variables['predicted_concreteness'][line[word]]) > 1.5 and 'highA_lowS' in label:
             continue
-        if float(variables['predicted_concreteness'][line[word]]) > 2.7 and 'highA_highS' in label:
+        if float(variables['predicted_concreteness'][line[word]]) > 2.3 and 'highA_highS' in label:
             continue
-        if float(variables['predicted_concreteness'][line[word]]) > 1.3 and 'highA' in label:
-            if random.choice([0, 1]) == 1:
-                print('remove')
-                continue
-            else:
-                print('kept')
+        #if float(variables['predicted_concreteness'][line[word]]) > 1.3 and 'highA' in label:
+        #    if random.choice([0, 1]) == 1:
+        #        print('remove')
+        ##        continue
+        #    else:
+        #        print('kept')
         if eval_val < 0.9:
             if eval_val > 0.5:
                 localizer[label].add(line[word])
@@ -141,26 +141,26 @@ for f in os.listdir(folder):
             line = l.strip().split('\t')
             if line[0] == 'word':
                 continue
-            if float(variables['word_average_trigram_frequency'][line[0]]) > 11500000 and 'lowS' in label:
+            if float(variables['word_average_trigram_frequency'][line[0]]) > 10500000 and 'lowS' in label:
                 continue
             if float(variables['predicted_hand'][line[0]]) > .15 and 'lowA_lowS' in label:
                 continue
             if float(variables['old20_score'][line[0]]) < 4.5 and 'lowA_lowS' in label:
                 continue
-            if float(variables['log10_word_frequency_sdewac'][line[0]]) > 3.8 and 'lowA_lowS' in label:
+            if float(variables['log10_word_frequency_sdewac'][line[0]]) > 4. and 'lowA_lowS' in label:
                 continue
             if float(variables['predicted_concreteness'][line[0]]) < .75 and 'lowA' in label:
                 continue
-            if float(variables['predicted_concreteness'][line[0]]) > 2.3 and 'highA_lowS' in label:
+            if float(variables['predicted_concreteness'][line[0]]) > 2. and 'highA_lowS' in label:
                 continue
-            if float(variables['predicted_concreteness'][line[0]]) > 2.7 and 'highA_highS' in label:
+            if float(variables['predicted_concreteness'][line[0]]) > 2.3 and 'highA_highS' in label:
                 continue
-            if float(variables['predicted_concreteness'][line[0]]) > 1.3 and 'highA_lowS' in label:
-                if random.choice([0, 1]) == 1:
-                    print('remove')
-                    continue
-                else:
-                    print('kept')
+            #if float(variables['predicted_concreteness'][line[0]]) > 1.3 and 'highA_lowS' in label:
+            #    if random.choice([0, 1]) == 1:
+            #        print('remove')
+            #        continue
+            #    else:
+            #        print('kept')
             if line[1] in ['bad']:
                 continue
             elif line[1] in ['mid']:
