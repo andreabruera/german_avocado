@@ -6,7 +6,7 @@ Vordach	lowA_lowS
 Einhorn	lowA_lowS		
 Stachel	lowA_lowS		
 Veranda	lowA_lowS		
-FontŠne	lowA_lowS	bad	really low sound?
+Fontäne	lowA_lowS	bad	really low sound?
 Schleim	lowA_lowS		
 Fenchel	lowA_lowS		
 Bildnis	lowA_lowS		
@@ -17,11 +17,11 @@ Mahnmal	lowA_lowS
 Thymian	lowA_lowS		
 Viadukt	lowA_lowS	bad	too unfamiliar?
 Schlund	lowA_lowS		
-GebŸsch	lowA_lowS		
+Gebüsch	lowA_lowS		
 Stausee	lowA_lowS	mid	really low sound?
 Gefieder	lowA_lowS		
 Vorstadt	lowA_lowS	bad	"very similar to ""Vorplatz"" and ""Vorraum"""
-HŠmatom	lowA_lowS	bad	too unfamiliar?
+Hämatom	lowA_lowS	bad	too unfamiliar?
 Piranha	lowA_lowS		
 Schuppe	lowA_lowS		
 Falter	lowA_lowS		
@@ -40,7 +40,7 @@ Zapfen	lowA_lowS
 Lavendel	lowA_lowS		
 Pavillon	lowA_lowS		
 Vorhof	lowA_lowS		
-Wšlkchen	lowA_lowS		
+Wölkchen	lowA_lowS		
 Zisterne	lowA_lowS		
 Schwefel	lowA_lowS		
 Kiesel	lowA_lowS		
@@ -53,21 +53,21 @@ Diagramm	lowA_lowS
 Rebstock	lowA_lowS		
 Krabbe	lowA_lowS		
 Pappel	lowA_lowS		
-PrŠrie	lowA_lowS		
+Prärie	lowA_lowS		
 Emblem	lowA_lowS		
 Elektron	lowA_lowS		
 Steinweg	lowA_lowS		
-LŠtzchen	lowA_lowS		
+Lätzchen	lowA_lowS		
 Sandbank	lowA_lowS		
-Gehšft	lowA_lowS		
+Gehöft	lowA_lowS		
 Vorplatz	lowA_lowS		
 Abhang	lowA_lowS		
 Flagge	lowA_lowS		
 Sockel	lowA_lowS		
 Krater	lowA_lowS		
-PrŠparat	lowA_lowS	mid	quite abstract & really low action?
+Präparat	lowA_lowS	mid	quite abstract & really low action?
 Hermelin	lowA_lowS		
-AquŠdukt	lowA_lowS	bad	too unfamiliar?
+Aquädukt	lowA_lowS	bad	too unfamiliar?
 Morast	lowA_lowS	bad	too unfamiliar?
 Torbogen	lowA_lowS		
 Sensor	lowA_lowS		
@@ -251,7 +251,7 @@ Zahnpaste	highA_lowS
 Strick	highA_lowS		
 Serviette	highA_lowS		
 Kleidung	highA_lowS		
-StichsŠge	highA_lowS	mid	really low sound?
+Stichsäge	highA_lowS	mid	really low sound?
 Lanze	highA_lowS		
 Sohle	highA_lowS		
 Gurke	highA_lowS		
@@ -376,7 +376,7 @@ Blockflšte	highA_highS
 Schlagwerk	highA_highS		
 Brecheisen	highA_highS		
 Beil	highA_highS		
-ZahnbŸrste	highA_highS	mid	only indirect sound association
+Zahnbürste	highA_highS	mid	only indirect sound association
 Schlagzeug	highA_highS		
 Feuerwaffe	highA_highS		
 Brandbombe	highA_highS		

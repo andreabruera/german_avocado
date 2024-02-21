@@ -157,6 +157,7 @@ for f in os.listdir(folder):
                 else:
                     print('kept')
             if line[0] in corrections.keys():
+                print(line[0])
                 line[1] = corrections[line[0]]
             if line[1] in ['bad']:
                 continue
