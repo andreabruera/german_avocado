@@ -99,6 +99,12 @@ with open(old_file) as i:
             continue
         if float(variables['log10_word_frequency_sdewac'][line[word]]) > 4. and 'lowA_lowS' in label:
             continue
+        ### amount simt: 36 & 42
+        if float(variables['log10_word_frequency_sdewac'][line[word]]) > 4.5 and 'lowA' in label:
+            continue
+        ### amount simt: 36
+        if float(variables['predicted_concreteness'][line[word]]) < .85 and 'lowA' in label:
+            continue
         if float(variables['predicted_concreteness'][line[word]]) < .75 and 'lowA' in label:
             continue
         if float(variables['predicted_concreteness'][line[word]]) > 1.5 and 'highA_lowS' in label:
@@ -149,6 +155,12 @@ for f in os.listdir(folder):
                 continue
             if float(variables['log10_word_frequency_sdewac'][line[0]]) > 4. and 'lowA_lowS' in label:
                 continue
+            ### amount simt: 36 & 42
+            if float(variables['log10_word_frequency_sdewac'][line[0]]) > 4.5 and 'lowA' in label:
+                continue
+            ### amount simt: 36
+            if float(variables['predicted_concreteness'][line[0]]) < .85 and 'lowA' in label:
+                continue
             if float(variables['predicted_concreteness'][line[0]]) < .75 and 'lowA' in label:
                 continue
             if float(variables['predicted_concreteness'][line[0]]) > 2. and 'highA_lowS' in label:
@@ -181,8 +193,10 @@ new_good = {l : set([w for w in v if w not in corrections.keys()]) for l, v in n
 new_mid_good = {l : set([w for w in v if w not in corrections.keys() or corrections[w]=='mid']) for l, v in new_mid_good.items()}
 
 for amount_stim in [
-                    #36, 42, 
-                    48]:
+                    36, 
+                    #42, 
+                    #48
+                    ]:
     for mode, good in (
                  ('original_exp', old_good),
                  ('good_only', new_good),
