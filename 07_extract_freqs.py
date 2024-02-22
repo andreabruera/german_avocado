@@ -29,8 +29,11 @@ with open(os.path.join('output', 'candidate_nouns_freqs.tsv'), 'w') as o:
             o.write('{}\t'.format(round(numpy.log10(word_freqs[w]), 6)))
         except KeyError:
             o.write('na\tna\t')
-        o.write('{}\t'.format(lemma_freqs[w]))
-        o.write('{}\t'.format(round(numpy.log10(lemma_freqs[w]), 6)))
+        try:
+            o.write('{}\t'.format(lemma_freqs[w]))
+            o.write('{}\t'.format(round(numpy.log10(lemma_freqs[w]), 6)))
+        except KeyError:
+            o.write('na\tna\t')
         ### bigram freq
         ### words
         bigram = list()

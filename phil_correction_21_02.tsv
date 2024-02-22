@@ -448,3 +448,32 @@ Kartoffel	highA_lowS
 Spaghetti	highA_lowS		
 Scharnier	highA_lowS		
 Kimono	highA_lowS	mid	unfamiliar?
+Telegraf	lowA_highS	mid	some action association
+Staudamm	lowA_highS		
+Jaguar	lowA_highS		
+Saloon	lowA_highS		
+Schwalbe	lowA_highS		
+Theater	lowA_highS		
+Grille	lowA_highS		
+Ferkel	lowA_highS		
+Marder	lowA_highS		
+Kakadu	lowA_highS		
+Markise	highA_lowS	mid	some sound association?
+Möbel	highA_lowS	mid	very general
+Konsole	highA_highS	mid	really high sound?
+Trommel	highA_highS		
+Drucker	highA_highS		
+Dynamit	highA_highS		
+Roboter	highA_highS	mid	really high action?
+Propeller	lowA_highS		
+Telegraph	lowA_highS	bad	"identical to ""Telegraf"""
+Locher	highA_lowS	mid	some sound association?
+Lineal	highA_lowS		
+Gemüse	highA_lowS	mid	very general
+Ordner	highA_lowS		
+Skizze	highA_lowS		
+Gerte	highA_lowS	mid	some sound association?
+Sessel	highA_lowS		
+Spielzeug	highA_highS	mid	really high sound?
+Armlehne	highA_lowS	mid	really high action?
+Bagger	highA_highS	mid	really high action?

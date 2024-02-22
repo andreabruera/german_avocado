@@ -28,6 +28,7 @@ with open(os.path.join('output', 'candidate_nouns_all_variables.tsv')) as i:
                     if val.isnumeric():
                         val = float(val)
                         if 'gram' in h:
+                            print(h)
                             val = numpy.log10(val)
                     variables[h][word] = val
 
@@ -91,8 +92,7 @@ with open(old_file) as i:
         if line[word] not in full_words:
             print(line[word])
             continue
-        if float(variables['word_average_trigram_frequency'][line[word]]) > 10500000 and 'lowS' in label:
-            continue
+        '''
         if float(variables['predicted_hand'][line[word]]) > .15 and 'lowA_lowS' in label:
             continue
         if float(variables['old20_score'][line[word]]) < 4.5 and 'lowA_lowS' in label:
@@ -100,11 +100,11 @@ with open(old_file) as i:
         if float(variables['log10_word_frequency_sdewac'][line[word]]) > 4. and 'lowA_lowS' in label:
             continue
         ### amount simt: 36 & 42
-        if float(variables['log10_word_frequency_sdewac'][line[word]]) > 4.5 and 'lowA' in label:
-            continue
+        #if float(variables['log10_word_frequency_sdewac'][line[word]]) > 4.5 and 'lowA' in label:
+        #    continue
         ### amount simt: 36
-        if float(variables['predicted_concreteness'][line[word]]) < .85 and 'lowA' in label:
-            continue
+        #if float(variables['predicted_concreteness'][line[word]]) < .85 and 'lowA' in label:
+        #    continue
         if float(variables['predicted_concreteness'][line[word]]) < .75 and 'lowA' in label:
             continue
         if float(variables['predicted_concreteness'][line[word]]) > 1.5 and 'highA_lowS' in label:
@@ -117,6 +117,15 @@ with open(old_file) as i:
         ##        continue
         #    else:
         #        print('kept')
+        '''
+        if float(variables['predicted_concreteness'][line[word]]) > 2. and 'highA_lowS' in label:
+            continue
+        if float(variables['predicted_concreteness'][line[word]]) < 1.1 and 'lowA_lowS' in label:
+            continue
+        if float(variables['word_average_trigram_frequency'][line[word]]) > 10500000 and 'lowA_lowS' in label:
+            continue
+        if float(variables['log10_word_frequency_sdewac'][line[word]]) > 3.9 and 'lowA_lowS' in label:
+            continue
         if eval_val < 0.9:
             if eval_val > 0.5:
                 localizer[label].add(line[word])
@@ -147,6 +156,7 @@ for f in os.listdir(folder):
             line = l.strip().split('\t')
             if line[0] == 'word':
                 continue
+            '''
             if float(variables['word_average_trigram_frequency'][line[0]]) > 10500000 and 'lowS' in label:
                 continue
             if float(variables['predicted_hand'][line[0]]) > .15 and 'lowA_lowS' in label:
@@ -156,16 +166,23 @@ for f in os.listdir(folder):
             if float(variables['log10_word_frequency_sdewac'][line[0]]) > 4. and 'lowA_lowS' in label:
                 continue
             ### amount simt: 36 & 42
-            if float(variables['log10_word_frequency_sdewac'][line[0]]) > 4.5 and 'lowA' in label:
-                continue
             ### amount simt: 36
-            if float(variables['predicted_concreteness'][line[0]]) < .85 and 'lowA' in label:
-                continue
+            #if float(variables['predicted_concreteness'][line[0]]) < .85 and 'lowA' in label:
+            #    continue
             if float(variables['predicted_concreteness'][line[0]]) < .75 and 'lowA' in label:
                 continue
             if float(variables['predicted_concreteness'][line[0]]) > 2. and 'highA_lowS' in label:
                 continue
             if float(variables['predicted_concreteness'][line[0]]) > 2.3 and 'highA_highS' in label:
+                continue
+            '''
+            if float(variables['predicted_concreteness'][line[0]]) > 2. and 'highA_lowS' in label:
+                continue
+            if float(variables['predicted_concreteness'][line[0]]) < 1.1 and 'lowA_lowS' in label:
+                continue
+            if float(variables['word_average_trigram_frequency'][line[0]]) > 7500000 and 'lowA_lowS' in label:
+                continue
+            if float(variables['log10_word_frequency_sdewac'][line[0]]) > 3.9 and 'lowA_lowS' in label:
                 continue
             #if float(variables['predicted_concreteness'][line[0]]) > 1.3 and 'highA_lowS' in label:
             #    if random.choice([0, 1]) == 1:
@@ -181,7 +198,7 @@ for f in os.listdir(folder):
                 localizer[label].add(line[0])
             else:
                 ### good
-                print(line[0])
+                #print(line[0])
                 new_mid_good[label].add(line[0])
                 new_good[label].add(line[0])
 print('localizer items')
@@ -194,13 +211,13 @@ new_mid_good = {l : set([w for w in v if w not in corrections.keys() or correcti
 
 for amount_stim in [
                     36, 
-                    #42, 
-                    #48
+                    42, 
+                    48
                     ]:
     for mode, good in (
-                 ('original_exp', old_good),
+                 #('original_exp', old_good),
                  ('good_only', new_good),
-                 ('good_mid', new_mid_good),
+                 #('good_mid', new_mid_good),
                  ):
         print('{}\n\n'.format(mode))
         ### testing p-vals
@@ -285,6 +302,7 @@ for amount_stim in [
                                      'log10_word_frequency_sdewac',
                                      #'word_length',
                                      #'predicted_concreteness',
+                                     #'predicted_visual',
                                      ]):
                         rel_vals = [float(variables[more_var][w_two]) for key in rel_keys for w_two in good[key]]
                         rel_avg = numpy.average(rel_vals)
