@@ -384,7 +384,7 @@ Tuba	highA_highS
 Klarinette	highA_highS		
 Elektron	lowA_lowS	mid	not really an object
 Lätzchen	lowA_lowS		
-Pappel	lowA_lowS		
+Rohrstock	highA_highS	mid	not really high sound
 Prärie	lowA_lowS		
 Emblem	lowA_lowS		
 Vorplatz	lowA_lowS	bad	"too similar to ""Vorzimmer"""
@@ -393,13 +393,13 @@ Torbogen	lowA_lowS
 Hermelin	lowA_lowS	bad	too unfamiliar
 Hornhaut	lowA_lowS	mid	low action?
 Bakterium	lowA_lowS		
-Wacholder	lowA_lowS		
+Telefax	lowA_highS	mid	action association
 Schalotte	lowA_lowS		
-Gletscher	lowA_lowS		
+Router	lowA_lowS	bad	not low-A low-S
 Mausoleum	lowA_lowS		
-Sarkophag	lowA_lowS		
+Sägemühle	lowA_highS	mid	action association?
 Vorzimmer	lowA_lowS		
-Sandstein	lowA_lowS		
+Vitrine	highA_lowS	mid	not really high action
 Labyrinth	lowA_lowS	mid	low action?
 Waschbär	lowA_highS	mid	really high sound?
 Brandung	lowA_highS		

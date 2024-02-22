@@ -275,6 +275,16 @@ for amount_stim in [
             selected_words = {k : v[:amount_stim*2] for k, v in best_good.items()}
             for v in selected_words.values():
                 assert len(v) == amount_stim*2
+        ### hard-coding phil's words
+        hard_code = [
+                     'Pferd', 
+                     'Kind', 
+                     'Baby', 
+                     'Säugling',
+                     ]
+        hard_code = [w for w in hard_code if w not in selected_words['highA_highS']]
+        selected_words['highA_highS'] = hard_code + selected_words['highA_highS']
+        selected_words['highA_highS'] = selected_words['highA_highS'][:amount_stim*2]
         ### criterion: average separately for high/low action/sound
         #best_good = {k : random.sample(list(v), k=len(v)) for k, v in good.items()}
 
