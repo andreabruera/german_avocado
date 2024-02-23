@@ -3,7 +3,6 @@ Grabmal	lowA_lowS
 Stachel	lowA_lowS
 Einhorn	lowA_lowS
 Pfeiler	lowA_lowS
-Libelle	lowA_lowS
 Schweif	lowA_lowS
 Mahnmal	lowA_lowS
 Molekül	lowA_lowS
@@ -83,6 +82,7 @@ Tentakel	lowA_lowS
 Schleier	lowA_lowS
 Statue	lowA_lowS
 Pavillon	lowA_lowS
+Quartier	lowA_lowS
 Papagei	lowA_highS
 Gorilla	lowA_highS
 Tornado	lowA_highS
@@ -152,8 +152,8 @@ Fluss	lowA_highS
 Schaf	lowA_highS
 Amsel	lowA_highS
 Singvogel	lowA_highS
-Wasserwerk	lowA_highS
 Elch	lowA_highS
+Wasserwerk	lowA_highS
 Helikopter	lowA_highS
 Affe	lowA_highS
 Wasserfall	lowA_highS
@@ -200,8 +200,8 @@ Bikini	highA_lowS
 Krücke	highA_lowS
 Lineal	highA_lowS
 Schlaufe	highA_lowS
-Prothese	highA_lowS
 Butter	highA_lowS
+Prothese	highA_lowS
 Webstuhl	highA_lowS
 Bumerang	highA_lowS
 Peperoni	highA_lowS
@@ -216,8 +216,8 @@ Knauf	highA_lowS
 Textilie	highA_lowS
 Himbeere	highA_lowS
 Kartoffel	highA_lowS
-Karabiner	highA_lowS
 Anker	highA_lowS
+Karabiner	highA_lowS
 Toast	highA_lowS
 Rollstuhl	highA_lowS
 Tabak	highA_lowS
