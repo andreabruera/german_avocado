@@ -11,7 +11,7 @@ Schleim	lowA_lowS
 Fenchel	lowA_lowS		
 Bildnis	lowA_lowS		
 Pfeiler	lowA_lowS		
-Strauch	lowA_lowS		
+Schwein	lowA_highS	mid	action association?
 Koralle	lowA_lowS		
 Mahnmal	lowA_lowS		
 Thymian	lowA_lowS		
@@ -85,18 +85,18 @@ Kruste	lowA_lowS
 Statue	lowA_lowS		
 Heroin	lowA_lowS	bad	emotional valence
 Talisman	lowA_lowS		
-Eidechse	lowA_lowS		
+Mundstück	highA_highS	mid	really high sound?
 Flocke	lowA_lowS		
 Akazie	lowA_lowS		
 Palast	lowA_lowS		
-KŠnguruh	lowA_lowS		
+Barren	highA_lowS	mid	really high action?
 Zitadelle	lowA_lowS		
 Satellit	lowA_lowS		
-Hornhaut	lowA_lowS		
+Kleinbus	lowA_highS	mid	action association?
 Bakterium	lowA_lowS		
 Wacholder	lowA_lowS		
 Papagei	lowA_highS		
-Panther	lowA_highS		
+Lastwagen	lowA_highS	mid	action association?
 Gorilla	lowA_highS		
 Truthahn	lowA_highS		
 Auspuff	lowA_highS		
@@ -403,7 +403,7 @@ Vitrine	highA_lowS	mid	not really high action
 Labyrinth	lowA_lowS	mid	low action?
 Waschbär	lowA_highS	mid	really high sound?
 Brandung	lowA_highS		
-Düsenjet	lowA_highS		
+Gebüsch	lowA_lowS	mid	really low sound?
 Telegraf	lowA_highS		
 Staudamm	lowA_highS		
 Wachturm	lowA_highS	bad	not high sound
