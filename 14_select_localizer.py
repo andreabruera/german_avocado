@@ -34,7 +34,7 @@ def skip_words(word, label):
         if float(variables['predicted_concreteness'][word]) > 3.:
             marker = True
     if 'highA_lowS' in label:
-        if float(variables['predicted_concreteness'][word]) > 2.25:
+        if float(variables['predicted_concreteness'][word]) > 2.5:
             marker = True
     '''
     if word in selected_words:
@@ -197,7 +197,10 @@ for split_k, v in localizer_words.items():
             rel_keys = [split_k]
             #assert len(rel_keys) == 2
             assert len(rel_keys) == 1
-            all_vars = [var, 'predicted_concreteness']
+            all_vars = [
+                       var, 
+                       #'predicted_concreteness'
+                       ]
             #all_vars = [var]
             for all_var in all_vars:
                 rel_vals = [float(variables[all_var][w_two]) for key in rel_keys for w_two in localizer_words[key]]
@@ -218,17 +221,19 @@ for split_k, v in localizer_words.items():
                          #'word_average_bigram_frequency',
                          #'word_average_trigram_frequency',
             '''
+            ### we want other variables to be matched
+            rel_keys = [k for k in localizer_words.keys() if k[-1]==split_k[-1]]
             for rel, more_var in enumerate([
                              'old20_score',
-                             #'log10_word_frequency_sdewac',
+                             'log10_word_frequency_sdewac',
+                             'predicted_concreteness',
                              'word_length',
-                             #'predicted_concreteness',
                              #'predicted_visual',
                              ]):
                 rel_vals = [float(variables[more_var][w_two]) for key in rel_keys for w_two in localizer_words[key]]
                 rel_avg = numpy.average(rel_vals)
                 #dist = (1/(rel+1))*abs(rel_avg-float(variables[more_var][w]))
-                dist = (2./(rel+1))*abs(rel_avg-float(variables[more_var][w]))
+                dist = (1./(rel+1))*abs(rel_avg-float(variables[more_var][w]))
                 distances[w].append(dist)
 distances = {w : numpy.average(v) for w, v in distances.items()}
 
