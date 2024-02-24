@@ -62,7 +62,7 @@ with open(os.path.join(res_f, 'main_experiment_words_{}_{}.tsv'.format(mode, str
         xs = [cat for cat in original_words.keys()]
 
 ### randomly shuffling
-random.seed(42)
+random.seed(12)
 original_words = {k : random.sample(v, k=len(v)) for k, v in original_words.items()}
 for k, v in original_words.items():
     assert len(v) == amount_stim*2
