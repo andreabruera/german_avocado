@@ -23,11 +23,6 @@ def skip_words(word, label):
             marker = True
         if float(variables['log10_word_frequency_sdewac'][word]) > 3.9:
                 marker = True
-    if 'highS' in label:
-        #if float(variables['word_length'][word]) <=5:
-        #    marker = True
-        if float(variables['word_length'][word]) > 11:
-            marker = True
     if 'lowA_lowS' in label:
         if float(variables['predicted_auditory'][word]) > -.75:
             marker = True
@@ -41,6 +36,11 @@ def skip_words(word, label):
             marker = True
     '''
     #print(label)
+    #if 'highS' in label:
+        #if float(variables['word_length'][word]) < 5:
+        #    marker = True
+        #if float(variables['word_length'][word]) > 11:
+        #    marker = True
     if 'lowA' in label:
         if float(variables['predicted_concreteness'][word]) < 1.5:
             marker = True
