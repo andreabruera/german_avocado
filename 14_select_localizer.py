@@ -39,10 +39,17 @@ def skip_words(word, label):
     if 'highS' in label:
         if float(variables['predicted_concreteness'][word]) > 3.:
             marker = True
-    if 'lowA' in label:
-        if float(variables['predicted_concreteness'][word]) < 1.:
-            marker = True
     '''
+    #print(label)
+    if 'lowA' in label:
+        if float(variables['predicted_concreteness'][word]) < 1.5:
+            marker = True
+    if 'highA' in label:
+        if float(variables['predicted_concreteness'][word]) > 2.75:
+            marker = True
+    if 'lowS' in label:
+        if float(variables['predicted_concreteness'][word]) > 2.5:
+            marker = True
     if word in selected_words:
         marker = True
     if word in corrections:
@@ -146,8 +153,8 @@ with open(old_file) as i:
             print(line[word])
             continue
         ### pruning distributions
-        if skip_words(line[word], label) == True:
-            continue
+        #if skip_words(line[word], label) == True:
+        #    continue
         ### checking evaluation is high enough, else localizer
         if eval_val > 0.5:
             localizer[label].add(line[word])
@@ -169,8 +176,8 @@ for f in os.listdir(folder):
             if line[0] == 'word':
                 continue
             ### pruning distributions
-            if skip_words(line[0], label) == True:
-                continue
+            #if skip_words(line[0], label) == True:
+            #    continue
             ### dividing into bad/mid/good
             if line[1] in ['bad']:
                 continue
@@ -188,6 +195,9 @@ localizer_words = {
 localizer_words = {k : [w for _, v in localizer.items() for w in v if k in _] for k in localizer_words.keys()}
 print('localizer items')
 print([(k, len(v)) for k, v in localizer_words.items()])
+
+### removing wrong ends of the distributions
+localizer_words = {k : [w for w in v if skip_words(w, k)==False] for k,v in localizer_words.items()}
 
 distances = dict()
 for split_k, v in localizer_words.items():
@@ -262,10 +272,10 @@ distances = {w : numpy.average(v) for w, v in distances.items()}
 
 best_good = {label : {w : distances[w] for w in v} for label, v in localizer_words.items()}
 best_good = {label : [w[0] for w in sorted(v.items(), key=lambda item : item[1])] for label, v in best_good.items()}
-amount_stim = 1000
+amount_stim = 48
 selected_words = {k : v[:amount_stim] for k, v in best_good.items()}
-#for v in selected_words.values():
-#    assert len(v) == amount_stim
+for v in selected_words.values():
+    assert len(v) == amount_stim
 
 ### plotting violinplots
 violin_folder = os.path.join('violins', 'localizer', str(amount_stim))
