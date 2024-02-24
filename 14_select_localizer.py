@@ -36,6 +36,12 @@ def skip_words(word, label):
     if 'highA_lowS' in label:
         if float(variables['predicted_concreteness'][word]) > 2.5:
             marker = True
+    if 'highS' in label:
+        if float(variables['predicted_concreteness'][word]) > 3.:
+            marker = True
+    if 'lowA' in label:
+        if float(variables['predicted_concreteness'][word]) < 1.:
+            marker = True
     '''
     if word in selected_words:
         marker = True
@@ -188,6 +194,7 @@ for split_k, v in localizer_words.items():
     ### every word
     for w in v:
         distances[w] = list()
+        '''
         ### the thing we really care about are hand and audition
         for var_i, var in enumerate([
                                      'predicted_hand', 
@@ -207,42 +214,58 @@ for split_k, v in localizer_words.items():
                 rel_avg = numpy.average(rel_vals)
                 dist = abs(rel_avg-float(variables[all_var][w]))
                 distances[w].append(dist)
-            '''
-            ### promoting dissimilarity
-            unrel_keys = [split_k.replace('low', 'high')] if 'low' in split_k else [split_k.replace('high','low')]
-            assert len(unrel_keys) == 1
-            rel_vals = [float(variables[all_var][w_two]) for key in unrel_keys for w_two in localizer_words[key]]
+        '''
+        ### promoting similarity to the other cat
+        rel_keys = [k for k in localizer_words.keys() if k[-1]==split_k[-1] and k!=split_k]
+        #assert len(rel_keys) == 2
+        assert len(rel_keys) == 1
+        all_vars = [
+                   #var, 
+                   'predicted_concreteness',
+                   #'old20_score',
+                   ]
+        #all_vars = [var]
+        for all_var in all_vars:
+            rel_vals = [float(variables[all_var][w_two]) for key in rel_keys for w_two in localizer_words[key]]
             rel_avg = numpy.average(rel_vals)
-            dist = -abs(rel_avg-float(variables[all_var][w]))
+            dist = abs(rel_avg-float(variables[all_var][w]))
             distances[w].append(dist)
-            ### also trying to match more fundamental variables
-                         'log10_word_frequency_sdewac',
+        '''
+        ### promoting dissimilarity
+        unrel_keys = [split_k.replace('low', 'high')] if 'low' in split_k else [split_k.replace('high','low')]
+        assert len(unrel_keys) == 1
+        rel_vals = [float(variables[all_var][w_two]) for key in unrel_keys for w_two in localizer_words[key]]
+        rel_avg = numpy.average(rel_vals)
+        dist = -abs(rel_avg-float(variables[all_var][w]))
+        distances[w].append(dist)
+        ### also trying to match more fundamental variables
+                     'log10_word_frequency_sdewac',
+                     'old20_score',
+                     #'word_average_bigram_frequency',
+                     #'word_average_trigram_frequency',
+        '''
+        ### we want other variables to be matched
+        rel_keys = [k for k in localizer_words.keys() if k[-1]==split_k[-1]]
+        for rel, more_var in enumerate([
                          'old20_score',
-                         #'word_average_bigram_frequency',
-                         #'word_average_trigram_frequency',
-            '''
-            ### we want other variables to be matched
-            rel_keys = [k for k in localizer_words.keys() if k[-1]==split_k[-1]]
-            for rel, more_var in enumerate([
-                             'old20_score',
-                             'log10_word_frequency_sdewac',
-                             'predicted_concreteness',
-                             'word_length',
-                             #'predicted_visual',
-                             ]):
-                rel_vals = [float(variables[more_var][w_two]) for key in rel_keys for w_two in localizer_words[key]]
-                rel_avg = numpy.average(rel_vals)
-                #dist = (1/(rel+1))*abs(rel_avg-float(variables[more_var][w]))
-                dist = (1./(rel+1))*abs(rel_avg-float(variables[more_var][w]))
-                distances[w].append(dist)
+                         'log10_word_frequency_sdewac',
+                         'word_length',
+                         #'predicted_concreteness',
+                         #'predicted_visual',
+                         ]):
+            rel_vals = [float(variables[more_var][w_two]) for key in rel_keys for w_two in localizer_words[key]]
+            rel_avg = numpy.average(rel_vals)
+            #dist = (1/(rel+1))*abs(rel_avg-float(variables[more_var][w]))
+            dist = (1.5/(rel+1))*abs(rel_avg-float(variables[more_var][w]))
+            distances[w].append(dist)
 distances = {w : numpy.average(v) for w, v in distances.items()}
 
 best_good = {label : {w : distances[w] for w in v} for label, v in localizer_words.items()}
 best_good = {label : [w[0] for w in sorted(v.items(), key=lambda item : item[1])] for label, v in best_good.items()}
-amount_stim = 48
+amount_stim = 1000
 selected_words = {k : v[:amount_stim] for k, v in best_good.items()}
-for v in selected_words.values():
-    assert len(v) == amount_stim
+#for v in selected_words.values():
+#    assert len(v) == amount_stim
 
 ### plotting violinplots
 violin_folder = os.path.join('violins', 'localizer', str(amount_stim))
