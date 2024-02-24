@@ -23,8 +23,23 @@ def skip_words(word, label):
             marker = True
         if float(variables['log10_word_frequency_sdewac'][word]) > 3.9:
                 marker = True
+    if 'highS' in label:
+        #if float(variables['word_length'][word]) <=5:
+        #    marker = True
+        if float(variables['word_length'][word]) > 11:
+            marker = True
+    if 'lowA_lowS' in label:
+        if float(variables['predicted_auditory'][word]) > -.75:
+            marker = True
+        if float(variables['predicted_concreteness'][word]) > 3.:
+            marker = True
+    if 'highA_lowS' in label:
+        if float(variables['predicted_concreteness'][word]) > 2.25:
+            marker = True
     '''
     if word in selected_words:
+        marker = True
+    if word in corrections:
         marker = True
     return marker
 
@@ -68,23 +83,26 @@ remove = [
           'predicted_mouth', 
           'predicted_head', 
           'predicted_torso', 
-          #'predicted_visual',
-          #'predicted_olfactory',
-          #'predicted_gustatory',
-          #'predicted_hearing',
+          'predicted_visual',
+          'predicted_olfactory',
+          'predicted_gustatory',
+          'predicted_valence',
+          'predicted_dominance',
+          'predicted_arousal',
           ]
 relevant_keys = [h for h in variables.keys() if 'en_' not in h and 'raw_' not in h and h not in remove and 'proto' not in h]
 
 ### reading latest corrections
-corrections = dict()
+global corrections
+corrections = list()
 with open('phil_correction_21_02.tsv') as i:
     for l_i, l in enumerate(i):
         if l_i == 0:
             continue
         line = l.strip().split('\t')
         if len(line) > 2:
-            if line[2].strip() in ['bad', 'mid']:
-                corrections[line[0].strip()] = line[2].strip()
+            if line[2].strip() in ['bad']:
+                corrections.append(line[2].strip())
 
 ### reading words from previous experiments
 old_file = os.path.join('output', 'phil_original_annotated_clean.tsv')
@@ -125,7 +143,7 @@ with open(old_file) as i:
         if skip_words(line[word], label) == True:
             continue
         ### checking evaluation is high enough, else localizer
-        if eval_val > 0.7:
+        if eval_val > 0.5:
             localizer[label].add(line[word])
 
 print('old localizers')
@@ -188,15 +206,13 @@ for split_k, v in localizer_words.items():
                 distances[w].append(dist)
             '''
             ### promoting dissimilarity
-            unrel_keys = [k for k in good.keys() if split_k[var_i] not in k]
-            assert len(unrel_keys) == 2
-            rel_vals = [float(variables[all_var][w_two]) for key in unrel_keys for  w_two in good[key]]
+            unrel_keys = [split_k.replace('low', 'high')] if 'low' in split_k else [split_k.replace('high','low')]
+            assert len(unrel_keys) == 1
+            rel_vals = [float(variables[all_var][w_two]) for key in unrel_keys for w_two in localizer_words[key]]
             rel_avg = numpy.average(rel_vals)
             dist = -abs(rel_avg-float(variables[all_var][w]))
             distances[w].append(dist)
-            '''
             ### also trying to match more fundamental variables
-            '''
                          'log10_word_frequency_sdewac',
                          'old20_score',
                          #'word_average_bigram_frequency',
@@ -204,15 +220,15 @@ for split_k, v in localizer_words.items():
             '''
             for rel, more_var in enumerate([
                              'old20_score',
-                             'log10_word_frequency_sdewac',
-                             #'word_length',
+                             #'log10_word_frequency_sdewac',
+                             'word_length',
                              #'predicted_concreteness',
                              #'predicted_visual',
                              ]):
                 rel_vals = [float(variables[more_var][w_two]) for key in rel_keys for w_two in localizer_words[key]]
                 rel_avg = numpy.average(rel_vals)
                 #dist = (1/(rel+1))*abs(rel_avg-float(variables[more_var][w]))
-                dist = (1.5/(rel+1))*abs(rel_avg-float(variables[more_var][w]))
+                dist = (2./(rel+1))*abs(rel_avg-float(variables[more_var][w]))
                 distances[w].append(dist)
 distances = {w : numpy.average(v) for w, v in distances.items()}
 

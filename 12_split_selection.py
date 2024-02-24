@@ -135,7 +135,7 @@ for amount_stim in [36, 42, 48]:
         low_sound_comp = scipy.stats.ttest_ind(low_sound_one, low_sound_two)
         hi_sound_one = [float(variables[k][w]) for _ in xs for w in two_lists['one'][_] if 'highS' in _]
         hi_sound_two = [float(variables[k][w]) for _ in xs for w in two_lists['two'][_] if 'highS' in _]
-        hi_sound_comp = scipy.stats.ttest_ind(hi_sound_two, hi_sound_two)
+        hi_sound_comp = scipy.stats.ttest_ind(hi_sound_one, hi_sound_two)
         low_action_one = [float(variables[k][w]) for _ in xs for w in two_lists['one'][_] if 'lowA' in _]
         low_action_two = [float(variables[k][w]) for _ in xs for w in two_lists['two'][_] if 'lowA' in _]
         low_action_comp = scipy.stats.ttest_ind(low_action_one, low_action_two)
@@ -163,7 +163,7 @@ for amount_stim in [36, 42, 48]:
             low_sound_comp = scipy.stats.ttest_ind(low_sound_one, low_sound_two)
             hi_sound_one = [float(variables[k][w]) for _ in xs for w in two_lists['one'][_] if 'highS' in _]
             hi_sound_two = [float(variables[k][w]) for _ in xs for w in two_lists['two'][_] if 'highS' in _]
-            hi_sound_comp = scipy.stats.ttest_ind(hi_sound_two, hi_sound_two)
+            hi_sound_comp = scipy.stats.ttest_ind(hi_sound_one, hi_sound_two)
             low_action_one = [float(variables[k][w]) for _ in xs for w in two_lists['one'][_] if 'lowA' in _]
             low_action_two = [float(variables[k][w]) for _ in xs for w in two_lists['two'][_] if 'lowA' in _]
             low_action_comp = scipy.stats.ttest_ind(low_action_one, low_action_two)
