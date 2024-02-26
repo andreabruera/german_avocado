@@ -1054,19 +1054,19 @@ Strand	lowA
 Zimmer	lowA		
 Felsbrocken	lowA		
 Notarztwagen	lowA	mid	not necessarily low action
-Baseball	highA		
+Brandbombe	highS	bad	"similar to ""Bombe"" in main experiment"
 Teelicht	highA		
-Geschirr	highA		
-Schnalle	highA		
-Teleskop	highA		
-Werkzeug	highA		
-Bratsche	highA		
-Notizbuch	highA		
-Feuerholz	highA		
-Bleistift	highA		
-Serviette	highA		
-Geldbšrse	highA		
-Klebstoff	highA		
+Brandbombe	highA	bad	"similar to ""Bombe"" in main experiment"
+Verpackung	highA		
+StichsŠge	highA		
+Waffe	highA	bad	"too similar to ""Feuerwaffe"""
+Nadel	highA		
+Kelle	highA		
+Salami	highA		
+Nagel	highA		
+Paste	highA	bad	"too similar to ""Zahnpaste"""
+Sohle	highA	bad	not really high action
+Leder	highA	bad	not really high action
 Mandarine	highA		
 Bindfaden	highA		
 Schuhwerk	highA		
@@ -1074,16 +1074,16 @@ Konsole	highA
 Schatulle	highA		
 Markise	highA		
 Knetmasse	highA		
-Zahnpaste	highA		
-Teigware	highA		
-Toaster	highA		
-Spielzeug	highA		
-Hamburger	highA		
-Traktor	highA		
-Zigarre	highA		
-StichsŠge	highA		
-Sticker	highA		
-Spritze	highA		
+Beule	lowA	mid	not necessarily low action
+Beuteltier	lowA		
+Pfahl	lowA		
+Köfer	lowA	bad	not necessarily low action
+Wanze	lowA	bad	not necessarily low action
+Spalt	lowA		
+Nelke	lowA		
+Wespe	lowA	bad	not necessarily low action
+SŠule	lowA		
+Beton	lowA	bad	not necessarily low action
 Shampoo	highA		
 Bekleidung	highA		
 Knebel	highA		
