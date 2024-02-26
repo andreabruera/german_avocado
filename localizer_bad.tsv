@@ -1,37 +1,37 @@
 word	category	rating	comments
 Vorraum	lowA	bad	"too similar to ""Vorstadt"""
-Fontäne	lowA		
-Gestein	lowA		
+Bakterie	lowS	bad	"same concept as ""Bakterium"""
+Hufeisen	lowS	mid	not necessarily low sound
 Viadukt	lowA	mid	too unfamiliar
-Flunder	lowA		
-Schrein	lowA		
-Pflanze	lowA		
+Geländer	lowS	mid	not necessarily low sound
+Schnalle	lowS	mid	not necessarily low sound
+Rednerpult	highA	mid	not really high action
 Schwein	lowA	mid	some action association
 Garnele	lowA	mid	some action association
 Hämatom	lowA	mid	too unfamiliar
-Maulwurf	lowA		
-Vorstadt	lowA		
+Siedlung	lowS	mid	not necessarily low sound
+Brosche	highA	mid	not really high action
 Präparat	lowA	mid	some action association
-Flamingo	lowA		
-Skulptur	lowA		
+Alligator	lowS	mid	not necessarily low sound
+Schalotte	lowA	bad	food
 Waschbär	lowA		
 Aufzug	lowA	mid	some action association
 Aquädukt	lowA		
 Metronom	lowA	mid	some action association
 Friedhof	lowA		
-Wachturm	lowA		
-Ameise	lowA		
+Waschbär	highS	mid	not really high sound
+Hufeisen	highA	mid	not really high action
 Vorplatz	lowA	bad	"too similar to ""Vorraum"" and ""Vorplatz"""
 Holunder	lowA	mid	some action association
-Eichel	lowA		
+Wimpel	lowA	bad	not necessarily low action
 Hermelin	lowA	mid	too unfamiliar
-Erdkugel	lowA		
+Schnauzbart	lowA	bad	body part
 Rachen	lowA	bad	body part
-Torbogen	lowA		
-Wimpel	lowA		
+Leberfleck	lowA	bad	body part
+Bauchfell	lowA	bad	odd
 Streifen	lowA		
 Gipfel	lowA		
-Tempel	lowA		
+Schalotte	lowA	bad	food
 Erdapfel	lowA		
 Schlange	lowA		
 Insekt	lowA	mid	too general
