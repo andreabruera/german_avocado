@@ -34,6 +34,8 @@ def levenshtein(seq1, seq2):
 def multiprocessing_levenshtein(w):
     levs = list()
     for w_two in other_words:
+        if w_two == w:
+            continue
         levs.append(levenshtein(w, w_two))
     score = numpy.average(sorted(levs)[:20])
     return (w, score)
@@ -67,17 +69,17 @@ all_sdewac_freqs = {k : v for k, v in all_sdewac_freqs.items() if len(k)>1 and l
 ### number of words in the original OLD20 paper
 max_n = 35502
 global other_words
-other_words = sorted(all_sdewac_freqs.items(), key=lambda item : item[1], reverse=True)[:max_n]
+other_words = [w[0] for w in sorted(all_sdewac_freqs.items(), key=lambda item : item[1], reverse=True)][:max_n]
 #print(other_words[-1])
 
 def print_stuff(inputs):
     print(inputs)
 
-old20_scores = {w : 0 for w in relevant_words}
 '''
+old20_scores = {w : 0 for w in relevant_words}
 for w in tqdm(relevant_words):
-    _, score = multiprocessing_levenshtein([w, other_words])
-    #print([w, score])
+    _, score = multiprocessing_levenshtein(w)
+    print([w, score])
     old20_scores[w] = score
 '''
 with multiprocessing.Pool() as i:

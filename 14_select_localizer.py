@@ -63,7 +63,7 @@ def skip_words(word, label):
     if 'lowA' in label:
         if float(variables['predicted_concreteness'][word]) < 1.5:
             marker = True
-        if float(variables['word_average_bigram_frequency'][word]) < .5*1e7:
+        if float(variables['word_average_bigram_frequency'][word]) < .75*1e7:
             marker = True
         if float(variables['word_length'][word]) < 5:
             marker = True
