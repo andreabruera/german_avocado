@@ -41,16 +41,22 @@ def skip_words(word, label):
         #    marker = True
         #if float(variables['word_length'][word]) > 11:
         #    marker = True
+    '''
+        if float(variables['predicted_auditory'][word]) > 0.:
+            marker = True
+        if float(variables['word_average_trigram_frequency'][word]) > 1e7:
+            marker = True
     if 'lowA' in label:
-        if float(variables['predicted_concreteness'][word]) < 1.5:
+        if float(variables['predicted_auditory'][word]) >= 0.:
             marker = True
-    if 'highA' in label:
-        if float(variables['predicted_concreteness'][word]) > 2.25:
-            marker = True
+    '''
     if 'lowS' in label:
         if float(variables['predicted_concreteness'][word]) > 2.5:
             marker = True
-        if float(variables['predicted_auditory'][word]) > 0.:
+    if 'highA' in label:
+        if float(variables['predicted_concreteness'][word]) > 3.:
+            marker = True
+        if float(variables['predicted_concreteness'][word]) < 1.:
             marker = True
     if word in selected_words:
         marker = True
@@ -289,10 +295,11 @@ distances = {w : numpy.average(v) for w, v in distances.items()}
 
 best_good = {label : {w : distances[w] for w in v} for label, v in localizer_words.items()}
 best_good = {label : [w[0] for w in sorted(v.items(), key=lambda item : item[1])] for label, v in best_good.items()}
-amount_stim = 48
+amount_stim = 1000
 selected_words = {k : v[:amount_stim] for k, v in best_good.items()}
-for v in selected_words.values():
-    assert len(v) == amount_stim
+if amount_stim != 1000:
+    for v in selected_words.values():
+        assert len(v) == amount_stim
 
 ### plotting violinplots
 violin_folder = os.path.join('violins', 'localizer', str(amount_stim))
