@@ -60,6 +60,8 @@ def skip_words(word, label):
             marker = True
         if float(variables['predicted_concreteness'][word]) < .75:
             marker = True
+        if float(variables['predicted_auditory'][word]) > 1.5:
+            marker = True
     if 'lowA' in label:
         if float(variables['predicted_concreteness'][word]) < 1.5:
             marker = True
