@@ -45,7 +45,7 @@ def skip_words(word, label):
         if float(variables['predicted_concreteness'][word]) < 1.5:
             marker = True
     if 'highA' in label:
-        if float(variables['predicted_concreteness'][word]) > 2.75:
+        if float(variables['predicted_concreteness'][word]) > 2.25:
             marker = True
     if 'lowS' in label:
         if float(variables['predicted_concreteness'][word]) > 2.5:
@@ -132,7 +132,7 @@ with open('localizer_bad.tsv') as i:
             if line[2].strip() in ['mid', 'bad']:
                 if line[1] not in localizer_corrections.keys():
                     localizer_corrections[line[1]] = list()
-                corrections.append(line[2].strip())
+                localizer_corrections[line[1]].append(line[0].strip())
 
 ### reading words from previous experiments
 old_file = os.path.join('output', 'phil_original_annotated_clean.tsv')
