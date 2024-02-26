@@ -1,0 +1,193 @@
+word	category	rating	comments
+Vorraum	lowA	bad	"too similar to ""Vorstadt"""
+Fontäne	lowA		
+Gestein	lowA		
+Viadukt	lowA	mid	too unfamiliar
+Flunder	lowA		
+Schrein	lowA		
+Pflanze	lowA		
+Schwein	lowA	mid	some action association
+Garnele	lowA	mid	some action association
+Hämatom	lowA	mid	too unfamiliar
+Maulwurf	lowA		
+Vorstadt	lowA		
+Präparat	lowA	mid	some action association
+Flamingo	lowA		
+Skulptur	lowA		
+Waschbär	lowA		
+Aufzug	lowA	mid	some action association
+Aquädukt	lowA		
+Metronom	lowA	mid	some action association
+Friedhof	lowA		
+Wachturm	lowA		
+Ameise	lowA		
+Vorplatz	lowA	bad	"too similar to ""Vorraum"" and ""Vorplatz"""
+Holunder	lowA	mid	some action association
+Eichel	lowA		
+Hermelin	lowA	mid	too unfamiliar
+Erdkugel	lowA		
+Rachen	lowA	bad	body part
+Torbogen	lowA		
+Wimpel	lowA		
+Streifen	lowA		
+Gipfel	lowA		
+Tempel	lowA		
+Erdapfel	lowA		
+Schlange	lowA		
+Insekt	lowA	mid	too general
+Spinne	lowA		
+Nessel	lowA		
+Balken	lowA	mid	some action association
+Plakat	lowA	mid	some action association
+Strand	lowA		
+Farbstoff	lowA		
+Zimmer	lowA		
+Weinstock	lowA		
+Abzeichen	lowA		
+Chamäleon	lowA		
+Zitadelle	lowA		
+Zecke	lowA		
+Vitrine	highA	mid	really high action?
+Toaster	highA		
+Traktor	highA		
+Konsole	highA		
+Zigarre	highA		
+Markise	highA		
+Spritze	highA		
+Shampoo	highA		
+Sticker	highA		
+Gestell	highA	mid	really high action?
+Bandage	highA		
+Schrank	highA		
+Zutaten	highA	mid	too general
+Pipette	highA		
+Brosche	highA		
+Schürze	highA		
+Roboter	highA	mid	really high action?
+Jackett	highA		
+Perücke	highA		
+Schnake	highA	bad	really high action?
+Stöpsel	highA		
+Teppich	highA		
+Baseball	highA		
+Krawatte	highA		
+Riemen	highA	mid	really high action?
+Salami	highA		
+Teleskop	highA		
+Barren	highA	mid	really high action?
+Hocker	highA		
+Brötchen	highA		
+Werkzeug	highA		
+Puzzle	highA		
+Geländer	highA	mid	really high action?
+Knebel	highA		
+Bürste	highA		
+Spaten	highA		
+Fußmatte	highA		
+Bagger	highA	mid	really high action?
+Hufeisen	highA		
+Teelicht	highA		
+Kuvert	highA		
+Geschirr	highA		
+Kleidung	highA	mid	too general
+Locher	highA		
+Sessel	highA		
+Hefter	highA		
+Schnalle	highA		
+Pinsel	highA		
+Vorraum	lowS		
+Vitrine	lowS		
+Fontäne	lowS	bad	really low sound?
+Stausee	lowS	mid	really low sound?
+Gestein	lowS		
+Zigarre	lowS		
+Gebüsch	lowS	mid	really low sound?
+Libelle	lowS	bad	really low sound?
+Markise	lowS	mid	really low sound?
+Spritze	lowS		
+Viadukt	lowS	bad	too unfamiliar
+Strauch	lowS		
+Karpfen	lowS		
+Flieder	lowS		
+Flunder	lowS		
+Shampoo	lowS		
+Schrein	lowS		
+Sticker	lowS		
+Gestell	lowS		
+Pflanze	lowS		
+Verlies	lowS	mid	really low sound?
+Anwesen	lowS		
+Makrele	lowS		
+Bandage	lowS		
+Schrank	lowS		
+Zutaten	lowS	mid	too general
+Pipette	lowS		
+Brosche	lowS		
+Gemälde	lowS		
+Garnele	lowS		
+Fassade	lowS		
+Hämatom	lowS	mid	too unfamiliar
+Gelände	lowS		
+Vorstadt	lowS	bad	"too many ""Vor…"" words"
+Termite	lowS		
+Präparat	lowS		
+Riemen	lowS		
+Salami	lowS		
+Teleskop	lowS		
+Skulptur	lowS		
+Phosphor	lowS	bad	too abstract
+Hornhaut	lowS		
+Elektron	lowS	mid	really low sound?
+Barren	lowS		
+Hocker	lowS		
+Aquädukt	lowS	mid	too unfamiliar
+Puzzle	lowS		
+Friedhof	lowS		
+Toaster	highS		
+Traktor	highS		
+Konsole	highS	bad	really high sound?
+Telefax	highS		
+Piepser	highS		
+Schwein	highS		
+Roboter	highS		
+Schnake	highS	bad	really high sound?
+Baseball	highS	bad	really high sound?
+Kleinbus	highS		
+Waschbär	highS		
+Aufzug	highS		
+Metronom	highS		
+Werkzeug	highS	bad	too general
+Wachturm	highS	bad	really high sound?
+Knebel	highS	mid	really high sound?
+Detektor	highS	mid	really high sound?
+Bagger	highS		
+Telegraf	highS	mid	unfamiliar
+Bratsche	highS		
+Wecker	highS		
+Fiedel	highS		
+Truck	highS		
+Biber	highS		
+Telegraph	highS	bad	"same as ""Telegraf"""
+Lastwagen	highS		
+Fräse	highS		
+Biene	highS		
+Spielzeug	highS	bad	too general
+Pauke	highS		
+Waffe	highS	bad	too general
+Sägemühle	highS		
+Laute	highS		
+Rohrstock	highS	mid	really high sound?
+Orgel	highS		
+Mundstück	highS	mid	really high sound?
+Rednerpult	highS	mid	only indirect association with sound
+Kuhglocke	highS		
+Sporthalle	highS		
+Zahnbürste	highS	mid	only indirect association with sound
+Gala	highS		
+Brecheisen	highS	mid	only indirect association with sound
+Taxi	highS		
+Feuerwaffe	highS		
+Brandbombe	highS		
+Oboe	highS		
+Nachtigall	highS		
+Meer	highS		

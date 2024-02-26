@@ -56,6 +56,8 @@ def skip_words(word, label):
         marker = True
     if word in corrections:
         marker = True
+    if word in localizer_corrections[label]:
+        marker = True
     return marker
 
 ### reading selected words
@@ -117,6 +119,19 @@ with open('phil_correction_21_02.tsv') as i:
         line = l.strip().split('\t')
         if len(line) > 2:
             if line[2].strip() in ['bad']:
+                corrections.append(line[2].strip())
+### reading latest corrections
+global localizer_corrections
+localizer_corrections = dict()
+with open('localizer_bad.tsv') as i:
+    for l_i, l in enumerate(i):
+        if l_i == 0:
+            continue
+        line = l.strip().split('\t')
+        if len(line) > 2:
+            if line[2].strip() in ['mid', 'bad']:
+                if line[1] not in localizer_corrections.keys():
+                    localizer_corrections[line[1]] = list()
                 corrections.append(line[2].strip())
 
 ### reading words from previous experiments
@@ -195,11 +210,11 @@ localizer_words = {
                    'highS' : list(),
                    }
 localizer_words = {k : [w for _, v in localizer.items() for w in v if k in _] for k in localizer_words.keys()}
-print('localizer items')
-print([(k, len(v)) for k, v in localizer_words.items()])
 
 ### removing wrong ends of the distributions
 localizer_words = {k : [w for w in v if skip_words(w, k)==False] for k,v in localizer_words.items()}
+print('localizer items')
+print([(k, len(v)) for k, v in localizer_words.items()])
 
 distances = dict()
 for split_k, v in localizer_words.items():
