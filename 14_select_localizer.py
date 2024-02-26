@@ -65,11 +65,14 @@ def skip_words(word, label):
             marker = True
         if float(variables['word_average_bigram_frequency'][word]) < .5*1e7:
             marker = True
+        if float(variables['word_length'][word]) <= 5:
+            marker = True
     if word in selected_words:
         marker = True
     if word in corrections:
         marker = True
     if word in localizer_corrections[label]:
+        print(word)
         marker = True
     return marker
 

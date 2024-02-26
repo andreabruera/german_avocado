@@ -143,38 +143,38 @@ Hocker	lowS
 Aquädukt	lowS	mid	too unfamiliar
 Puzzle	lowS		
 Friedhof	lowS		
-Toaster	highS		
+Wasserpfeife	highS	mid	not necessarily high sound
 Traktor	highS		
 Konsole	highS	bad	really high sound?
 Telefax	highS		
-Piepser	highS		
+Streichholz	highS	mid	not necessarily high sound
 Schwein	highS		
 Roboter	highS		
 Schnake	highS	bad	really high sound?
 Baseball	highS	bad	really high sound?
-Kleinbus	highS		
-Waschbär	highS		
-Aufzug	highS		
-Metronom	highS		
+Stichsäge	lowS	bad	really low sound?
+Flamingo	lowS	mid	not necessarily low sound
+Hermelin	lowS	bad	too unfamiliar
+Geschirr	lowS	mid	not necessarily low sound
 Werkzeug	highS	bad	too general
 Wachturm	highS	bad	really high sound?
 Knebel	highS	mid	really high sound?
 Detektor	highS	mid	really high sound?
-Bagger	highS		
+Vorplatz	lowS	mid	not necessarily low sound
 Telegraf	highS	mid	unfamiliar
-Bratsche	highS		
+Känguruh	lowS	mid	not necessarily low sound
 Wecker	highS		
-Fiedel	highS		
-Truck	highS		
-Biber	highS		
+Schnittgut	highA	mid	really high action?
+Schrank	highA		
+Steigeisen	highA	bad	"same concept as ""Steigbügel"""
 Telegraph	highS	bad	"same as ""Telegraf"""
-Lastwagen	highS		
-Fräse	highS		
-Biene	highS		
+Hosenbund	highA	mid	really high action?
+Teelicht	highA		
+Behältnis	highA	mid	really high action?
 Spielzeug	highS	bad	too general
 Pauke	highS		
 Waffe	highS	bad	too general
-Sägemühle	highS		
+Brotkrume	highA	mid	really high action?
 Laute	highS		
 Rohrstock	highS	mid	really high sound?
 Orgel	highS		
@@ -185,9 +185,309 @@ Sporthalle	highS
 Zahnbürste	highS	mid	only indirect association with sound
 Gala	highS		
 Brecheisen	highS	mid	only indirect association with sound
-Taxi	highS		
+Zecke	lowA	mid	not necessarily low action
+Feuerwaffe	highS		
+Pflanze	lowA	mid	not necessarily low action
+Oboe	highS		
+Lastwagen	lowA	mid	not really low action
+Armlehne	highA	mid	not really high action
+Schrein	lowA	mid	not necessarily low action
+Schrein	lowA	mid	not necessarily low action
+Fontäne	lowA		
+Waschbär	lowA		
+Gestein	lowA		
+Weinstock	lowA		
+Farbstoff	lowA		
+Wacholder	lowA		
+Chamäleon	lowA		
+Schalotte	lowA		
+Skulptur	lowA		
+Zitadelle	lowA		
+Flunder	lowA		
+Friedhof	lowA		
+Sarkophag	lowA		
+Erdkugel	lowA		
+Container	lowA		
+Torbogen	lowA		
+Dachrinne	lowA		
+Fadenwurm	lowA		
+Vorstadt	lowA		
+Lastwagen	lowA	mid	not really low action
+Streifen	lowA		
+Flamingo	lowA		
+Reflektor	lowA		
+Wachturm	lowA		
+Schlange	lowA		
+Felsblock	lowA		
+Sandhügel	lowA		
+Maulwurf	lowA		
+Laubblatt	lowA		
+Eichel	lowA		
+Spinne	lowA		
+Zwerchfell	lowA		
+Erdapfel	lowA		
+Leitplanke	lowA		
+Turmspitze	lowA		
+Abzeichen	lowA		
+Pflanze	lowA	mid	not necessarily low action
+Leberfleck	lowA		
+Felsspalte	lowA		
+Regenrinne	lowA		
+Narbe	lowA		
+Bauchfell	lowA		
+Pfahl	lowA		
+Spalt	lowA		
+Möhre	lowA		
+Palme	lowA		
+Zecke	lowA	mid	not necessarily low action
+Konsole	highA		
+Markise	highA		
+Brosche	highA		
+Teleskop	highA		
+Hufeisen	highA		
+Baseball	highA		
+Schnalle	highA		
+Bratsche	highA		
+Notizbuch	highA		
+Armlehne	highA	mid	not really high action
+Stichsäge	highA		
+Feuerholz	highA		
+Geschirr	highA		
+Serviette	highA		
+Bleistift	highA		
+Geldbörse	highA		
+Bindfaden	highA		
+Klebstoff	highA		
+Hosenbund	highA	mid	really high action?
+Teelicht	highA		
+Behältnis	highA	mid	really high action?
+Schuhwerk	highA		
+Schatulle	highA		
+Mandarine	highA		
+Knetmasse	highA		
+Zahnpaste	highA		
+Werkzeug	highA		
+Teigware	highA		
+Knebel	highA		
+Toaster	highA		
+Brotkrume	highA	mid	really high action?
+Hamburger	highA		
+Traktor	highA		
+Zigarre	highA		
+Sticker	highA		
+Spritze	highA		
+Shampoo	highA		
+Bekleidung	highA		
+Bandage	highA		
+Pipette	highA		
+Bügeleisen	highA		
+Schnittgut	highA	mid	really high action?
+Schrank	highA		
+Steigeisen	highA	bad	"same concept as ""Steigbügel"""
+Bettwäsche	highA		
+Steigbügel	highA		
+Feuerwaffe	highA		
+Spielzeug	highA		
+Weinstock	lowS		
+Präparat	lowS		
+Farbstoff	lowS		
+Hornhaut	lowS		
+Teleskop	lowS		
+Wacholder	lowS		
+Känguruh	lowS	mid	not necessarily low sound
+Chamäleon	lowS		
+Schalotte	lowS		
+Skulptur	lowS		
+Zitadelle	lowS		
+Sediment	lowS		
+Bakterium	lowS		
+Fragment	lowS		
+Hufeisen	lowS		
+Vorzimmer	lowS		
+Vorplatz	lowS	mid	not necessarily low sound
+Friedhof	lowS		
+Altarbild	lowS		
+Sarkophag	lowS		
+Kalkstein	lowS		
+Bakterie	lowS		
+Hermelin	lowS	bad	too unfamiliar
+Geländer	lowS		
+Erdkugel	lowS		
+Container	lowS		
+Mausoleum	lowS		
+Torbogen	lowS		
+Schnalle	lowS		
+Portrait	lowS		
+Dachrinne	lowS		
+Sandstein	lowS		
+Notizbuch	lowS		
+Gletscher	lowS		
+Luftblase	lowS		
+Armlehne	lowS		
+Alligator	lowS		
+Stichsäge	lowS	bad	really low sound?
+Feuerholz	lowS		
+Hirnstamm	lowS		
+Geschirr	lowS	mid	not necessarily low sound
+Fadenwurm	lowS		
+Serviette	lowS		
+Bleistift	lowS		
+Streifen	lowS		
+Flamingo	lowS	mid	not necessarily low sound
+Reflektor	lowS		
+Umzäunung	lowS		
+Waschbär	highS		
+Kleinbus	highS		
+Metronom	highS		
+Bratsche	highS		
+Lastwagen	highS		
+Sägemühle	highS		
+Toaster	highS		
+Traktor	highS		
+Kuhglocke	highS		
+Telefax	highS		
+Piepser	highS		
+Schwein	highS		
+Sporthalle	highS		
+Roboter	highS		
 Feuerwaffe	highS		
 Brandbombe	highS		
-Oboe	highS		
 Nachtigall	highS		
-Meer	highS		
+Verstärker	highS		
+Aufzug	highS		
+Bagger	highS		
+Zugmaschine	highS		
+Mähdrescher	highS		
+Sprengstoff	highS		
+Fiedel	highS		
+Wecker	highS		
+Blechbüchse	highS		
+Staubsauger	highS		
+Feuerstätte	highS		
+Streichholz	highS	mid	not necessarily high sound
+Truck	highS		
+Biber	highS		
+Schlagstock	highS		
+Fräse	highS		
+Pauke	highS		
+Biene	highS		
+Notarztwagen	highS		
+Krankenwagen	highS		
+Luftfahrzeug	highS		
+Lautsprecher	highS		
+Hubschrauber	highS		
+Laute	highS		
+Gabelstapler	highS		
+Schauspieler	highS		
+Orgel	highS		
+Wasserpfeife	highS	mid	not necessarily high sound
+Gala	highS		
+Taxi	highS		
+Wellensittich	highS		
+Schrein	lowA		
+FontŠne	lowA		
+WaschbŠr	lowA		
+Gestein	lowA		
+Weinstock	lowA		
+Farbstoff	lowA	bad	not necessarily low action
+Wacholder	lowA		
+ChamŠleon	lowA		
+Schalotte	lowA		
+Skulptur	lowA		
+Zitadelle	lowA		
+Flunder	lowA		
+Friedhof	lowA		
+Sarkophag	lowA		
+Erdkugel	lowA		
+Container	lowA	bad	not necessarily low action
+Torbogen	lowA		
+Dachrinne	lowA		
+Fadenwurm	lowA		
+Vorstadt	lowA		
+Lastwagen	lowA	bad	not necessarily low action
+Streifen	lowA		
+Flamingo	lowA		
+Reflektor	lowA		
+Wachturm	lowA		
+Schlange	lowA		
+Felsblock	lowA		
+SandhŸgel	lowA		
+Maulwurf	lowA		
+Laubblatt	lowA		
+Eichel	lowA		
+Spinne	lowA		
+Zwerchfell	lowA		
+Erdapfel	lowA	bad	not necessarily low action
+Leitplanke	lowA		
+Turmspitze	lowA		
+Abzeichen	lowA		
+Pflanze	lowA		
+Leberfleck	lowA		
+Felsspalte	lowA		
+Regenrinne	lowA		
+Narbe	lowA		
+Bauchfell	lowA		
+Pfahl	lowA		
+Spalt	lowA		
+Mšhre	lowA		
+Palme	lowA		
+Zecke	lowA		
+Konsole	highA		
+Markise	highA		
+Brosche	highA		
+Teleskop	highA		
+Hufeisen	highA		
+Baseball	highA		
+Schnalle	highA		
+Bratsche	highA		
+Notizbuch	highA		
+Armlehne	highA	bad	not necessarily high action
+StichsŠge	highA		
+Feuerholz	highA		
+Geschirr	highA		
+Serviette	highA		
+Bleistift	highA		
+Geldbšrse	highA		
+Bindfaden	highA		
+Klebstoff	highA		
+Hosenbund	highA		
+Teelicht	highA		
+Behältnis	highA	bad	not necessarily high action
+Schuhwerk	highA		
+Schatulle	highA		
+Mandarine	highA		
+Knetmasse	highA		
+Zahnpaste	highA		
+Werkzeug	highA		
+Teigware	highA		
+Knebel	highA		
+Toaster	highA		
+Brotkrume	highA	bad	not necessarily high action
+Hamburger	highA		
+Traktor	highA		
+Zigarre	highA		
+Sticker	highA		
+Spritze	highA		
+Shampoo	highA		
+Bekleidung	highA		
+Bandage	highA		
+Pipette	highA		
+Bügeleisen	highA		
+Schnittgut	highA	bad	not necessarily high action
+Schrank	highA		
+Steigeisen	highA		
+BettwŠsche	highA		
+SteigbŸgel	highA		
+Feuerwaffe	highA		
+Spielzeug	highA		
+Weinstock	lowS		
+PrŠparat	lowS		
+Farbstoff	lowS		
+Hornhaut	lowS		
+Teleskop	lowS		
+Wacholder	lowS		
+Känguruh	lowS	bad	not necessarily low sound
+Hermelin	lowS	bad	too unfamiliar
+Stichsäge	lowS	bad	not really low sound
+Streichholz	highS	bad	not necessarily high sound
+Wasserpfeife	highS	bad	not necessarily high sound
