@@ -302,91 +302,91 @@ distances = {w : numpy.average(v) for w, v in distances.items()}
 
 best_good = {label : {w : distances[w] for w in v} for label, v in localizer_words.items()}
 best_good = {label : [w[0] for w in sorted(v.items(), key=lambda item : item[1])] for label, v in best_good.items()}
-amount_stim = 48
-selected_words = {k : v[:amount_stim] for k, v in best_good.items()}
-if amount_stim != 1000:
-    for v in selected_words.values():
-        assert len(v) == amount_stim
+for amount_stim in [48, 1000]:
+    selected_words = {k : v[:amount_stim] for k, v in best_good.items()}
+    if amount_stim != 1000:
+        for v in selected_words.values():
+            assert len(v) == amount_stim
 
-### plotting violinplots
-violin_folder = os.path.join('violins', 'localizer', str(amount_stim))
-os.makedirs(violin_folder, exist_ok=True)
-xs = [val for val in best_good.keys()]
-### testing p-vals
-ps = list()
-cases = list()
-combs = list(itertools.combinations(xs, r=2))
-for k in relevant_keys:
-    vals = {xs[_] : [float(variables[k][w]) for w in selected_words[xs[_]]] for _ in range(len(xs))}
-    for c in combs:
-        p = scipy.stats.ttest_ind(vals[c[0]], vals[c[1]]).pvalue
-        ps.append(p)
-        cases.append([k, c[0], c[1]])
-    file_name = os.path.join(violin_folder, 'localizer_{}_{}.jpg'.format(str(amount_stim), k))
-    fig, ax = pyplot.subplots(constrained_layout=True)
-    for _ in range(len(xs)):
-        ax.violinplot(positions=[_], dataset=[float(variables[k][w]) for w in best_good[xs[_]][:amount_stim*2]], showmeans=True)
-    ax.set_xticks(range(len(xs)))
-    ax.set_xticklabels([x.replace('_', '_') for x in xs])
-    ax.set_title('{} distributions for localizer words'.format(k))
-    pyplot.savefig(file_name)
-    pyplot.clf()
-    pyplot.close()
-
-corrected_ps = mne.stats.fdr_correction(ps)[1]
-#for case, p in zip(cases, ps):
-for case, p in zip(cases, corrected_ps):
-    if p<=0.05:
-        #print([case, p])
-        pass
-#print(k)
-### corrected p-values
-corr_ps = dict()
-for k in relevant_keys:
-    low_sound = [float(variables[k][w])  for _ in xs for w in selected_words[_] if 'lowS' in _]
-    hi_sound = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'highS' in _]
-    sound_comp = scipy.stats.ttest_ind(low_sound, hi_sound)
-    low_action = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'lowA' in _]
-    hi_action = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'highA' in _]
-    action_comp = scipy.stats.ttest_ind(low_action, hi_action)
-    corr_ps[k] = [sound_comp.pvalue, action_comp.pvalue]
-sound_corr = mne.stats.fdr_correction([corr_ps[k][0] for k in relevant_keys])[1]
-action_corr = mne.stats.fdr_correction([corr_ps[k][1] for k in relevant_keys])[1]
-for k_i, k in enumerate(relevant_keys):
-    corr_ps[k] = [sound_corr[k_i], action_corr[k_i]]
-
-### writing to files the pairwise tests
-res_f = os.path.join('txt_results', 'localizer', str(amount_stim))
-os.makedirs(res_f, exist_ok=True)
-with open(os.path.join(res_f, 'pairwise_comparisons_localizer_{}.tsv'.format(str(amount_stim))), 'w') as o:
-    o.write('variable\t')
-    o.write('low_sound_avg_zscore\tlow_sound_std\t')
-    o.write('high_sound_avg_zscore\thigh_sound_std\t')
-    o.write('sound_T\tsound_p_raw\tsound_p_corrected\t')
-    o.write('low_action_avg_zscore\tlow_action_std\t')
-    o.write('high_action_avg_zscore\thigh_action_std\t')
-    o.write('action_T\taction_p_raw\taction_p_corrected\n')
+    ### plotting violinplots
+    violin_folder = os.path.join('violins', 'localizer', str(amount_stim))
+    os.makedirs(violin_folder, exist_ok=True)
+    xs = [val for val in best_good.keys()]
+    ### testing p-vals
+    ps = list()
+    cases = list()
+    combs = list(itertools.combinations(xs, r=2))
     for k in relevant_keys:
-        o.write('{}\t'.format(k))
-        ### sound
-        low_sound = [float(variables[k][w])  for _ in xs for w in selected_words[_] if 'lowS' in _]
-        o.write('{}\t{}\t'.format(round(numpy.average(low_sound), 4),round(numpy.std(low_sound), 4)))
-        hi_sound = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'highS' in _]
-        o.write('{}\t{}\t'.format(round(numpy.average(hi_sound), 4),round(numpy.std(hi_sound), 4)))
-        stat_comp = scipy.stats.ttest_ind(low_sound, hi_sound)
-        o.write('{}\t{}\t'.format(round(stat_comp.statistic, 4),round(stat_comp.pvalue, 5)))
-        o.write('{}\t'.format(round(corr_ps[k][0], 5)))
-        ### action
-        low_action = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'lowA' in _]
-        o.write('{}\t{}\t'.format(round(numpy.average(low_action), 4),round(numpy.std(low_action), 4)))
-        hi_action = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'highA' in _]
-        o.write('{}\t{}\t'.format(round(numpy.average(hi_action), 4),round(numpy.std(hi_action), 4)))
-        stat_comp = scipy.stats.ttest_ind(low_action, hi_action)
-        o.write('{}\t{}\t'.format(round(stat_comp.statistic, 4),round(stat_comp.pvalue, 5)))
-        o.write('{}\n'.format(round(corr_ps[k][1], 5)))
+        vals = {xs[_] : [float(variables[k][w]) for w in selected_words[xs[_]]] for _ in range(len(xs))}
+        for c in combs:
+            p = scipy.stats.ttest_ind(vals[c[0]], vals[c[1]]).pvalue
+            ps.append(p)
+            cases.append([k, c[0], c[1]])
+        file_name = os.path.join(violin_folder, 'localizer_{}_{}.jpg'.format(str(amount_stim), k))
+        fig, ax = pyplot.subplots(constrained_layout=True)
+        for _ in range(len(xs)):
+            ax.violinplot(positions=[_], dataset=[float(variables[k][w]) for w in best_good[xs[_]][:amount_stim*2]], showmeans=True)
+        ax.set_xticks(range(len(xs)))
+        ax.set_xticklabels([x.replace('_', '_') for x in xs])
+        ax.set_title('{} distributions for localizer words'.format(k))
+        pyplot.savefig(file_name)
+        pyplot.clf()
+        pyplot.close()
 
-with open(os.path.join(res_f, 'localizer_words_{}.tsv'.format(str(amount_stim))), 'w') as o:
-    o.write('word\tcategory\n')
-    for cat, ws in selected_words.items():
-        for w in ws:
-            o.write('{}\t{}\n'.format(w, cat))
+    corrected_ps = mne.stats.fdr_correction(ps)[1]
+    #for case, p in zip(cases, ps):
+    for case, p in zip(cases, corrected_ps):
+        if p<=0.05:
+            #print([case, p])
+            pass
+    #print(k)
+    ### corrected p-values
+    corr_ps = dict()
+    for k in relevant_keys:
+        low_sound = [float(variables[k][w])  for _ in xs for w in selected_words[_] if 'lowS' in _]
+        hi_sound = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'highS' in _]
+        sound_comp = scipy.stats.ttest_ind(low_sound, hi_sound)
+        low_action = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'lowA' in _]
+        hi_action = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'highA' in _]
+        action_comp = scipy.stats.ttest_ind(low_action, hi_action)
+        corr_ps[k] = [sound_comp.pvalue, action_comp.pvalue]
+    sound_corr = mne.stats.fdr_correction([corr_ps[k][0] for k in relevant_keys])[1]
+    action_corr = mne.stats.fdr_correction([corr_ps[k][1] for k in relevant_keys])[1]
+    for k_i, k in enumerate(relevant_keys):
+        corr_ps[k] = [sound_corr[k_i], action_corr[k_i]]
+
+    ### writing to files the pairwise tests
+    res_f = os.path.join('txt_results', 'localizer', str(amount_stim))
+    os.makedirs(res_f, exist_ok=True)
+    with open(os.path.join(res_f, 'pairwise_comparisons_localizer_{}.tsv'.format(str(amount_stim))), 'w') as o:
+        o.write('variable\t')
+        o.write('low_sound_avg_zscore\tlow_sound_std\t')
+        o.write('high_sound_avg_zscore\thigh_sound_std\t')
+        o.write('sound_T\tsound_p_raw\tsound_p_corrected\t')
+        o.write('low_action_avg_zscore\tlow_action_std\t')
+        o.write('high_action_avg_zscore\thigh_action_std\t')
+        o.write('action_T\taction_p_raw\taction_p_corrected\n')
+        for k in relevant_keys:
+            o.write('{}\t'.format(k))
+            ### sound
+            low_sound = [float(variables[k][w])  for _ in xs for w in selected_words[_] if 'lowS' in _]
+            o.write('{}\t{}\t'.format(round(numpy.average(low_sound), 4),round(numpy.std(low_sound), 4)))
+            hi_sound = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'highS' in _]
+            o.write('{}\t{}\t'.format(round(numpy.average(hi_sound), 4),round(numpy.std(hi_sound), 4)))
+            stat_comp = scipy.stats.ttest_ind(low_sound, hi_sound)
+            o.write('{}\t{}\t'.format(round(stat_comp.statistic, 4),round(stat_comp.pvalue, 5)))
+            o.write('{}\t'.format(round(corr_ps[k][0], 5)))
+            ### action
+            low_action = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'lowA' in _]
+            o.write('{}\t{}\t'.format(round(numpy.average(low_action), 4),round(numpy.std(low_action), 4)))
+            hi_action = [float(variables[k][w]) for _ in xs for w in selected_words[_] if 'highA' in _]
+            o.write('{}\t{}\t'.format(round(numpy.average(hi_action), 4),round(numpy.std(hi_action), 4)))
+            stat_comp = scipy.stats.ttest_ind(low_action, hi_action)
+            o.write('{}\t{}\t'.format(round(stat_comp.statistic, 4),round(stat_comp.pvalue, 5)))
+            o.write('{}\n'.format(round(corr_ps[k][1], 5)))
+
+    with open(os.path.join(res_f, 'localizer_words_{}.tsv'.format(str(amount_stim))), 'w') as o:
+        o.write('word\tcategory\n')
+        for cat, ws in selected_words.items():
+            for w in ws:
+                o.write('{}\t{}\n'.format(w, cat))
