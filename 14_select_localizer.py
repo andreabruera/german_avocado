@@ -44,8 +44,6 @@ def skip_words(word, label):
     '''
         if float(variables['predicted_auditory'][word]) > 0.:
             marker = True
-        if float(variables['word_average_trigram_frequency'][word]) > 1e7:
-            marker = True
     if 'lowA' in label:
         if float(variables['predicted_auditory'][word]) >= 0.:
             marker = True
@@ -53,10 +51,19 @@ def skip_words(word, label):
     if 'lowS' in label:
         if float(variables['predicted_concreteness'][word]) > 2.5:
             marker = True
-    if 'highA' in label:
-        if float(variables['predicted_concreteness'][word]) > 3.:
+        if float(variables['word_length'][word]) <= 5:
             marker = True
-        if float(variables['predicted_concreteness'][word]) < 1.:
+        if float(variables['word_average_trigram_frequency'][word]) > 1.1*1e7:
+            marker = True
+    if 'highA' in label:
+        if float(variables['predicted_concreteness'][word]) > 2.5:
+            marker = True
+        if float(variables['predicted_concreteness'][word]) < .75:
+            marker = True
+    if 'lowA' in label:
+        if float(variables['predicted_concreteness'][word]) < 1.5:
+            marker = True
+        if float(variables['word_average_bigram_frequency'][word]) < .5*1e7:
             marker = True
     if word in selected_words:
         marker = True
@@ -295,7 +302,7 @@ distances = {w : numpy.average(v) for w, v in distances.items()}
 
 best_good = {label : {w : distances[w] for w in v} for label, v in localizer_words.items()}
 best_good = {label : [w[0] for w in sorted(v.items(), key=lambda item : item[1])] for label, v in best_good.items()}
-amount_stim = 1000
+amount_stim = 48
 selected_words = {k : v[:amount_stim] for k, v in best_good.items()}
 if amount_stim != 1000:
     for v in selected_words.values():
