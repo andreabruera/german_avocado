@@ -56,7 +56,7 @@ def skip_words(word, label):
         if float(variables['word_average_trigram_frequency'][word]) > 1.1*1e7:
             marker = True
     if 'highA' in label:
-        if float(variables['predicted_concreteness'][word]) > 2.5:
+        if float(variables['predicted_concreteness'][word]) > 2.25:
             marker = True
         if float(variables['predicted_concreteness'][word]) < .75:
             marker = True

@@ -35,7 +35,7 @@ def multiprocessing_levenshtein(w):
     levs = list()
     for w_two in other_words:
         levs.append(levenshtein(w, w_two))
-    score = numpy.average(sorted(levs, reverse=True)[:20])
+    score = numpy.average(sorted(levs)[:20])
     return (w, score)
 
 '''
