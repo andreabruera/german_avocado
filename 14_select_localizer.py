@@ -65,7 +65,7 @@ def skip_words(word, label):
             marker = True
         if float(variables['word_average_bigram_frequency'][word]) < .5*1e7:
             marker = True
-        if float(variables['word_length'][word]) <= 5:
+        if float(variables['word_length'][word]) < 5:
             marker = True
     if word in selected_words:
         marker = True
