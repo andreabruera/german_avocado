@@ -75,8 +75,8 @@ other_words = [w[0] for w in sorted(all_sdewac_freqs.items(), key=lambda item : 
 def print_stuff(inputs):
     print(inputs)
 
-'''
 old20_scores = {w : 0 for w in relevant_words}
+'''
 for w in tqdm(relevant_words):
     _, score = multiprocessing_levenshtein(w)
     print([w, score])

@@ -51,6 +51,8 @@ def skip_words(word, label):
     if 'lowS' in label:
         if float(variables['predicted_concreteness'][word]) > 2.5:
             marker = True
+        if float(variables['word_length'][word]) == 5:
+            marker = random.choice([True, False])
         if float(variables['word_length'][word]) < 5:
             marker = True
         if float(variables['word_average_trigram_frequency'][word]) > 1.1*1e7:
