@@ -57,6 +57,8 @@ def skip_words(word, label):
             marker = True
         if float(variables['word_average_trigram_frequency'][word]) > 1.1*1e7:
             marker = True
+        if float(variables['predicted_auditory'][word]) > -.6:
+            marker = True
     if 'highA' in label:
         if float(variables['predicted_concreteness'][word]) > 2.25:
             marker = True
@@ -64,12 +66,16 @@ def skip_words(word, label):
             marker = True
         if float(variables['predicted_auditory'][word]) > 1.5:
             marker = True
+        if float(variables['predicted_hand'][word]) < 1.:
+            marker = True
     if 'lowA' in label:
         if float(variables['predicted_concreteness'][word]) < 1.5:
             marker = True
         if float(variables['word_average_bigram_frequency'][word]) < .75*1e7:
             marker = True
         if float(variables['word_length'][word]) < 5:
+            marker = True
+        if float(variables['predicted_hand'][word]) > 0.5:
             marker = True
     if word in selected_words:
         marker = True
@@ -235,6 +241,7 @@ localizer_words = {k : [w for _, v in localizer.items() for w in v if k in _] fo
 localizer_words = {k : [w for w in v if skip_words(w, k)==False] for k,v in localizer_words.items()}
 print('localizer items')
 print([(k, len(v)) for k, v in localizer_words.items()])
+import pdb; pdb.set_trace()
 
 distances = dict()
 for split_k, v in localizer_words.items():
