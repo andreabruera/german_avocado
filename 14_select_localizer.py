@@ -241,7 +241,6 @@ localizer_words = {k : [w for _, v in localizer.items() for w in v if k in _] fo
 localizer_words = {k : [w for w in v if skip_words(w, k)==False] for k,v in localizer_words.items()}
 print('localizer items')
 print([(k, len(v)) for k, v in localizer_words.items()])
-import pdb; pdb.set_trace()
 
 distances = dict()
 for split_k, v in localizer_words.items():
