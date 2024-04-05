@@ -1,5 +1,6 @@
 phil_original_annotated/
 pickles/
+old_pickles/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

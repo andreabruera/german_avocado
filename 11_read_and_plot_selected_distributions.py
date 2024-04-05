@@ -163,14 +163,65 @@ old_good = {l : set([w for w in v if w not in corrections.keys()]) for l, v in o
 new_good = {l : set([w for w in v if w not in corrections.keys()]) for l, v in new_good.items()}
 new_mid_good = {l : set([w for w in v if w not in corrections.keys() or corrections[w]=='mid']) for l, v in new_mid_good.items()}
 
+### reading latest corrections
+corrections = list()
+with open('phil_correction_21_02.tsv') as i:
+    for l_i, l in enumerate(i):
+        if l_i == 0:
+            continue
+        line = l.strip().split('\t')
+        if len(line) > 2:
+            if line[2].strip() in ['bad', 'mid']:
+                corrections.append(line[0].strip())
+### reading latest corrections
+global localizer_corrections
+localizer_corrections = dict()
+with open('localizer_bad.tsv') as i:
+    for l_i, l in enumerate(i):
+        if l_i == 0:
+            continue
+        line = l.strip().split('\t')
+        if len(line) > 2:
+            if line[2].strip() in ['mid', 'bad']:
+                corrections.append(line[0].strip())
+
+res_f = os.path.join('txt_results', 'localizer', '48')
+with open(os.path.join(res_f, 'localizer_words_48.tsv')) as o:
+    for l_i, l in enumerate(o):
+        if l_i == 0:
+            continue
+        line = l.strip().split('\t')
+        corrections.append(line[0].strip())
+reduced_good = {k : [w for w in v if w not in corrections] for k, v in new_good.items()}
+print([(k, len(v)) for k, v in reduced_good.items()])
+for k in reduced_good.keys():
+    new_l = list()
+    for w in reduced_good[k]:
+        if 'lowS' in k:
+            if float(variables['predicted_auditory'][w]) > 0.:
+                continue
+        if 'highS' in k:
+            if float(variables['predicted_auditory'][w]) < 0.:
+                continue
+        if 'lowA' in k:
+            if float(variables['predicted_hand'][w]) > 0.:
+                continue
+        if 'highA' in k:
+            if float(variables['predicted_hand'][w]) < 0.:
+                continue
+        new_l.append(w)
+    reduced_good[k] = new_l
+print([(k, len(v)) for k, v in reduced_good.items()])
+
 for amount_stim in [
                     36, 
-                    42, 
-                    48
+                    #42, 
+                    #48
                     ]:
     for mode, good in (
                  #('original_exp', old_good),
-                 ('good_only', new_good),
+                 #('good_only', new_good),
+                 ('good_only', reduced_good),
                  #('good_mid', new_mid_good),
                  ):
         print('{}\n\n'.format(mode))
