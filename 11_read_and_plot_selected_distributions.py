@@ -23,12 +23,12 @@ def skip_words(word, label):
     #if label == 'lowA_highS':
     #    if float(variables['old20_score'][word]) >= 4.:
     #        marker = True
+    '''
     if label == 'highA_highS':
         if float(variables['old20_score'][word]) >= 5.:
             marker = True
         if float(variables['predicted_concreteness'][word]) > 2.5:
             marker = True
-    '''
         if float(variables['word_average_trigram_frequency'][word]) > 10500000:
             marker = True
         if float(variables['log10_word_frequency_sdewac'][word]) > 3.9:
