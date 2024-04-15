@@ -10,15 +10,23 @@ from matplotlib import pyplot
 from scipy import stats
 
 def skip_words(word, label):
-    '''
     marker = False
     if label == 'highA_lowS':
         if float(variables['predicted_concreteness'][word]) > 2.:
             marker = True
     ### this is where we can cut the most...
     if label == 'lowA_lowS':
-        if float(variables['predicted_concreteness'][word]) < 1.1:
+        #if float(variables['predicted_concreteness'][word]) < 1.1:
+        #    marker = True
+        if float(variables['old20_score'][word]) <= 2.:
             marker = True
+    #if label == 'lowA_highS':
+    #    if float(variables['old20_score'][word]) >= 4.:
+    #        marker = True
+    if label == 'highA_highS':
+        if float(variables['old20_score'][word]) >= 5.:
+            marker = True
+    '''
         if float(variables['word_average_trigram_frequency'][word]) > 10500000:
             marker = True
         if float(variables['log10_word_frequency_sdewac'][word]) > 3.9:
@@ -201,16 +209,16 @@ for k in reduced_good.keys():
     new_l = list()
     for w in reduced_good[k]:
         if 'lowS' in k:
-            if float(variables['predicted_auditory'][w]) > 0.:
+            if float(variables['predicted_auditory'][w]) > .5:
                 continue
         if 'highS' in k:
-            if float(variables['predicted_auditory'][w]) < 0.:
+            if float(variables['predicted_auditory'][w]) < -.5:
                 continue
         if 'lowA' in k:
-            if float(variables['predicted_hand'][w]) > 0.:
+            if float(variables['predicted_hand'][w]) > .3:
                 continue
         if 'highA' in k:
-            if float(variables['predicted_hand'][w]) < 0.:
+            if float(variables['predicted_hand'][w]) < -.3:
                 continue
         new_l.append(w)
     reduced_good[k] = new_l
