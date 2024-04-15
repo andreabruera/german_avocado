@@ -10,6 +10,7 @@ from matplotlib import pyplot
 from scipy import stats
 
 def skip_words(word, label):
+    '''
     marker = False
     if label == 'highA_lowS':
         if float(variables['predicted_concreteness'][word]) > 2.:
@@ -22,6 +23,7 @@ def skip_words(word, label):
             marker = True
         if float(variables['log10_word_frequency_sdewac'][word]) > 3.9:
                 marker = True
+    '''
     return marker
 
 ### reading ratings
@@ -165,13 +167,14 @@ new_mid_good = {l : set([w for w in v if w not in corrections.keys() or correcti
 
 ### reading latest corrections
 corrections = list()
-with open('phil_correction_21_02.tsv') as i:
+with open('phil_correction_15_04.tsv') as i:
     for l_i, l in enumerate(i):
         if l_i == 0:
             continue
         line = l.strip().split('\t')
         if len(line) > 2:
             if line[2].strip() in ['bad', 'mid']:
+                #print(line[0])
                 corrections.append(line[0].strip())
 ### reading latest corrections
 global localizer_corrections

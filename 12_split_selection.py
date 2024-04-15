@@ -67,7 +67,11 @@ original_words = {k : random.sample(v, k=len(v)) for k, v in original_words.item
 for k, v in original_words.items():
     assert len(v) == amount_stim*2
 
-for amount_stim in [36, 42, 48]:
+for amount_stim in [
+                    36, 
+                    #42, 
+                    #48,
+                    ]:
     res_f = os.path.join('two_lists', mode, str(amount_stim))
     os.makedirs(res_f, exist_ok=True)
     two_lists = {'one' : dict(), 'two' : dict()}
