@@ -20,9 +20,9 @@ def skip_words(word, label):
         #    marker = True
         if float(variables['old20_score'][word]) <= 2.:
             marker = True
-    #if label == 'lowA_highS':
-    #    if float(variables['old20_score'][word]) >= 4.:
-    #        marker = True
+    if label == 'lowA_highS':
+        if float(variables['predicted_concreteness'][word]) <= .1:
+            marker = True
     if label == 'highA_highS':
         if float(variables['predicted_concreteness'][word]) > 2.6:
             marker = True
