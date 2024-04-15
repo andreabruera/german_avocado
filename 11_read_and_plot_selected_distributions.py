@@ -11,16 +11,16 @@ from scipy import stats
 
 def skip_words(word, label):
     marker = False
-    '''
     if label == 'highA_lowS':
         if float(variables['predicted_concreteness'][word]) > 2.:
             marker = True
-    ### this is where we can cut the most...
     if label == 'lowA_lowS':
-        #if float(variables['predicted_concreteness'][word]) < 1.1:
-        #    marker = True
-        if float(variables['old20_score'][word]) <= 2.:
+        if float(variables['predicted_concreteness'][word]) <= 1.2:
             marker = True
+        if float(variables['old20_score'][word]) < 1.9:
+            marker = True
+    '''
+    ### this is where we can cut the most...
     if label == 'lowA_highS':
         if float(variables['predicted_concreteness'][word]) <= .1:
             marker = True
@@ -29,9 +29,7 @@ def skip_words(word, label):
     if label == 'highA_highS':
         if float(variables['predicted_concreteness'][word]) > 2.6:
             marker = True
-    '''
     ### prova
-    '''
         if float(variables['old20_score'][word]) >= 5.:
             marker = True
         if float(variables['word_average_trigram_frequency'][word]) > 10500000:
