@@ -10,16 +10,16 @@ from matplotlib import pyplot
 from scipy import stats
 
 def skip_words(word, label):
+    '''
     marker = False
     if label == 'highA_lowS':
-        if float(variables['predicted_concreteness'][word]) > 2.:
+        if float(variables['predicted_concreteness'][word]) > 2.5:
             marker = True
     if label == 'lowA_lowS':
         if float(variables['predicted_concreteness'][word]) <= 1.2:
             marker = True
         if float(variables['old20_score'][word]) < 1.9:
             marker = True
-    '''
     ### this is where we can cut the most...
     if label == 'lowA_highS':
         if float(variables['predicted_concreteness'][word]) <= .1:
