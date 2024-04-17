@@ -9,6 +9,17 @@ import scipy
 from matplotlib import pyplot
 from scipy import stats
 
+def skip_words(word, label):
+    marker = False
+    if label == 'highA_highS':
+        if float(variables['old20_score'][word]) >= 4.8:
+            print(word)
+            marker = True
+    if label == 'lowA_lowS':
+        if float(variables['old20_score'][word]) <= 1.8:
+            print(word)
+            marker = True
+    return marker
 
 ### reading ratings
 full_words = list()
@@ -68,7 +79,9 @@ with open('all_selected_words.tsv') as i:
             word = line[0].strip()
             cat = line[1].strip()
             if word in corrections[cat]:
-                print(word)
+                #print(word)
+                continue
+            if skip_words(word, cat):
                 continue
             try:
                 reduced_good[cat].append(word)
