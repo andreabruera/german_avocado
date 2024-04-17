@@ -29,6 +29,7 @@ def skip_words(word, label):
         #    marker = True
         if float(variables['old20_score'][word]) > 4.55:
             marker = True
+    ###new
     '''
     ### this is where we can cut the most...
     if label == 'highA_highS':
@@ -233,6 +234,7 @@ for k in reduced_good.keys():
         new_l.append(w)
     reduced_good[k] = new_l
 print([(k, len(v)) for k, v in reduced_good.items()])
+import pdb; pdb.set_trace()
 
 for amount_stim in [
                     36, 
