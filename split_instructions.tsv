@@ -1,0 +1,289 @@
+word	category	separation
+Gefieder	lowA_lowS	
+Marmor	lowA_lowS	
+Krabbe	lowA_lowS	
+Stachel	lowA_lowS	
+Schwefel	lowA_lowS	
+Abhang	lowA_lowS	
+Gehöft	lowA_lowS	
+Knospe	lowA_lowS	
+Prärie	lowA_lowS	
+Pfeiler	lowA_lowS	
+Seestern	lowA_lowS	
+Mumie	lowA_lowS	
+Zipfel	lowA_lowS	
+Veranda	lowA_lowS	
+Gebirge	lowA_lowS	
+Grabmal	lowA_lowS	
+Sphinx	lowA_lowS	
+Schnecke	lowA_lowS	
+Lagune	lowA_lowS	
+Mahnmal	lowA_lowS	
+Vordach	lowA_lowS	
+Zisterne	lowA_lowS	
+Schlund	lowA_lowS	
+Pfosten	lowA_lowS	
+Qualle	lowA_lowS	
+Tunnel	lowA_lowS	
+Schlamm	lowA_lowS	
+Fenchel	lowA_lowS	
+Emblem	lowA_lowS	
+Planet	lowA_lowS	
+Kristall	lowA_lowS	
+Gecko	lowA_lowS	
+Akazie	lowA_lowS	
+Sockel	lowA_lowS	
+Schleim	lowA_lowS	
+Kuppel	lowA_lowS	
+Aufdruck	lowA_lowS	
+Pappel	lowA_lowS	
+Koralle	lowA_lowS	
+Rinne	lowA_lowS	
+Palast	lowA_lowS	
+Sensor	lowA_lowS	
+Dunst	lowA_lowS	
+Kiesel	lowA_lowS	
+Kruste	lowA_lowS	
+Zapfen	lowA_lowS	
+Fels	lowA_lowS	
+Moor	lowA_lowS	
+Steinweg	lowA_lowS	
+Gitter	lowA_lowS	
+Sumpf	lowA_lowS	
+Flocke	lowA_lowS	
+Molekül	lowA_lowS	
+Eiche	lowA_lowS	
+Asche	lowA_lowS	
+Statue	lowA_lowS	
+Schuppe	lowA_lowS	
+Bildnis	lowA_lowS	1
+Krater	lowA_lowS	
+Wolke	lowA_lowS	
+Sandbank	lowA_lowS	
+Ziegel	lowA_lowS	
+Düne	lowA_lowS	
+Porträt	lowA_lowS	1
+Korridor	lowA_lowS	
+Tentakel	lowA_lowS	
+Rebstock	lowA_lowS	
+Borke	lowA_lowS	
+Graben	lowA_lowS	
+Skorpion	lowA_lowS	
+Erdhügel	lowA_lowS	
+Eidechse	lowA_lowS	
+Jaguar	lowA_highS	
+Brandung	lowA_highS	
+Tonband	lowA_highS	
+Papagei	lowA_highS	
+Kakadu	lowA_highS	
+Panther	lowA_highS	
+Saloon	lowA_highS	
+Hamster	lowA_highS	
+Büffel	lowA_highS	
+Zirkus	lowA_highS	
+Ferkel	lowA_highS	
+Tornado	lowA_highS	
+Elefant	lowA_highS	
+Gorilla	lowA_highS	3
+Sirene	lowA_highS	
+Kapelle	lowA_highS	
+Gondel	lowA_highS	
+Flieger	lowA_highS	4
+Tiergarten	lowA_highS	
+Truthahn	lowA_highS	
+Wasserfall	lowA_highS	
+Spatz	lowA_highS	
+Wasserwerk	lowA_highS	
+Specht	lowA_highS	
+Grille	lowA_highS	
+Henne	lowA_highS	
+Affe	lowA_highS	2
+Pavian	lowA_highS	3
+Geläut	lowA_highS	
+Hyäne	lowA_highS	
+Propeller	lowA_highS	
+Uhu	lowA_highS	5
+Flugplatz	lowA_highS	4
+Auspuff	lowA_highS	
+Kröte	lowA_highS	6
+Staudamm	lowA_highS	
+Theater	lowA_highS	
+Stadion	lowA_highS	
+Trafo	lowA_highS	
+Esel	lowA_highS	
+Elch	lowA_highS	
+Getriebe	lowA_highS	
+Tiger	lowA_highS	
+Stier	lowA_highS	
+Fluss	lowA_highS	
+Rotor	lowA_highS	
+Kolibri	lowA_highS	
+Panda	lowA_highS	
+Lawine	lowA_highS	
+Lüftung	lowA_highS	
+Krähe	lowA_highS	
+Taube	lowA_highS	
+Turbine	lowA_highS	
+Straße	lowA_highS	
+Ente	lowA_highS	
+Düsenjet	lowA_highS	
+Triebwerk	lowA_highS	
+Aula	lowA_highS	
+Eule	lowA_highS	5
+Meise	lowA_highS	
+Motor	lowA_highS	
+Ziege	lowA_highS	
+Hummel	lowA_highS	
+Rabe	lowA_highS	
+Frosch	lowA_highS	6
+Kondensator	lowA_highS	
+Gebläse	lowA_highS	
+Wal	lowA_highS	
+Küken	lowA_highS	
+Schimpanse	lowA_highS	2
+Kuckuck	lowA_highS	
+Amsel	lowA_highS	
+Schminke	highA_lowS	
+Krümel	highA_lowS	
+Bargeld	highA_lowS	
+Kommode	highA_lowS	
+Zwiebel	highA_lowS	
+Schraube	highA_lowS	
+Paprika	highA_lowS	
+Skizze	highA_lowS	
+Bikini	highA_lowS	
+Tabak	highA_lowS	
+Tablette	highA_lowS	
+Zeichnung	highA_lowS	
+Strumpf	highA_lowS	
+Schleppe	highA_lowS	
+Frisbee	highA_lowS	
+Banane	highA_lowS	
+Schlitten	highA_lowS	
+Korsett	highA_lowS	
+Tupfer	highA_lowS	
+Stativ	highA_lowS	
+Krücke	highA_lowS	
+Schemel	highA_lowS	
+Umschlag	highA_lowS	
+Scharnier	highA_lowS	
+Saatgut	highA_lowS	
+Lineal	highA_lowS	
+Sattel	highA_lowS	
+Prothese	highA_lowS	
+Ausweis	highA_lowS	
+Knauf	highA_lowS	
+Knopf	highA_lowS	
+Joghurt	highA_lowS	
+Toast	highA_lowS	
+Sichel	highA_lowS	
+Einrad	highA_lowS	
+Schlaufe	highA_lowS	
+Karabiner	highA_lowS	
+Paddel	highA_lowS	
+Kordel	highA_lowS	
+Zügel	highA_lowS	
+Kamm	highA_lowS	
+Skalpell	highA_lowS	
+Anker	highA_lowS	
+Regal	highA_lowS	
+Waage	highA_lowS	
+Ranzen	highA_lowS	
+Bumerang	highA_lowS	
+Gurt	highA_lowS	
+Spind	highA_lowS	
+Kartoffel	highA_lowS	
+Paket	highA_lowS	
+Mappe	highA_lowS	
+Kajak	highA_lowS	
+Butter	highA_lowS	
+Lupe	highA_lowS	
+Peperoni	highA_lowS	
+Jeans	highA_lowS	
+Krokette	highA_lowS	
+Flyer	highA_lowS	
+Brot	highA_lowS	
+Webstuhl	highA_lowS	
+Wickel	highA_lowS	
+Haken	highA_lowS	7
+Degen	highA_lowS	
+Matte	highA_lowS	
+Hacke	highA_lowS	7
+Lasche	highA_lowS	
+Magnet	highA_lowS	
+Herd	highA_lowS	
+Mikroskop	highA_lowS	
+Himbeere	highA_lowS	
+Textilie	highA_lowS	
+Moped	highA_highS	8
+Flöte	highA_highS	
+Triangel	highA_highS	
+Drucker	highA_highS	
+Lasso	highA_highS	
+Peitsche	highA_highS	
+Trommel	highA_highS	13
+Schleuder	highA_highS	
+Knarre	highA_highS	
+Roller	highA_highS	
+Schalter	highA_highS	
+Stapler	highA_highS	
+Geschütz	highA_highS	11
+Seilzug	highA_highS	
+Flinte	highA_highS	
+Granate	highA_highS	
+Bombe	highA_highS	
+Rekorder	highA_highS	
+Festwagen	highA_highS	
+Blech	highA_highS	
+Schleifer	highA_highS	
+Rakete	highA_highS	
+Harfe	highA_highS	
+Walze	highA_highS	
+Mixer	highA_highS	
+Hammer	highA_highS	
+Blinker	highA_highS	
+Karussell	highA_highS	
+Cello	highA_highS	12
+Dusche	highA_highS	
+Gitarre	highA_highS	
+Gewehr	highA_highS	11
+Posaune	highA_highS	
+Telefon	highA_highS	
+Klavier	highA_highS	9
+Bohrer	highA_highS	
+Geige	highA_highS	
+Dynamit	highA_highS	
+Hobel	highA_highS	
+Saite	highA_highS	
+Banjo	highA_highS	
+Trompete	highA_highS	
+Kanone	highA_highS	
+Tuba	highA_highS	
+Pistole	highA_highS	
+Schlagzeug	highA_highS	13
+Pfeife	highA_highS	
+Fagott	highA_highS	
+Säugling	highA_highS	10
+Saxophon	highA_highS	
+Böller	highA_highS	
+Akkordeon	highA_highS	
+Revolver	highA_highS	
+Keyboard	highA_highS	14
+Lagerfeuer	highA_highS	
+Alphorn	highA_highS	
+Mäher	highA_highS	
+Motorrad	highA_highS	8
+Tastatur	highA_highS	14
+Computer	highA_highS	
+Hupe	highA_highS	
+Pferd	highA_highS	
+Baby	highA_highS	10
+Auto	highA_highS	
+Klaviatur	highA_highS	9
+Tamburin	highA_highS	
+Rassel	highA_highS	
+Zapfhahn	highA_highS	
+Kind	highA_highS	
+Meißel	highA_highS	
+Kontrabass	highA_highS	12
+Klarinette	highA_highS	
